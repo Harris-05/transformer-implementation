@@ -1,0 +1,57 @@
+{
+  "signature": "aa069914a6fbd39b333698bc9beb31e30f3b7b0ef4219738070892a2fe33c40e",
+  "identity": {
+    "model": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "prompt_version": 1,
+      "system_prompt_sha256": "3ba5d29f630b8fec2b4de14e83632060015c82fe1633e88deadb87d4f9fb6672",
+      "max_sequence_length": 1024,
+      "max_new_tokens": 128,
+      "required_tokens_including_generation_reserve": 872,
+      "truncated_records": 0,
+      "do_sample": false,
+      "eos_token_id": 151645,
+      "pad_token_id": 151643
+    },
+    "qlora": {
+      "num_train_epochs": 3,
+      "learning_rate": 0.0001,
+      "per_device_train_batch_size": 1,
+      "per_device_eval_batch_size": 1,
+      "gradient_accumulation_steps": 8,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.01,
+      "max_grad_norm": 1.0,
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "target_modules": "all-linear",
+      "gradient_checkpointing": true,
+      "seed": 42,
+      "checkpoint_selection": "lowest_validation_completion_loss",
+      "early_stopping_patience": 2
+    },
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "transformers": "5.15.1",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.15.0",
+      "tokenizers": "0.22.2"
+    },
+    "data_sha256": {
+      "train": "2b3c21901e1719e89804bb532f0c42b1f2677f14136fcc532e25df2f4b810489",
+      "validation": "0a6ad872b4b22bb5f69ad2f3db163dc6aff75f421cb71e199aee328ad881e2e3"
+    },
+    "source_sha256": {
+      "finetune.py": "61cd4d07e6c38fed4179c8d7f88818d68ea2d1dd7060c5b5106964cc5170e48a",
+      "prepare_model_inputs.py": "004b35f7e65d70e64a1e6b8fa75e6f00e865dee309d9b6d1be0beae59642683d",
+      "eda.py": "23806970afd89f37e2f954592ed06946c03a23e20384b801f1c4b672a17747e5"
+    }
+  },
+  "gpu": "Tesla T4",
+  "cuda": "13.0",
+  "train_records": 602,
+  "validation_records": 206
+}

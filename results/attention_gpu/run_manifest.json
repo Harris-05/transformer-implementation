@@ -1,0 +1,40 @@
+{
+  "signature": "4f8aabb7e0d3b8612271dccf87985d8eb6ae260ba67a14d298d1f5349527051c",
+  "identity": {
+    "config": {
+      "seed": 42,
+      "lengths": [
+        128,
+        256,
+        512
+      ],
+      "causal_modes": [
+        false,
+        true
+      ],
+      "batch": 1,
+      "heads": 4,
+      "head_dim": 64,
+      "dtype": "float32",
+      "block_q": 64,
+      "block_k": 64,
+      "warmups": 2,
+      "repetitions": 5,
+      "cpu_threads": 2,
+      "atol": 2e-05,
+      "rtol": 0.0002
+    },
+    "device": "cuda",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "float32_matmul_precision": "highest",
+    "gpu": "Tesla T4",
+    "source_sha256": {
+      "attention.py": "df22dc21f739b9e601af444e0dff2b224552db35e367ce6bb4cc8d2a8c43d72a",
+      "benchmark_attention.py": "f3e4d9da892feeee4e058f653c8b9ae3e4eb64c3314613b60c5d1d61705e3b78",
+      "attention_benchmark_report.py": "ccfa3b38471e491748034d6a9dd6af81005239f6baa8ffcca8709f4c0e364db0"
+    }
+  }
+}

@@ -1,0 +1,1184 @@
+{
+  "complete": true,
+  "passed": true,
+  "device": "cpu",
+  "signature": "fc171a3644f847c3668f63418f89002887943aa7ac5ae9bc914d85f82a09ac17",
+  "cases": [
+    {
+      "case_id": "n128-full",
+      "length": 128,
+      "causal": false,
+      "seed": 42,
+      "shape": [
+        1,
+        4,
+        128,
+        64
+      ],
+      "passed": true,
+      "numerical": {
+        "reference": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 3.9899682563460104e-07,
+          "mean_absolute_error": 3.353653392377753e-08,
+          "max_relative_error": 0.0044929859841154355
+        },
+        "tiled": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 4.341152640696677e-07,
+          "mean_absolute_error": 3.069830114836437e-08,
+          "max_relative_error": 0.00812004100703054
+        },
+        "sdpa_auto": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 4.341152640696677e-07,
+          "mean_absolute_error": 3.383546231743321e-08,
+          "max_relative_error": 0.0025551547506829525
+        }
+      },
+      "timing": {
+        "complete": true,
+        "methods": {
+          "reference": {
+            "repetitions": 5,
+            "median_seconds": 0.001820300007238984,
+            "min_seconds": 0.00114079998456873,
+            "max_seconds": 0.00201500000548549,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "tiled": {
+            "repetitions": 5,
+            "median_seconds": 0.0032202000147663057,
+            "min_seconds": 0.002513000014005229,
+            "max_seconds": 0.003937500005122274,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "sdpa_auto": {
+            "repetitions": 5,
+            "median_seconds": 0.0006939999875612557,
+            "min_seconds": 0.000517700013006106,
+            "max_seconds": 0.0014547999890055507,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          }
+        },
+        "reference_over_tiled_speedup": 0.5652754483858002
+      },
+      "measurements": [
+        {
+          "method": "reference",
+          "repeat": 0,
+          "seconds": 0.00201500000548549,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 0,
+          "seconds": 0.003937500005122274,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 0,
+          "seconds": 0.0007128999859560281,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 1,
+          "seconds": 0.002513000014005229,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 1,
+          "seconds": 0.0006939999875612557,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 1,
+          "seconds": 0.00114079998456873,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 2,
+          "seconds": 0.0014547999890055507,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 2,
+          "seconds": 0.001820300007238984,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 2,
+          "seconds": 0.0032202000147663057,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 3,
+          "seconds": 0.0019606999994721264,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 3,
+          "seconds": 0.00359590002335608,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 3,
+          "seconds": 0.0005514000076800585,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 4,
+          "seconds": 0.003184400004101917,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 4,
+          "seconds": 0.000517700013006106,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 4,
+          "seconds": 0.0011685999925248325,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        }
+      ],
+      "score_workspace": {
+        "kind": "theoretical_score_tensor_only",
+        "dense_score_tensor_bytes": 262144,
+        "largest_tiled_score_tensor_bytes": 65536
+      }
+    },
+    {
+      "case_id": "n128-causal",
+      "length": 128,
+      "causal": true,
+      "seed": 43,
+      "shape": [
+        1,
+        4,
+        128,
+        64
+      ],
+      "passed": true,
+      "numerical": {
+        "reference": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 5.862925218647064e-07,
+          "mean_absolute_error": 4.0331829553722195e-08,
+          "max_relative_error": 0.0029077597114437006
+        },
+        "tiled": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 5.266878770893157e-07,
+          "mean_absolute_error": 3.9092382034638274e-08,
+          "max_relative_error": 0.0038934575337688294
+        },
+        "sdpa_auto": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 6.048838802064083e-07,
+          "mean_absolute_error": 4.106520334916268e-08,
+          "max_relative_error": 0.003876368166633953
+        }
+      },
+      "timing": {
+        "complete": true,
+        "methods": {
+          "reference": {
+            "repetitions": 5,
+            "median_seconds": 0.0013750999933108687,
+            "min_seconds": 0.0013373999972827733,
+            "max_seconds": 0.002119500015396625,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "tiled": {
+            "repetitions": 5,
+            "median_seconds": 0.002639200014527887,
+            "min_seconds": 0.0021216000022832304,
+            "max_seconds": 0.005134500010171905,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "sdpa_auto": {
+            "repetitions": 5,
+            "median_seconds": 0.0009204999951180071,
+            "min_seconds": 0.000601100007770583,
+            "max_seconds": 0.0012830000196117908,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          }
+        },
+        "reference_over_tiled_speedup": 0.5210290943245744
+      },
+      "measurements": [
+        {
+          "method": "reference",
+          "repeat": 0,
+          "seconds": 0.0013601000246126205,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 0,
+          "seconds": 0.002639200014527887,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 0,
+          "seconds": 0.0012830000196117908,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 1,
+          "seconds": 0.005134500010171905,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 1,
+          "seconds": 0.000601100007770583,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 1,
+          "seconds": 0.0015054999967105687,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 2,
+          "seconds": 0.0009476999985054135,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 2,
+          "seconds": 0.002119500015396625,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 2,
+          "seconds": 0.0022969999990891665,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 3,
+          "seconds": 0.0013750999933108687,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 3,
+          "seconds": 0.0027006000163964927,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 3,
+          "seconds": 0.0007811999821569771,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 4,
+          "seconds": 0.0021216000022832304,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 4,
+          "seconds": 0.0009204999951180071,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 4,
+          "seconds": 0.0013373999972827733,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        }
+      ],
+      "score_workspace": {
+        "kind": "theoretical_score_tensor_only",
+        "dense_score_tensor_bytes": 262144,
+        "largest_tiled_score_tensor_bytes": 65536
+      }
+    },
+    {
+      "case_id": "n256-full",
+      "length": 256,
+      "causal": false,
+      "seed": 44,
+      "shape": [
+        1,
+        4,
+        256,
+        64
+      ],
+      "passed": true,
+      "numerical": {
+        "reference": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 9.262348599214931e-07,
+          "mean_absolute_error": 2.8949028757818596e-08,
+          "max_relative_error": 0.03643947113824207
+        },
+        "tiled": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 3.329036746269054e-07,
+          "mean_absolute_error": 2.297149574919901e-08,
+          "max_relative_error": 0.01723457055536687
+        },
+        "sdpa_auto": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 6.162100166795526e-07,
+          "mean_absolute_error": 2.910779408979781e-08,
+          "max_relative_error": 0.02289555589940293
+        }
+      },
+      "timing": {
+        "complete": true,
+        "methods": {
+          "reference": {
+            "repetitions": 5,
+            "median_seconds": 0.0033733999880496413,
+            "min_seconds": 0.002663799998117611,
+            "max_seconds": 0.005947600002400577,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "tiled": {
+            "repetitions": 5,
+            "median_seconds": 0.01622670001233928,
+            "min_seconds": 0.00881410000147298,
+            "max_seconds": 0.016994299978250638,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "sdpa_auto": {
+            "repetitions": 5,
+            "median_seconds": 0.0019323999877087772,
+            "min_seconds": 0.0015336000069510192,
+            "max_seconds": 0.002733000001171604,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          }
+        },
+        "reference_over_tiled_speedup": 0.2078919303052626
+      },
+      "measurements": [
+        {
+          "method": "reference",
+          "repeat": 0,
+          "seconds": 0.0030645999941043556,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 0,
+          "seconds": 0.00881410000147298,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 0,
+          "seconds": 0.002733000001171604,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 1,
+          "seconds": 0.01622670001233928,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 1,
+          "seconds": 0.00226979999570176,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 1,
+          "seconds": 0.005947600002400577,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 2,
+          "seconds": 0.0015875000099185854,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 2,
+          "seconds": 0.004084299987880513,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 2,
+          "seconds": 0.013841300009516999,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 3,
+          "seconds": 0.002663799998117611,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 3,
+          "seconds": 0.016730900009861216,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 3,
+          "seconds": 0.0015336000069510192,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 4,
+          "seconds": 0.016994299978250638,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 4,
+          "seconds": 0.0019323999877087772,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 4,
+          "seconds": 0.0033733999880496413,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        }
+      ],
+      "score_workspace": {
+        "kind": "theoretical_score_tensor_only",
+        "dense_score_tensor_bytes": 1048576,
+        "largest_tiled_score_tensor_bytes": 65536
+      }
+    },
+    {
+      "case_id": "n256-causal",
+      "length": 256,
+      "causal": true,
+      "seed": 45,
+      "shape": [
+        1,
+        4,
+        256,
+        64
+      ],
+      "passed": true,
+      "numerical": {
+        "reference": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 4.7200818797943356e-07,
+          "mean_absolute_error": 3.575905722887215e-08,
+          "max_relative_error": 0.005961016061672602
+        },
+        "tiled": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 4.4519295339107146e-07,
+          "mean_absolute_error": 3.258873386309273e-08,
+          "max_relative_error": 0.008744659595548198
+        },
+        "sdpa_auto": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 4.494693488510393e-07,
+          "mean_absolute_error": 3.657927070914378e-08,
+          "max_relative_error": 0.008160545522276423
+        }
+      },
+      "timing": {
+        "complete": true,
+        "methods": {
+          "reference": {
+            "repetitions": 5,
+            "median_seconds": 0.007616599992616102,
+            "min_seconds": 0.003677200002130121,
+            "max_seconds": 0.009455500025069341,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "tiled": {
+            "repetitions": 5,
+            "median_seconds": 0.013738000008743256,
+            "min_seconds": 0.013423099997453392,
+            "max_seconds": 0.024620099982712418,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "sdpa_auto": {
+            "repetitions": 5,
+            "median_seconds": 0.00379590000375174,
+            "min_seconds": 0.0015232999867293984,
+            "max_seconds": 0.004679400008171797,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          }
+        },
+        "reference_over_tiled_speedup": 0.554418400623721
+      },
+      "measurements": [
+        {
+          "method": "reference",
+          "repeat": 0,
+          "seconds": 0.009455500025069341,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 0,
+          "seconds": 0.01836869999533519,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 0,
+          "seconds": 0.0046202999947126955,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 1,
+          "seconds": 0.024620099982712418,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 1,
+          "seconds": 0.00379590000375174,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 1,
+          "seconds": 0.007616599992616102,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 2,
+          "seconds": 0.0015232999867293984,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 2,
+          "seconds": 0.00761689999490045,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 2,
+          "seconds": 0.013738000008743256,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 3,
+          "seconds": 0.003677200002130121,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 3,
+          "seconds": 0.013597499986644834,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 3,
+          "seconds": 0.001986999996006489,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 4,
+          "seconds": 0.013423099997453392,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 4,
+          "seconds": 0.004679400008171797,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 4,
+          "seconds": 0.004990899993572384,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        }
+      ],
+      "score_workspace": {
+        "kind": "theoretical_score_tensor_only",
+        "dense_score_tensor_bytes": 1048576,
+        "largest_tiled_score_tensor_bytes": 65536
+      }
+    },
+    {
+      "case_id": "n512-full",
+      "length": 512,
+      "causal": false,
+      "seed": 46,
+      "shape": [
+        1,
+        4,
+        512,
+        64
+      ],
+      "passed": true,
+      "numerical": {
+        "reference": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 2.892923163799743e-07,
+          "mean_absolute_error": 2.1994858049136603e-08,
+          "max_relative_error": 0.16489787843162135
+        },
+        "tiled": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 2.820569437456122e-07,
+          "mean_absolute_error": 1.7682129082323712e-08,
+          "max_relative_error": 0.18082035696781895
+        },
+        "sdpa_auto": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 3.6979719592045157e-07,
+          "mean_absolute_error": 2.2229901247119228e-08,
+          "max_relative_error": 0.2522924220925476
+        }
+      },
+      "timing": {
+        "complete": true,
+        "methods": {
+          "reference": {
+            "repetitions": 5,
+            "median_seconds": 0.013500200002454221,
+            "min_seconds": 0.012361899978714064,
+            "max_seconds": 0.017633600014960393,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "tiled": {
+            "repetitions": 5,
+            "median_seconds": 0.03938549998565577,
+            "min_seconds": 0.035633499996038154,
+            "max_seconds": 0.05806389998178929,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "sdpa_auto": {
+            "repetitions": 5,
+            "median_seconds": 0.007238099991809577,
+            "min_seconds": 0.004686500004027039,
+            "max_seconds": 0.00957860000198707,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          }
+        },
+        "reference_over_tiled_speedup": 0.34277081685826016
+      },
+      "measurements": [
+        {
+          "method": "reference",
+          "repeat": 0,
+          "seconds": 0.013648399995872751,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 0,
+          "seconds": 0.0360651999944821,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 0,
+          "seconds": 0.007942199998069555,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 1,
+          "seconds": 0.03938549998565577,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 1,
+          "seconds": 0.007180599990533665,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 1,
+          "seconds": 0.017633600014960393,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 2,
+          "seconds": 0.00957860000198707,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 2,
+          "seconds": 0.013500200002454221,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 2,
+          "seconds": 0.05806389998178929,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 3,
+          "seconds": 0.013297199999215081,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 3,
+          "seconds": 0.035633499996038154,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 3,
+          "seconds": 0.007238099991809577,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 4,
+          "seconds": 0.04533900000387803,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 4,
+          "seconds": 0.004686500004027039,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 4,
+          "seconds": 0.012361899978714064,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        }
+      ],
+      "score_workspace": {
+        "kind": "theoretical_score_tensor_only",
+        "dense_score_tensor_bytes": 4194304,
+        "largest_tiled_score_tensor_bytes": 65536
+      }
+    },
+    {
+      "case_id": "n512-causal",
+      "length": 512,
+      "causal": true,
+      "seed": 47,
+      "shape": [
+        1,
+        4,
+        512,
+        64
+      ],
+      "passed": true,
+      "numerical": {
+        "reference": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 6.69116583695839e-07,
+          "mean_absolute_error": 3.0013793098068485e-08,
+          "max_relative_error": 0.02344319145589604
+        },
+        "tiled": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 6.910331324938568e-07,
+          "mean_absolute_error": 2.626280082995676e-08,
+          "max_relative_error": 0.0166652182462935
+        },
+        "sdpa_auto": {
+          "finite": true,
+          "passed": true,
+          "max_absolute_error": 6.882645795514009e-07,
+          "mean_absolute_error": 3.042829927136286e-08,
+          "max_relative_error": 0.02922051273797287
+        }
+      },
+      "timing": {
+        "complete": true,
+        "methods": {
+          "reference": {
+            "repetitions": 5,
+            "median_seconds": 0.01495829998748377,
+            "min_seconds": 0.011342400015564635,
+            "max_seconds": 0.026943300006678328,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "tiled": {
+            "repetitions": 5,
+            "median_seconds": 0.03189179999753833,
+            "min_seconds": 0.028166099975351244,
+            "max_seconds": 0.049201999994693324,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          },
+          "sdpa_auto": {
+            "repetitions": 5,
+            "median_seconds": 0.005325600010110065,
+            "min_seconds": 0.004068100010044873,
+            "max_seconds": 0.012439100013580173,
+            "initial_allocated_bytes": null,
+            "peak_allocated_bytes": null,
+            "peak_reserved_bytes": null
+          }
+        },
+        "reference_over_tiled_speedup": 0.4690327917721287
+      },
+      "measurements": [
+        {
+          "method": "reference",
+          "repeat": 0,
+          "seconds": 0.026943300006678328,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 0,
+          "seconds": 0.03189179999753833,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 0,
+          "seconds": 0.0050718999991659075,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 1,
+          "seconds": 0.03176859999075532,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 1,
+          "seconds": 0.012439100013580173,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 1,
+          "seconds": 0.01495829998748377,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 2,
+          "seconds": 0.004068100010044873,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 2,
+          "seconds": 0.011998900008620694,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 2,
+          "seconds": 0.032991399988532066,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 3,
+          "seconds": 0.011342400015564635,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 3,
+          "seconds": 0.028166099975351244,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 3,
+          "seconds": 0.010943400004180148,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "tiled",
+          "repeat": 4,
+          "seconds": 0.049201999994693324,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "sdpa_auto",
+          "repeat": 4,
+          "seconds": 0.005325600010110065,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        },
+        {
+          "method": "reference",
+          "repeat": 4,
+          "seconds": 0.022177500010002404,
+          "initial_allocated_bytes": null,
+          "peak_allocated_bytes": null,
+          "peak_reserved_bytes": null
+        }
+      ],
+      "score_workspace": {
+        "kind": "theoretical_score_tensor_only",
+        "dense_score_tensor_bytes": 4194304,
+        "largest_tiled_score_tensor_bytes": 65536
+      }
+    }
+  ]
+}

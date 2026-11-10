@@ -1,0 +1,83 @@
+{
+  "run_signature": "057846ed20a2ff477a6c83a0d23467ea3bff16ac03397d71a66133aa4293d21e",
+  "identity": {
+    "settings": {
+      "draft_lengths": [
+        2,
+        4
+      ],
+      "repetitions": 2,
+      "warmups": 1,
+      "seed": 42
+    },
+    "cases": [
+      {
+        "case_id": "tiny-3-1",
+        "kind": "fixed_token_stress",
+        "output_budget": 1,
+        "eos_token_id": null,
+        "token_ids": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "case_id": "tiny-7-9",
+        "kind": "fixed_token_stress",
+        "output_budget": 9,
+        "eos_token_id": null,
+        "token_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "case_id": "tiny-17-15",
+        "kind": "fixed_token_stress",
+        "output_budget": 15,
+        "eos_token_id": null,
+        "token_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    ],
+    "experiment": "miniature_cpu_smoke_fp64",
+    "versions": {
+      "torch": "2.13.0",
+      "transformers": "5.15.1"
+    },
+    "source_sha256": {
+      "speculative_decoding.py": "69057fc90a11661915f93c38db5bb83f9c8b902d00b4ead905e858998e21839e",
+      "speculative_inputs.py": "e7cc04e18d01714a2e9cba133bee934d752bd187f00ad8402abd4e0c623180c9",
+      "speculative_report.py": "c089e2a9056140fc2436bdbf2a38dcc8ce6ad998f67507c1f84b702d3dca52d3",
+      "benchmark_speculative.py": "1e27a3092c529ec7a4997e77039c77ba42520e488792c26573a02671d521e5ae",
+      "decoding.py": "e7217f1c3e93e4229f3b8e38b7da5aad706a6ff42f20f9eaaaa44afbce28378c",
+      "benchmark_kv_cache.py": "f1000abc7ae04a0c6fc85c902f9f777e98116a7affd54618a171f9d59e77e92e",
+      "baseline.py": "65b95fb88c7e7e8aafa6962f384cbae1eabd559f058240977062c5b71a808bd3",
+      "prepare_model_inputs.py": "004b35f7e65d70e64a1e6b8fa75e6f00e865dee309d9b6d1be0beae59642683d"
+    },
+    "float32_matmul_precision": "highest"
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "case_id": "tiny-3-1",
+    "kind": "fixed_token_stress",
+    "output_budget": 1,
+    "eos_token_id": null,
+    "token_ids": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "case_id": "tiny-7-9",
+    "kind": "fixed_token_stress",
+    "output_budget": 9,
+    "eos_token_id": null,
+    "token_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "case_id": "tiny-17-15",
+    "kind": "fixed_token_stress",
+    "output_budget": 15,
+    "eos_token_id": null,
+    "token_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  }
+]

@@ -1,0 +1,465 @@
+{
+  "status": "REVIEW WARNINGS",
+  "source_sha256": "14c547184fac9b013cd17441fd028845b40150c76b022e58334f5494077e5234",
+  "rows": 1015,
+  "expected_rows": 1015,
+  "patients": 53,
+  "schema": {
+    "annotation_id": "int64",
+    "patient_id": "object",
+    "note": "object",
+    "trial_id": "object",
+    "trial_title": "object",
+    "criterion_type": "object",
+    "criterion_text": "object",
+    "gpt4_explanation": "object",
+    "explanation_correctness": "object",
+    "gpt4_sentences": "object",
+    "expert_sentences": "object",
+    "gpt4_eligibility": "object",
+    "expert_eligibility": "object",
+    "training": "bool"
+  },
+  "versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.3.5",
+    "pyarrow": "23.0.0"
+  },
+  "split_summary": {
+    "train": {
+      "patients": 37,
+      "annotations": 603
+    },
+    "validation": {
+      "patients": 8,
+      "annotations": 206
+    },
+    "test": {
+      "patients": 8,
+      "annotations": 206
+    }
+  },
+  "development": {
+    "train": {
+      "rows": 603,
+      "patients": 37,
+      "trials": 72,
+      "missing_or_blank": {
+        "note": 0,
+        "criterion_type": 0,
+        "criterion_text": 1,
+        "expert_eligibility": 0,
+        "expert_sentences": 0,
+        "annotation_id": 0,
+        "patient_id": 0,
+        "trial_id": 0,
+        "trial_title": 0
+      },
+      "label_counts": [
+        {
+          "criterion_type": "exclusion",
+          "label": "excluded",
+          "count": 8
+        },
+        {
+          "criterion_type": "exclusion",
+          "label": "not applicable",
+          "count": 23
+        },
+        {
+          "criterion_type": "exclusion",
+          "label": "not enough information",
+          "count": 65
+        },
+        {
+          "criterion_type": "exclusion",
+          "label": "not excluded",
+          "count": 292
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "included",
+          "count": 88
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "not applicable",
+          "count": 5
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "not enough information",
+          "count": 109
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "not included",
+          "count": 13
+        }
+      ],
+      "empty_evidence_rows": 349,
+      "duplicate_criterion_rows": 0,
+      "repeated_criterion_annotation_ids": [],
+      "conflicting_annotation_groups": [],
+      "inconsistent_patient_notes": [],
+      "lengths": {
+        "note_characters_per_annotation": {
+          "min": 370.0,
+          "median": 582.0,
+          "p95": 1441.0,
+          "max": 1447.0
+        },
+        "note_words_per_unique_patient_note": {
+          "min": 58.0,
+          "median": 91.0,
+          "p95": 172.79999999999976,
+          "max": 235.0
+        },
+        "criterion_characters": {
+          "min": 0.0,
+          "median": 57.0,
+          "p95": 220.0,
+          "max": 969.0
+        },
+        "patient_sentence_count_per_valid_annotation": {
+          "min": 3.0,
+          "median": 6.0,
+          "p95": 12.0,
+          "max": 14.0
+        },
+        "evidence_sentence_count_per_valid_annotation": {
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 3.0,
+          "max": 9.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": 43,
+          "patient_id": "sigir-20143",
+          "criterion_type": "inclusion",
+          "criterion_text": "Participant is a lung cancer patient.",
+          "label": "not enough information",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "A 58-year-old nonsmoker white female with mild exertional dyspnea and occasional cough is found to have a left lung mass on chest x-ray."
+          ]
+        },
+        {
+          "annotation_id": 44,
+          "patient_id": "sigir-20143",
+          "criterion_type": "exclusion",
+          "criterion_text": "Participant is under 18 years old.",
+          "label": "not excluded",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "A 58-year-old nonsmoker white female with mild exertional dyspnea and occasional cough is found to have a left lung mass on chest x-ray."
+          ]
+        },
+        {
+          "annotation_id": 45,
+          "patient_id": "sigir-20143",
+          "criterion_type": "exclusion",
+          "criterion_text": "Participant is not a lung cancer patient.",
+          "label": "not enough information",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "A 58-year-old nonsmoker white female with mild exertional dyspnea and occasional cough is found to have a left lung mass on chest x-ray."
+          ]
+        },
+        {
+          "annotation_id": 46,
+          "patient_id": "sigir-20143",
+          "criterion_type": "inclusion",
+          "criterion_text": "Pulmonary nodule on a recent CT",
+          "label": "not included",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "A 58-year-old nonsmoker white female with mild exertional dyspnea and occasional cough is found to have a left lung mass on chest x-ray."
+          ]
+        },
+        {
+          "annotation_id": 49,
+          "patient_id": "sigir-20144",
+          "criterion_type": "inclusion",
+          "criterion_text": "Patients, male and female, at any age \u2265 3 months (5 kg) of life, with KD according to the American Heart Association definition for complete or incomplete KD. fever \u2265 5 days and \u2265 4 of 5 main clinical signs: modification of the extremities, polymorphic exanthema, bilateral bulbar not exudative conjunctivitis, erythema of the lips or oral cavity, and cervical lymph nodes usually unilateral > 1.5 cm in diameter. In the presence of less than 4 clinical criteria and 5 days of fever, the diagnosis of disease KD is proposed in case of coronary abnormalities (at least one dilated coronary artery with internal diameter \u2265 2,5 SD from the mean normalized for body surface area (Z score) as determined by echocardiography. For indicative purpose, in case of incomplete KD, other biological supportive criteria for incomplete KD can help to ensure the diagnosis: leucocytosis, elevated CRP, elevated ESR, anaemia, hyponatremia, elevated ASAT, ALAT and gGT, hyperlipidaemia.",
+          "label": "included",
+          "sentence_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "evidence_text": [
+            "A 2-year-old boy is brought to the emergency department by his parents for 5 days of high fever and irritability.",
+            "The physical exam reveals conjunctivitis, strawberry tongue, inflammation of the hands and feet, desquamation of the skin of the fingers and toes, and cervical lymphadenopathy with the smallest node at 1.5 cm.",
+            "The abdominal exam demonstrates tenderness and enlarged liver.",
+            "Laboratory tests report elevated alanine aminotransferase, white blood cell count of 17,580/mm, albumin 2.1 g/dL, C-reactive protein 4.5 mg, erythrocyte sedimentation rate 60 mm/h, mild normochromic, normocytic anemia, and leukocytes in urine of 20/mL with no bacteria identified.",
+            "The echocardiogram shows moderate dilation of the coronary arteries with possible coronary artery aneurysm."
+          ]
+        },
+        {
+          "annotation_id": 54,
+          "patient_id": "sigir-20144",
+          "criterion_type": "inclusion",
+          "criterion_text": "Patient agrees to have effective contraception for the duration of participation in the research",
+          "label": "not applicable",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "A 2-year-old boy is brought to the emergency department by his parents for 5 days of high fever and irritability."
+          ]
+        },
+        {
+          "annotation_id": 76,
+          "patient_id": "sigir-20144",
+          "criterion_type": "exclusion",
+          "criterion_text": "Female subjects diagnosed with KD 12 years of age and older.",
+          "label": "not applicable",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "A 2-year-old boy is brought to the emergency department by his parents for 5 days of high fever and irritability."
+          ]
+        },
+        {
+          "annotation_id": 124,
+          "patient_id": "sigir-20146",
+          "criterion_type": "exclusion",
+          "criterion_text": "History of poor compliance with physician's recommendations",
+          "label": "excluded",
+          "sentence_ids": [
+            1
+          ],
+          "evidence_text": [
+            "She is reluctant to see a nutritionist and is not compliant with her diabetes medication or exercise."
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "annotation_id": 883,
+          "issue": "Missing or blank criterion_text."
+        }
+      ]
+    },
+    "validation": {
+      "rows": 206,
+      "patients": 8,
+      "trials": 16,
+      "missing_or_blank": {
+        "note": 0,
+        "criterion_type": 0,
+        "criterion_text": 0,
+        "expert_eligibility": 0,
+        "expert_sentences": 0,
+        "annotation_id": 0,
+        "patient_id": 0,
+        "trial_id": 0,
+        "trial_title": 0
+      },
+      "label_counts": [
+        {
+          "criterion_type": "exclusion",
+          "label": "excluded",
+          "count": 2
+        },
+        {
+          "criterion_type": "exclusion",
+          "label": "not applicable",
+          "count": 11
+        },
+        {
+          "criterion_type": "exclusion",
+          "label": "not enough information",
+          "count": 26
+        },
+        {
+          "criterion_type": "exclusion",
+          "label": "not excluded",
+          "count": 101
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "included",
+          "count": 35
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "not applicable",
+          "count": 1
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "not enough information",
+          "count": 27
+        },
+        {
+          "criterion_type": "inclusion",
+          "label": "not included",
+          "count": 3
+        }
+      ],
+      "empty_evidence_rows": 116,
+      "duplicate_criterion_rows": 0,
+      "repeated_criterion_annotation_ids": [],
+      "conflicting_annotation_groups": [],
+      "inconsistent_patient_notes": [],
+      "lengths": {
+        "note_characters_per_annotation": {
+          "min": 518.0,
+          "median": 756.0,
+          "p95": 824.0,
+          "max": 824.0
+        },
+        "note_words_per_unique_patient_note": {
+          "min": 86.0,
+          "median": 112.0,
+          "p95": 127.6,
+          "max": 129.0
+        },
+        "criterion_characters": {
+          "min": 7.0,
+          "median": 57.0,
+          "p95": 243.25,
+          "max": 679.0
+        },
+        "patient_sentence_count_per_valid_annotation": {
+          "min": 5.0,
+          "median": 7.0,
+          "p95": 9.0,
+          "max": 9.0
+        },
+        "evidence_sentence_count_per_valid_annotation": {
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 2.0,
+          "max": 4.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": 0,
+          "patient_id": "sigir-20141",
+          "criterion_type": "inclusion",
+          "criterion_text": "Patients of chronic stable angina with abnormal Exercise Myocardial Perfusion Spect Scan with reversible and partially reversible ischemic changes.",
+          "label": "not enough information",
+          "sentence_ids": [
+            0,
+            1,
+            2
+          ],
+          "evidence_text": [
+            "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+            "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+            "The latest episode of pain ended half an hour prior to her arrival."
+          ]
+        },
+        {
+          "annotation_id": 1,
+          "patient_id": "sigir-20141",
+          "criterion_type": "inclusion",
+          "criterion_text": "Male and female",
+          "label": "included",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life."
+          ]
+        },
+        {
+          "annotation_id": 5,
+          "patient_id": "sigir-20141",
+          "criterion_type": "exclusion",
+          "criterion_text": "Hypertension of > 170/100 mm of Hg",
+          "label": "not excluded",
+          "sentence_ids": [],
+          "evidence_text": []
+        },
+        {
+          "annotation_id": 8,
+          "patient_id": "sigir-20141",
+          "criterion_type": "exclusion",
+          "criterion_text": "Unstable angina",
+          "label": "not enough information",
+          "sentence_ids": [
+            0,
+            1,
+            2
+          ],
+          "evidence_text": [
+            "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+            "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+            "The latest episode of pain ended half an hour prior to her arrival."
+          ]
+        },
+        {
+          "annotation_id": 24,
+          "patient_id": "sigir-20141",
+          "criterion_type": "exclusion",
+          "criterion_text": "Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass grafting(CABG)",
+          "label": "not applicable",
+          "sentence_ids": [],
+          "evidence_text": []
+        },
+        {
+          "annotation_id": 31,
+          "patient_id": "sigir-20142",
+          "criterion_type": "inclusion",
+          "criterion_text": "patients have fever more than one week",
+          "label": "not included",
+          "sentence_ids": [
+            0
+          ],
+          "evidence_text": [
+            "An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days."
+          ]
+        },
+        {
+          "annotation_id": 33,
+          "patient_id": "sigir-20142",
+          "criterion_type": "inclusion",
+          "criterion_text": "full of physical examination and laboratory examination have been carried out after one week\uff0cbut still cannot make a definite diagnosis",
+          "label": "not applicable",
+          "sentence_ids": [],
+          "evidence_text": []
+        },
+        {
+          "annotation_id": 41,
+          "patient_id": "sigir-20142",
+          "criterion_type": "exclusion",
+          "criterion_text": "Respiratory distress",
+          "label": "excluded",
+          "sentence_ids": [
+            4
+          ],
+          "evidence_text": [
+            "On examination he is in respiratory distress and has bronchial respiratory sounds on the left."
+          ]
+        }
+      ],
+      "errors": []
+    }
+  },
+  "test_content_inspected": false,
+  "quarantined_training_ids": [
+    883
+  ],
+  "exports": {
+    "train": 602,
+    "validation": 206
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "embedded_files": 24,
+  "validation_records": 206,
+  "validation_patients": 8,
+  "held_out_test_examples_embedded": 0,
+  "tiny_cpu_trials": 18,
+  "tiny_cpu_passed": true,
+  "prepared_real_cases": 6,
+  "tokenizer_compatibility": {
+    "compatible": true,
+    "token_count": 151669,
+    "special_token_ids": {
+      "bos_token_id": null,
+      "eos_token_id": 151645,
+      "pad_token_id": 151643
+    },
+    "model_vocab_size": 151936,
+    "backend_sha256": "872ea1d932f9af602b7fb4059b0fa09d797de336a19e7d1befc47cb044a1d6cb",
+    "prompt_template": "target_only",
+    "draft_template_used": false
+  },
+  "frozen_source_sha256": {
+    "eda.py": "23806970afd89f37e2f954592ed06946c03a23e20384b801f1c4b672a17747e5",
+    "prepare_model_inputs.py": "004b35f7e65d70e64a1e6b8fa75e6f00e865dee309d9b6d1be0beae59642683d",
+    "finetune.py": "61cd4d07e6c38fed4179c8d7f88818d68ea2d1dd7060c5b5106964cc5170e48a",
+    "baseline.py": "65b95fb88c7e7e8aafa6962f384cbae1eabd559f058240977062c5b71a808bd3",
+    "decoding.py": "e7217f1c3e93e4229f3b8e38b7da5aad706a6ff42f20f9eaaaa44afbce28378c"
+  },
+  "gpu_experiment": "pending_user_colab_run",
+  "colab_export_fix": {
+    "exact_raw_bytes_verified": true,
+    "notebook_and_repair_tests_passed": 4,
+    "validation_sha256": "0a6ad872b4b22bb5f69ad2f3db163dc6aff75f421cb71e199aee328ad881e2e3"
+  }
+}

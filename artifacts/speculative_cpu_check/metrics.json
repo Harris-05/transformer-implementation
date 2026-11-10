@@ -1,0 +1,1260 @@
+{
+  "complete": true,
+  "passed": true,
+  "expected_trials": 18,
+  "recorded_trials": 18,
+  "cases": [
+    {
+      "case_id": "tiny-3-1",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.010087949995067902,
+          "min_seconds": 0.009928599989507347,
+          "max_seconds": 0.010247300000628456,
+          "tokens_per_second_median": 99.15290804568909,
+          "target_forward_calls_median": 1.0,
+          "draft_forward_calls_median": 0.0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.03443909999623429,
+          "min_seconds": 0.02705130001413636,
+          "max_seconds": 0.04182689997833222,
+          "tokens_per_second_median": 30.43742963877358,
+          "target_forward_calls_median": 1.0,
+          "draft_forward_calls_median": 1.0,
+          "draft_acceptance_rate": 0.0,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": 0.2929214176959026
+        },
+        "speculative_4": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.027482750010676682,
+          "min_seconds": 0.019524900009855628,
+          "max_seconds": 0.035440600011497736,
+          "tokens_per_second_median": 39.71643905516686,
+          "target_forward_calls_median": 1.0,
+          "draft_forward_calls_median": 1.0,
+          "draft_acceptance_rate": 0.0,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": 0.36706479486764854
+        }
+      }
+    },
+    {
+      "case_id": "tiny-7-9",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.06476975000987295,
+          "min_seconds": 0.06442460001562722,
+          "max_seconds": 0.06511490000411868,
+          "tokens_per_second_median": 138.95770136833735,
+          "target_forward_calls_median": 9.0,
+          "draft_forward_calls_median": 0.0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.2612212000094587,
+          "min_seconds": 0.24543320000520907,
+          "max_seconds": 0.2770092000137083,
+          "tokens_per_second_median": 34.579875613014465,
+          "target_forward_calls_median": 9.0,
+          "draft_forward_calls_median": 17.0,
+          "draft_acceptance_rate": 0.0,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": 0.24794982186563597
+        },
+        "speculative_4": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.40432940000027884,
+          "min_seconds": 0.40226740000071004,
+          "max_seconds": 0.40639139999984764,
+          "tokens_per_second_median": 22.259657788753813,
+          "target_forward_calls_median": 9.0,
+          "draft_forward_calls_median": 30.0,
+          "draft_acceptance_rate": 0.0,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": 0.16019055257873477
+        }
+      }
+    },
+    {
+      "case_id": "tiny-17-15",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.1465745000023162,
+          "min_seconds": 0.09272889999556355,
+          "max_seconds": 0.20042010000906885,
+          "tokens_per_second_median": 118.30232991921606,
+          "target_forward_calls_median": 15.0,
+          "draft_forward_calls_median": 0.0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.5179128500021761,
+          "min_seconds": 0.4360975000017788,
+          "max_seconds": 0.5997282000025734,
+          "tokens_per_second_median": 29.703654047972936,
+          "target_forward_calls_median": 15.0,
+          "draft_forward_calls_median": 29.0,
+          "draft_acceptance_rate": 0.0,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": 0.2830099697308154
+        },
+        "speculative_4": {
+          "repetitions": 2,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 0.7630060000083176,
+          "min_seconds": 0.506815300002927,
+          "max_seconds": 1.0191967000137083,
+          "tokens_per_second_median": 22.157026964601698,
+          "target_forward_calls_median": 15.0,
+          "draft_forward_calls_median": 54.0,
+          "draft_acceptance_rate": 0.0,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "speedup_over_greedy": 0.1921013727293342
+        }
+      }
+    }
+  ],
+  "preflight": [
+    {
+      "case_id": "tiny-3-1",
+      "greedy_token_ids": [
+        30
+      ],
+      "hf_token_ids": [
+        30
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              30
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 1,
+            "accepted_tokens": 0,
+            "bonus_tokens": 0,
+            "rejection_rounds": 1,
+            "target_forward_calls": 1,
+            "draft_forward_calls": 1,
+            "target_cache_tokens": 3,
+            "draft_cache_tokens": 3,
+            "target_cache_bytes": 1536,
+            "draft_cache_bytes": 1536,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 3,
+                "committed_tokens": 4,
+                "proposed": 1,
+                "accepted": 0,
+                "emitted": [
+                  30
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 4,
+                "draft_cache_after_proposal": 3,
+                "target_cache_after": 3,
+                "draft_cache_after": 3
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              30
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 1,
+            "accepted_tokens": 0,
+            "bonus_tokens": 0,
+            "rejection_rounds": 1,
+            "target_forward_calls": 1,
+            "draft_forward_calls": 1,
+            "target_cache_tokens": 3,
+            "draft_cache_tokens": 3,
+            "target_cache_bytes": 1536,
+            "draft_cache_bytes": 1536,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 3,
+                "committed_tokens": 4,
+                "proposed": 1,
+                "accepted": 0,
+                "emitted": [
+                  30
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 4,
+                "draft_cache_after_proposal": 3,
+                "target_cache_after": 3,
+                "draft_cache_after": 3
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "tiny-7-9",
+      "greedy_token_ids": [
+        42,
+        34,
+        59,
+        14,
+        30,
+        62,
+        21,
+        4,
+        5
+      ],
+      "hf_token_ids": [
+        42,
+        34,
+        59,
+        14,
+        30,
+        62,
+        21,
+        4,
+        5
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              42,
+              34,
+              59,
+              14,
+              30,
+              62,
+              21,
+              4,
+              5
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 17,
+            "accepted_tokens": 0,
+            "bonus_tokens": 0,
+            "rejection_rounds": 9,
+            "target_forward_calls": 9,
+            "draft_forward_calls": 17,
+            "target_cache_tokens": 15,
+            "draft_cache_tokens": 15,
+            "target_cache_bytes": 7680,
+            "draft_cache_bytes": 7680,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 7,
+                "committed_tokens": 8,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  42
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 9,
+                "draft_cache_after_proposal": 8,
+                "target_cache_after": 7,
+                "draft_cache_after": 7
+              },
+              {
+                "prefix_tokens": 8,
+                "committed_tokens": 9,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  34
+                ],
+                "rejected": true,
+                "target_cache_before": 7,
+                "draft_cache_before": 7,
+                "target_cache_after_verification": 10,
+                "draft_cache_after_proposal": 9,
+                "target_cache_after": 8,
+                "draft_cache_after": 8
+              },
+              {
+                "prefix_tokens": 9,
+                "committed_tokens": 10,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  59
+                ],
+                "rejected": true,
+                "target_cache_before": 8,
+                "draft_cache_before": 8,
+                "target_cache_after_verification": 11,
+                "draft_cache_after_proposal": 10,
+                "target_cache_after": 9,
+                "draft_cache_after": 9
+              },
+              {
+                "prefix_tokens": 10,
+                "committed_tokens": 11,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  14
+                ],
+                "rejected": true,
+                "target_cache_before": 9,
+                "draft_cache_before": 9,
+                "target_cache_after_verification": 12,
+                "draft_cache_after_proposal": 11,
+                "target_cache_after": 10,
+                "draft_cache_after": 10
+              },
+              {
+                "prefix_tokens": 11,
+                "committed_tokens": 12,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  30
+                ],
+                "rejected": true,
+                "target_cache_before": 10,
+                "draft_cache_before": 10,
+                "target_cache_after_verification": 13,
+                "draft_cache_after_proposal": 12,
+                "target_cache_after": 11,
+                "draft_cache_after": 11
+              },
+              {
+                "prefix_tokens": 12,
+                "committed_tokens": 13,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  62
+                ],
+                "rejected": true,
+                "target_cache_before": 11,
+                "draft_cache_before": 11,
+                "target_cache_after_verification": 14,
+                "draft_cache_after_proposal": 13,
+                "target_cache_after": 12,
+                "draft_cache_after": 12
+              },
+              {
+                "prefix_tokens": 13,
+                "committed_tokens": 14,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  21
+                ],
+                "rejected": true,
+                "target_cache_before": 12,
+                "draft_cache_before": 12,
+                "target_cache_after_verification": 15,
+                "draft_cache_after_proposal": 14,
+                "target_cache_after": 13,
+                "draft_cache_after": 13
+              },
+              {
+                "prefix_tokens": 14,
+                "committed_tokens": 15,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  4
+                ],
+                "rejected": true,
+                "target_cache_before": 13,
+                "draft_cache_before": 13,
+                "target_cache_after_verification": 16,
+                "draft_cache_after_proposal": 15,
+                "target_cache_after": 14,
+                "draft_cache_after": 14
+              },
+              {
+                "prefix_tokens": 15,
+                "committed_tokens": 16,
+                "proposed": 1,
+                "accepted": 0,
+                "emitted": [
+                  5
+                ],
+                "rejected": true,
+                "target_cache_before": 14,
+                "draft_cache_before": 14,
+                "target_cache_after_verification": 16,
+                "draft_cache_after_proposal": 15,
+                "target_cache_after": 15,
+                "draft_cache_after": 15
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              42,
+              34,
+              59,
+              14,
+              30,
+              62,
+              21,
+              4,
+              5
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 30,
+            "accepted_tokens": 0,
+            "bonus_tokens": 0,
+            "rejection_rounds": 9,
+            "target_forward_calls": 9,
+            "draft_forward_calls": 30,
+            "target_cache_tokens": 15,
+            "draft_cache_tokens": 15,
+            "target_cache_bytes": 7680,
+            "draft_cache_bytes": 7680,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 7,
+                "committed_tokens": 8,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  42
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 11,
+                "draft_cache_after_proposal": 10,
+                "target_cache_after": 7,
+                "draft_cache_after": 7
+              },
+              {
+                "prefix_tokens": 8,
+                "committed_tokens": 9,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  34
+                ],
+                "rejected": true,
+                "target_cache_before": 7,
+                "draft_cache_before": 7,
+                "target_cache_after_verification": 12,
+                "draft_cache_after_proposal": 11,
+                "target_cache_after": 8,
+                "draft_cache_after": 8
+              },
+              {
+                "prefix_tokens": 9,
+                "committed_tokens": 10,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  59
+                ],
+                "rejected": true,
+                "target_cache_before": 8,
+                "draft_cache_before": 8,
+                "target_cache_after_verification": 13,
+                "draft_cache_after_proposal": 12,
+                "target_cache_after": 9,
+                "draft_cache_after": 9
+              },
+              {
+                "prefix_tokens": 10,
+                "committed_tokens": 11,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  14
+                ],
+                "rejected": true,
+                "target_cache_before": 9,
+                "draft_cache_before": 9,
+                "target_cache_after_verification": 14,
+                "draft_cache_after_proposal": 13,
+                "target_cache_after": 10,
+                "draft_cache_after": 10
+              },
+              {
+                "prefix_tokens": 11,
+                "committed_tokens": 12,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  30
+                ],
+                "rejected": true,
+                "target_cache_before": 10,
+                "draft_cache_before": 10,
+                "target_cache_after_verification": 15,
+                "draft_cache_after_proposal": 14,
+                "target_cache_after": 11,
+                "draft_cache_after": 11
+              },
+              {
+                "prefix_tokens": 12,
+                "committed_tokens": 13,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  62
+                ],
+                "rejected": true,
+                "target_cache_before": 11,
+                "draft_cache_before": 11,
+                "target_cache_after_verification": 16,
+                "draft_cache_after_proposal": 15,
+                "target_cache_after": 12,
+                "draft_cache_after": 12
+              },
+              {
+                "prefix_tokens": 13,
+                "committed_tokens": 14,
+                "proposed": 3,
+                "accepted": 0,
+                "emitted": [
+                  21
+                ],
+                "rejected": true,
+                "target_cache_before": 12,
+                "draft_cache_before": 12,
+                "target_cache_after_verification": 16,
+                "draft_cache_after_proposal": 15,
+                "target_cache_after": 13,
+                "draft_cache_after": 13
+              },
+              {
+                "prefix_tokens": 14,
+                "committed_tokens": 15,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  4
+                ],
+                "rejected": true,
+                "target_cache_before": 13,
+                "draft_cache_before": 13,
+                "target_cache_after_verification": 16,
+                "draft_cache_after_proposal": 15,
+                "target_cache_after": 14,
+                "draft_cache_after": 14
+              },
+              {
+                "prefix_tokens": 15,
+                "committed_tokens": 16,
+                "proposed": 1,
+                "accepted": 0,
+                "emitted": [
+                  5
+                ],
+                "rejected": true,
+                "target_cache_before": 14,
+                "draft_cache_before": 14,
+                "target_cache_after_verification": 16,
+                "draft_cache_after_proposal": 15,
+                "target_cache_after": 15,
+                "draft_cache_after": 15
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "tiny-17-15",
+      "greedy_token_ids": [
+        30,
+        56,
+        12,
+        36,
+        9,
+        16,
+        42,
+        34,
+        59,
+        26,
+        18,
+        24,
+        50,
+        35,
+        12
+      ],
+      "hf_token_ids": [
+        30,
+        56,
+        12,
+        36,
+        9,
+        16,
+        42,
+        34,
+        59,
+        26,
+        18,
+        24,
+        50,
+        35,
+        12
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              30,
+              56,
+              12,
+              36,
+              9,
+              16,
+              42,
+              34,
+              59,
+              26,
+              18,
+              24,
+              50,
+              35,
+              12
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 29,
+            "accepted_tokens": 0,
+            "bonus_tokens": 0,
+            "rejection_rounds": 15,
+            "target_forward_calls": 15,
+            "draft_forward_calls": 29,
+            "target_cache_tokens": 31,
+            "draft_cache_tokens": 31,
+            "target_cache_bytes": 15872,
+            "draft_cache_bytes": 15872,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 17,
+                "committed_tokens": 18,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  30
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 19,
+                "draft_cache_after_proposal": 18,
+                "target_cache_after": 17,
+                "draft_cache_after": 17
+              },
+              {
+                "prefix_tokens": 18,
+                "committed_tokens": 19,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  56
+                ],
+                "rejected": true,
+                "target_cache_before": 17,
+                "draft_cache_before": 17,
+                "target_cache_after_verification": 20,
+                "draft_cache_after_proposal": 19,
+                "target_cache_after": 18,
+                "draft_cache_after": 18
+              },
+              {
+                "prefix_tokens": 19,
+                "committed_tokens": 20,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  12
+                ],
+                "rejected": true,
+                "target_cache_before": 18,
+                "draft_cache_before": 18,
+                "target_cache_after_verification": 21,
+                "draft_cache_after_proposal": 20,
+                "target_cache_after": 19,
+                "draft_cache_after": 19
+              },
+              {
+                "prefix_tokens": 20,
+                "committed_tokens": 21,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  36
+                ],
+                "rejected": true,
+                "target_cache_before": 19,
+                "draft_cache_before": 19,
+                "target_cache_after_verification": 22,
+                "draft_cache_after_proposal": 21,
+                "target_cache_after": 20,
+                "draft_cache_after": 20
+              },
+              {
+                "prefix_tokens": 21,
+                "committed_tokens": 22,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  9
+                ],
+                "rejected": true,
+                "target_cache_before": 20,
+                "draft_cache_before": 20,
+                "target_cache_after_verification": 23,
+                "draft_cache_after_proposal": 22,
+                "target_cache_after": 21,
+                "draft_cache_after": 21
+              },
+              {
+                "prefix_tokens": 22,
+                "committed_tokens": 23,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  16
+                ],
+                "rejected": true,
+                "target_cache_before": 21,
+                "draft_cache_before": 21,
+                "target_cache_after_verification": 24,
+                "draft_cache_after_proposal": 23,
+                "target_cache_after": 22,
+                "draft_cache_after": 22
+              },
+              {
+                "prefix_tokens": 23,
+                "committed_tokens": 24,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  42
+                ],
+                "rejected": true,
+                "target_cache_before": 22,
+                "draft_cache_before": 22,
+                "target_cache_after_verification": 25,
+                "draft_cache_after_proposal": 24,
+                "target_cache_after": 23,
+                "draft_cache_after": 23
+              },
+              {
+                "prefix_tokens": 24,
+                "committed_tokens": 25,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  34
+                ],
+                "rejected": true,
+                "target_cache_before": 23,
+                "draft_cache_before": 23,
+                "target_cache_after_verification": 26,
+                "draft_cache_after_proposal": 25,
+                "target_cache_after": 24,
+                "draft_cache_after": 24
+              },
+              {
+                "prefix_tokens": 25,
+                "committed_tokens": 26,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  59
+                ],
+                "rejected": true,
+                "target_cache_before": 24,
+                "draft_cache_before": 24,
+                "target_cache_after_verification": 27,
+                "draft_cache_after_proposal": 26,
+                "target_cache_after": 25,
+                "draft_cache_after": 25
+              },
+              {
+                "prefix_tokens": 26,
+                "committed_tokens": 27,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  26
+                ],
+                "rejected": true,
+                "target_cache_before": 25,
+                "draft_cache_before": 25,
+                "target_cache_after_verification": 28,
+                "draft_cache_after_proposal": 27,
+                "target_cache_after": 26,
+                "draft_cache_after": 26
+              },
+              {
+                "prefix_tokens": 27,
+                "committed_tokens": 28,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  18
+                ],
+                "rejected": true,
+                "target_cache_before": 26,
+                "draft_cache_before": 26,
+                "target_cache_after_verification": 29,
+                "draft_cache_after_proposal": 28,
+                "target_cache_after": 27,
+                "draft_cache_after": 27
+              },
+              {
+                "prefix_tokens": 28,
+                "committed_tokens": 29,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  24
+                ],
+                "rejected": true,
+                "target_cache_before": 27,
+                "draft_cache_before": 27,
+                "target_cache_after_verification": 30,
+                "draft_cache_after_proposal": 29,
+                "target_cache_after": 28,
+                "draft_cache_after": 28
+              },
+              {
+                "prefix_tokens": 29,
+                "committed_tokens": 30,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  50
+                ],
+                "rejected": true,
+                "target_cache_before": 28,
+                "draft_cache_before": 28,
+                "target_cache_after_verification": 31,
+                "draft_cache_after_proposal": 30,
+                "target_cache_after": 29,
+                "draft_cache_after": 29
+              },
+              {
+                "prefix_tokens": 30,
+                "committed_tokens": 31,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  35
+                ],
+                "rejected": true,
+                "target_cache_before": 29,
+                "draft_cache_before": 29,
+                "target_cache_after_verification": 32,
+                "draft_cache_after_proposal": 31,
+                "target_cache_after": 30,
+                "draft_cache_after": 30
+              },
+              {
+                "prefix_tokens": 31,
+                "committed_tokens": 32,
+                "proposed": 1,
+                "accepted": 0,
+                "emitted": [
+                  12
+                ],
+                "rejected": true,
+                "target_cache_before": 30,
+                "draft_cache_before": 30,
+                "target_cache_after_verification": 32,
+                "draft_cache_after_proposal": 31,
+                "target_cache_after": 31,
+                "draft_cache_after": 31
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              30,
+              56,
+              12,
+              36,
+              9,
+              16,
+              42,
+              34,
+              59,
+              26,
+              18,
+              24,
+              50,
+              35,
+              12
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 54,
+            "accepted_tokens": 0,
+            "bonus_tokens": 0,
+            "rejection_rounds": 15,
+            "target_forward_calls": 15,
+            "draft_forward_calls": 54,
+            "target_cache_tokens": 31,
+            "draft_cache_tokens": 31,
+            "target_cache_bytes": 15872,
+            "draft_cache_bytes": 15872,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 17,
+                "committed_tokens": 18,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  30
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 21,
+                "draft_cache_after_proposal": 20,
+                "target_cache_after": 17,
+                "draft_cache_after": 17
+              },
+              {
+                "prefix_tokens": 18,
+                "committed_tokens": 19,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  56
+                ],
+                "rejected": true,
+                "target_cache_before": 17,
+                "draft_cache_before": 17,
+                "target_cache_after_verification": 22,
+                "draft_cache_after_proposal": 21,
+                "target_cache_after": 18,
+                "draft_cache_after": 18
+              },
+              {
+                "prefix_tokens": 19,
+                "committed_tokens": 20,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  12
+                ],
+                "rejected": true,
+                "target_cache_before": 18,
+                "draft_cache_before": 18,
+                "target_cache_after_verification": 23,
+                "draft_cache_after_proposal": 22,
+                "target_cache_after": 19,
+                "draft_cache_after": 19
+              },
+              {
+                "prefix_tokens": 20,
+                "committed_tokens": 21,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  36
+                ],
+                "rejected": true,
+                "target_cache_before": 19,
+                "draft_cache_before": 19,
+                "target_cache_after_verification": 24,
+                "draft_cache_after_proposal": 23,
+                "target_cache_after": 20,
+                "draft_cache_after": 20
+              },
+              {
+                "prefix_tokens": 21,
+                "committed_tokens": 22,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  9
+                ],
+                "rejected": true,
+                "target_cache_before": 20,
+                "draft_cache_before": 20,
+                "target_cache_after_verification": 25,
+                "draft_cache_after_proposal": 24,
+                "target_cache_after": 21,
+                "draft_cache_after": 21
+              },
+              {
+                "prefix_tokens": 22,
+                "committed_tokens": 23,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  16
+                ],
+                "rejected": true,
+                "target_cache_before": 21,
+                "draft_cache_before": 21,
+                "target_cache_after_verification": 26,
+                "draft_cache_after_proposal": 25,
+                "target_cache_after": 22,
+                "draft_cache_after": 22
+              },
+              {
+                "prefix_tokens": 23,
+                "committed_tokens": 24,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  42
+                ],
+                "rejected": true,
+                "target_cache_before": 22,
+                "draft_cache_before": 22,
+                "target_cache_after_verification": 27,
+                "draft_cache_after_proposal": 26,
+                "target_cache_after": 23,
+                "draft_cache_after": 23
+              },
+              {
+                "prefix_tokens": 24,
+                "committed_tokens": 25,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  34
+                ],
+                "rejected": true,
+                "target_cache_before": 23,
+                "draft_cache_before": 23,
+                "target_cache_after_verification": 28,
+                "draft_cache_after_proposal": 27,
+                "target_cache_after": 24,
+                "draft_cache_after": 24
+              },
+              {
+                "prefix_tokens": 25,
+                "committed_tokens": 26,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  59
+                ],
+                "rejected": true,
+                "target_cache_before": 24,
+                "draft_cache_before": 24,
+                "target_cache_after_verification": 29,
+                "draft_cache_after_proposal": 28,
+                "target_cache_after": 25,
+                "draft_cache_after": 25
+              },
+              {
+                "prefix_tokens": 26,
+                "committed_tokens": 27,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  26
+                ],
+                "rejected": true,
+                "target_cache_before": 25,
+                "draft_cache_before": 25,
+                "target_cache_after_verification": 30,
+                "draft_cache_after_proposal": 29,
+                "target_cache_after": 26,
+                "draft_cache_after": 26
+              },
+              {
+                "prefix_tokens": 27,
+                "committed_tokens": 28,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  18
+                ],
+                "rejected": true,
+                "target_cache_before": 26,
+                "draft_cache_before": 26,
+                "target_cache_after_verification": 31,
+                "draft_cache_after_proposal": 30,
+                "target_cache_after": 27,
+                "draft_cache_after": 27
+              },
+              {
+                "prefix_tokens": 28,
+                "committed_tokens": 29,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  24
+                ],
+                "rejected": true,
+                "target_cache_before": 27,
+                "draft_cache_before": 27,
+                "target_cache_after_verification": 32,
+                "draft_cache_after_proposal": 31,
+                "target_cache_after": 28,
+                "draft_cache_after": 28
+              },
+              {
+                "prefix_tokens": 29,
+                "committed_tokens": 30,
+                "proposed": 3,
+                "accepted": 0,
+                "emitted": [
+                  50
+                ],
+                "rejected": true,
+                "target_cache_before": 28,
+                "draft_cache_before": 28,
+                "target_cache_after_verification": 32,
+                "draft_cache_after_proposal": 31,
+                "target_cache_after": 29,
+                "draft_cache_after": 29
+              },
+              {
+                "prefix_tokens": 30,
+                "committed_tokens": 31,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  35
+                ],
+                "rejected": true,
+                "target_cache_before": 29,
+                "draft_cache_before": 29,
+                "target_cache_after_verification": 32,
+                "draft_cache_after_proposal": 31,
+                "target_cache_after": 30,
+                "draft_cache_after": 30
+              },
+              {
+                "prefix_tokens": 31,
+                "committed_tokens": 32,
+                "proposed": 1,
+                "accepted": 0,
+                "emitted": [
+                  12
+                ],
+                "rejected": true,
+                "target_cache_before": 30,
+                "draft_cache_before": 30,
+                "target_cache_after_verification": 32,
+                "draft_cache_after_proposal": 31,
+                "target_cache_after": 31,
+                "draft_cache_after": 31
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    }
+  ],
+  "experiment": "miniature_cpu_smoke",
+  "memory_protocol": "Both models resident in every timed mode; GPU peaks include both models."
+}

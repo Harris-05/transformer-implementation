@@ -1,0 +1,16 @@
+{
+  "groups": {
+    "train": {
+      "records": 602,
+      "max_tokens": 771,
+      "supervised_tokens": 9870
+    },
+    "validation": {
+      "records": 206,
+      "max_tokens": 605,
+      "supervised_tokens": 3273
+    }
+  },
+  "truncated_records": 0,
+  "model_weights_loaded": false
+}

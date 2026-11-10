@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "lengths": [128, 256, 512],
+  "causal_modes": [false, true],
+  "batch": 1,
+  "heads": 4,
+  "head_dim": 64,
+  "dtype": "float32",
+  "block_q": 64,
+  "block_k": 64,
+  "warmups": 2,
+  "repetitions": 5,
+  "cpu_threads": 2,
+  "atol": 0.00002,
+  "rtol": 0.0002
+}

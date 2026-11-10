@@ -1,0 +1,2 @@
+# Install PyTorch for your host separately; the remaining pins match Colab.
+-r requirements-colab-finetuning.txt

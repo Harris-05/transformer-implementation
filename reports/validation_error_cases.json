@@ -1,0 +1,292 @@
+[
+  {
+    "error_group": "Rare negative inclusion",
+    "annotation_id": 31,
+    "metadata": {
+      "annotation_id": 31,
+      "patient_id": "sigir-20142",
+      "trial_id": "NCT02618655",
+      "trial_title": "Clinical Research for the Diagnosis of Tick-borne Diseases in Patients With Unexplained Acute Fever"
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.\n1. He has just returned from a 5 day vacation in Colorado.\n2. Parents report that prior to the onset of fever and cough, he had loose stools.\n3. He denies upper respiratory tract symptoms.\n4. On examination he is in respiratory distress and has bronchial respiratory sounds on the left.\n5. A chest x-ray shows bilateral lung infiltrates.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "inclusion",
+    "criterion_text": "patients have fever more than one week",
+    "gold": {
+      "label": "not included",
+      "sentence_ids": [
+        0
+      ]
+    },
+    "raw_response": "{\"label\": \"not enough information\", \"sentence_ids\": [0]}",
+    "prediction": {
+      "label": "not enough information",
+      "sentence_ids": [
+        0
+      ],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {
+      "0": "An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days."
+    },
+    "output_tokens": 16,
+    "generation_seconds": 2.8418518089993086,
+    "peak_allocated_gib": 2.7597570419311523,
+    "peak_reserved_gib": 2.939453125
+  },
+  {
+    "error_group": "Rare negative inclusion",
+    "annotation_id": 934,
+    "metadata": {
+      "annotation_id": 934,
+      "patient_id": "sigir-201522",
+      "trial_id": "NCT02534727",
+      "trial_title": "Sputum Pharmacokinetics of TB Drugs and Bacterial Drug Resistance"
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. A 65-year-old male with a history of tuberculosis has started to complain of productive cough with tinges of blood.\n1. Chest X-ray reveals a round opaque mass within a cavity in his left upper lobe.\n2. The spherical mass moved in the cavity during supine and prone CT imaging.\n3. Culture of the sputum revealed an organism with septated, low-angle branching hyphae that had straight, parallel walls.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "inclusion",
+    "criterion_text": "Taking anti-tuberculosis medicines (or NTM meds at NIH CC) during the time sputa are provided",
+    "gold": {
+      "label": "not included",
+      "sentence_ids": []
+    },
+    "raw_response": "{\"label\": \"not enough information\", \"sentence_ids\": []}",
+    "prediction": {
+      "label": "not enough information",
+      "sentence_ids": [],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {},
+    "output_tokens": 15,
+    "generation_seconds": 2.254046209999615,
+    "peak_allocated_gib": 2.7593512535095215,
+    "peak_reserved_gib": 2.986328125
+  },
+  {
+    "error_group": "Rare negative inclusion",
+    "annotation_id": 935,
+    "metadata": {
+      "annotation_id": 935,
+      "patient_id": "sigir-201522",
+      "trial_id": "NCT02534727",
+      "trial_title": "Sputum Pharmacokinetics of TB Drugs and Bacterial Drug Resistance"
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. A 65-year-old male with a history of tuberculosis has started to complain of productive cough with tinges of blood.\n1. Chest X-ray reveals a round opaque mass within a cavity in his left upper lobe.\n2. The spherical mass moved in the cavity during supine and prone CT imaging.\n3. Culture of the sputum revealed an organism with septated, low-angle branching hyphae that had straight, parallel walls.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "inclusion",
+    "criterion_text": "Thought likely to be Mycobacterium culture positive (including NTM infected for the NIH CC) by enrolling physician",
+    "gold": {
+      "label": "not included",
+      "sentence_ids": [
+        3
+      ]
+    },
+    "raw_response": "{\"label\": \"not enough information\", \"sentence_ids\": [3]}",
+    "prediction": {
+      "label": "not enough information",
+      "sentence_ids": [
+        3
+      ],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {
+      "3": "Culture of the sputum revealed an organism with septated, low-angle branching hyphae that had straight, parallel walls."
+    },
+    "output_tokens": 16,
+    "generation_seconds": 2.3354246469998543,
+    "peak_allocated_gib": 2.7595534324645996,
+    "peak_reserved_gib": 2.986328125
+  },
+  {
+    "error_group": "Rare exclusion failure",
+    "annotation_id": 41,
+    "metadata": {
+      "annotation_id": 41,
+      "patient_id": "sigir-20142",
+      "trial_id": "NCT00711399",
+      "trial_title": "Assessment of Cough and Wheeze With Breath Sound Documenting Device"
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.\n1. He has just returned from a 5 day vacation in Colorado.\n2. Parents report that prior to the onset of fever and cough, he had loose stools.\n3. He denies upper respiratory tract symptoms.\n4. On examination he is in respiratory distress and has bronchial respiratory sounds on the left.\n5. A chest x-ray shows bilateral lung infiltrates.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "exclusion",
+    "criterion_text": "Respiratory distress",
+    "gold": {
+      "label": "excluded",
+      "sentence_ids": [
+        4
+      ]
+    },
+    "raw_response": "{\"label\": \"not excluded\", \"sentence_ids\": [0, 4]}",
+    "prediction": {
+      "label": "not excluded",
+      "sentence_ids": [
+        0,
+        4
+      ],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {
+      "0": "An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.",
+      "4": "On examination he is in respiratory distress and has bronchial respiratory sounds on the left."
+    },
+    "output_tokens": 18,
+    "generation_seconds": 2.5916389880003408,
+    "peak_allocated_gib": 2.759148120880127,
+    "peak_reserved_gib": 2.939453125
+  },
+  {
+    "error_group": "Rare exclusion failure",
+    "annotation_id": 263,
+    "metadata": {
+      "annotation_id": 263,
+      "patient_id": "sigir-201415",
+      "trial_id": "NCT00180739",
+      "trial_title": "Safety Trial of Magnetic Resonance (MR) Guided Focused Ultrasound Surgery (FUS) in Women With Uterine Fibroids Wishing to Pursue Pregnancy in the Future"
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. A 36-year-old woman presents to the emergency department with 12 weeks of amenorrhea, vaginal spotting that has increased since yesterday, lower abdominal tenderness, nausea and vomiting.\n1. The physical exam reveals overall tender abdomen, 18-week sized uterus, and cervical dilation of 2 cm.\n2. The complete blood count and biochemical profile are normal.\n3. Point of care pregnancy test with cut-off sensitivity of 25 mIU/ml Beta-HCG is negative.\n4. The ultrasound reports enlarged uterus (12 cm x 9 cm x 7 cms) with multiple cystic areas in the interior.\n5. The differential diagnosis includes vesicular mole vs fibroid degeneration.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "exclusion",
+    "criterion_text": "13. Evidence of uterine pathology other than leiomyoma",
+    "gold": {
+      "label": "excluded",
+      "sentence_ids": [
+        5
+      ]
+    },
+    "raw_response": "{\"label\": \"not excluded\", \"sentence_ids\": [5]}",
+    "prediction": {
+      "label": "not excluded",
+      "sentence_ids": [
+        5
+      ],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {
+      "5": "The differential diagnosis includes vesicular mole vs fibroid degeneration."
+    },
+    "output_tokens": 15,
+    "generation_seconds": 2.223669324999719,
+    "peak_allocated_gib": 2.769137382507324,
+    "peak_reserved_gib": 2.986328125
+  },
+  {
+    "error_group": "Missing information mapped to a decision",
+    "annotation_id": 8,
+    "metadata": {
+      "annotation_id": 8,
+      "patient_id": "sigir-20141",
+      "trial_id": "NCT01397994",
+      "trial_title": "Study to Assess Efficacy of Nicorandil+Atenolol vs Atenolol in Treatment of Chronic Stable Angina."
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "exclusion",
+    "criterion_text": "Unstable angina",
+    "gold": {
+      "label": "not enough information",
+      "sentence_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    "raw_response": "{\"label\": \"not excluded\", \"sentence_ids\": []}",
+    "prediction": {
+      "label": "not excluded",
+      "sentence_ids": [],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {},
+    "output_tokens": 14,
+    "generation_seconds": 2.0499658539993106,
+    "peak_allocated_gib": 2.7687244415283203,
+    "peak_reserved_gib": 2.892578125
+  },
+  {
+    "error_group": "Missing information mapped to a decision",
+    "annotation_id": 15,
+    "metadata": {
+      "annotation_id": 15,
+      "patient_id": "sigir-20141",
+      "trial_id": "NCT01397994",
+      "trial_title": "Study to Assess Efficacy of Nicorandil+Atenolol vs Atenolol in Treatment of Chronic Stable Angina."
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "exclusion",
+    "criterion_text": "Pregnant and nursing women",
+    "gold": {
+      "label": "not enough information",
+      "sentence_ids": []
+    },
+    "raw_response": "{\"label\": \"not excluded\", \"sentence_ids\": []}",
+    "prediction": {
+      "label": "not excluded",
+      "sentence_ids": [],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {},
+    "output_tokens": 14,
+    "generation_seconds": 2.0300570709996464,
+    "peak_allocated_gib": 2.7690000534057617,
+    "peak_reserved_gib": 2.892578125
+  },
+  {
+    "error_group": "Evidence localization failure",
+    "annotation_id": 0,
+    "metadata": {
+      "annotation_id": 0,
+      "patient_id": "sigir-20141",
+      "trial_id": "NCT01397994",
+      "trial_title": "Study to Assess Efficacy of Nicorandil+Atenolol vs Atenolol in Treatment of Chronic Stable Angina."
+    },
+    "run_signature": "a0b92f4cf0f5452a53cabc2fcb8d2ee8e2437e7ddbf43518ea98c0267f13c5c2",
+    "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "criterion_type": "inclusion",
+    "criterion_text": "Patients of chronic stable angina with abnormal Exercise Myocardial Perfusion Spect Scan with reversible and partially reversible ischemic changes.",
+    "gold": {
+      "label": "not enough information",
+      "sentence_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    "raw_response": "{\"label\": \"not enough information\", \"sentence_ids\": []}",
+    "prediction": {
+      "label": "not enough information",
+      "sentence_ids": [],
+      "schema_valid": true,
+      "output_valid": true,
+      "invalid_sentence_ids": [],
+      "error": null
+    },
+    "predicted_evidence_text": {},
+    "output_tokens": 15,
+    "generation_seconds": 2.638583983999524,
+    "peak_allocated_gib": 2.772340774536133,
+    "peak_reserved_gib": 2.892578125
+  }
+]

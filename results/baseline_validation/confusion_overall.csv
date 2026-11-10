@@ -1,0 +1,8 @@
+gold/predicted,included,not included,excluded,not excluded,not enough information,not applicable,__invalid__
+included,26,3,0,0,6,0,0
+not included,0,1,0,0,2,0,0
+excluded,0,0,0,1,1,0,0
+not excluded,0,0,0,8,58,33,2
+not enough information,3,5,0,1,37,7,0
+not applicable,0,0,0,3,4,5,0
+__invalid__,0,0,0,0,0,0,0

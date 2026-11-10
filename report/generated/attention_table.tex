@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Length / mask & Dense ms & Tiled ms & SDPA ms & Dense MiB & Tiled MiB \\
+\midrule
+128 / full & 0.876 & 2.709 & 0.292 & 9.26 & 9.00 \\
+128 / causal & 1.045 & 2.583 & 0.299 & 9.26 & 9.00 \\
+256 / full & 1.406 & 7.888 & 0.324 & 11.89 & 9.50 \\
+256 / causal & 1.329 & 6.719 & 0.330 & 11.89 & 9.50 \\
+512 / full & 1.415 & 28.808 & 0.673 & 21.66 & 10.50 \\
+512 / causal & 1.584 & 22.205 & 0.677 & 21.66 & 10.50 \\
+\bottomrule
+\end{tabular}

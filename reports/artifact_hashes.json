@@ -1,0 +1,8 @@
+{
+  "reports\\data_audit.json": "b381ad53c05e9a58a2c468509526a8a73a7d1d7c08647bbd0dcbb15c93b92a82",
+  "reports\\data_audit.md": "fd7b9c1805ff5862fa1d298600bce93177c48af9dc4d88a6eedcf02136b92b2e",
+  "data\\splits\\split_manifest.json": "945d010de9941f26564b5ebd2d8bf20148581e410c483721d6f27ce39f67a8d5",
+  "data\\processed\\quarantined_train.jsonl": "fc3d4ae4043feb9c12aa8569da76e875ef9bf37f2050c7e68e99db8cbdd9872b",
+  "data\\processed\\train.jsonl": "d322d8f209dac24571f6e262faf8efa33d667a9cc0b7679225cea57fa83a6256",
+  "data\\processed\\validation.jsonl": "cef706491a060b2d60558d88d80647fceabc3628ea96233edc9f1bdd5ca5b79d"
+}

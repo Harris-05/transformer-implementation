@@ -1,0 +1,6 @@
+# Keep the tokenizer-preparation versions and Colab's installed CUDA PyTorch.
+-r requirements-model-inputs.txt
+accelerate==1.15.0
+bitsandbytes==0.50.2
+scikit-learn==1.8.0
+matplotlib==3.10.7

@@ -1,0 +1,85 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{trialgpt}
+\citation{lora}
+\citation{qlora}
+\citation{qwenreport}
+\citation{qwen4}
+\citation{qwen3candidate}
+\citation{qwen7candidate}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work and Design Alternatives}{1}{section.2}\protected@file@percent }
+\citation{flash}
+\citation{specpaper}
+\citation{dataset}
+\citation{qwen4}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Model alternatives considered. GB estimates concern weights only.}}{2}{table.1}\protected@file@percent }
+\newlabel{tab:models}{{I}{2}{Model alternatives considered. GB estimates concern weights only}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Materials and Methods}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Dataset Integrity and Fixed Patient Split}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Target Architecture and Structured Interface}{2}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Adaptation Objective and Checkpoint Selection}{2}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Eligibility, Evidence and Explanations}{2}{subsection.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces System architecture and target decoder components. The browser supplies permitted inputs; model decisions are validated before original record statements are retrieved. Cache state and low-rank adaptation have distinct roles.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{3}{System architecture and target decoder components. The browser supplies permitted inputs; model decisions are validated before original record statements are retrieved. Cache state and low-rank adaptation have distinct roles}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Recorded training objective and validation completion loss. Validation loss is approximately 0.106814, 0.106949 and 0.129507 across epochs; the selected adapter comes from epoch one despite completion of all three epochs.}}{3}{figure.2}\protected@file@percent }
+\newlabel{fig:training}{{2}{3}{Recorded training objective and validation completion loss. Validation loss is approximately 0.106814, 0.106949 and 0.129507 across epochs; the selected adapter comes from epoch one despite completion of all three epochs}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Explicit KV-Cached and Uncached Generation}{3}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-F}}Dense and Tiled Online-Softmax Attention}{3}{subsection.3.6}\protected@file@percent }
+\citation{qwendraft}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-G}}Manual Greedy Speculative Decoding}{4}{subsection.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Experimental Setup and Metrics}{4}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overall validation comparison under the frozen FP16 classification protocol. Accuracy gains exceed macro-F1 gains, indicating unequal improvement across categories.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:validation}{{3}{4}{Overall validation comparison under the frozen FP16 classification protocol. Accuracy gains exceed macro-F1 gains, indicating unequal improvement across categories}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Results and Discussion}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Validation Before and After Adaptation}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Development validation comparison. Evidence F1 is pooled sentence-retrieval micro-F1; valid denotes strict output validity.}}{5}{table.2}\protected@file@percent }
+\newlabel{tab:validation}{{II}{5}{Development validation comparison. Evidence F1 is pooled sentence-retrieval micro-F1; valid denotes strict output validity}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Adapted model: per-class validation performance.}}{5}{table.3}\protected@file@percent }
+\newlabel{tab:classes}{{III}{5}{Adapted model: per-class validation performance}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Adapted-model validation confusion matrix, retaining the invalid-prediction category. Rare negative classes and confusion between missing information and not excluded remain visible.}}{5}{figure.4}\protected@file@percent }
+\newlabel{fig:confusion}{{4}{5}{Adapted-model validation confusion matrix, retaining the invalid-prediction category. Rare negative classes and confusion between missing information and not excluded remain visible}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Final Held-Out Evaluation Status}{5}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}KV Cache: Speedup and a Remaining Disagreement}{5}{subsection.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces KV-cache math-SDPA study. Ratios are uncached/cached median total latency; unequal output suppresses validated speedup.}}{5}{table.4}\protected@file@percent }
+\newlabel{tab:kv}{{IV}{5}{KV-cache math-SDPA study. Ratios are uncached/cached median total latency; unequal output suppresses validated speedup}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Attention: Numerical Agreement and a Memory/Latency Trade-Off}{5}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Standalone FP32 attention on T4. Peaks are measured allocated MiB including inputs and intermediates; SDPA auto does not identify a particular fused kernel.}}{6}{table.5}\protected@file@percent }
+\newlabel{tab:attention}{{V}{6}{Standalone FP32 attention on T4. Peaks are measured allocated MiB including inputs and intermediates; SDPA auto does not identify a particular fused kernel}{table.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Causal attention runtime and allocator peaks. Educational Python tiling saves memory at larger lengths while running slower; automatic SDPA is fastest in these measurements.}}{6}{figure.5}\protected@file@percent }
+\newlabel{fig:attention}{{5}{6}{Causal attention runtime and allocator peaks. Educational Python tiling saves memory at larger lengths while running slower; automatic SDPA is fastest in these measurements}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Speculation: Correct Outputs with Mixed Speed Outcomes}{6}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Representative Error Analysis}{6}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0a}1. Rare negative inclusion (annotation 31)}{6}{paragraph.6.0.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0b}2. Rare negative inclusion (annotation 934)}{6}{paragraph.6.0.0.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Speculative GPU comparison. Speed is ordinary greedy/speculative median latency; values below one are slowdowns. Both models remain resident.}}{7}{table.6}\protected@file@percent }
+\newlabel{tab:spec}{{VI}{7}{Speculative GPU comparison. Speed is ordinary greedy/speculative median latency; values below one are slowdowns. Both models remain resident}{table.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Measured ordinary and speculative latency on identical prompts with a shared FP32 target protocol. Draft length four is slower on most cases despite fewer target forwards.}}{7}{figure.6}\protected@file@percent }
+\newlabel{fig:spec}{{6}{7}{Measured ordinary and speculative latency on identical prompts with a shared FP32 target protocol. Draft length four is slower on most cases despite fewer target forwards}{figure.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0c}3. Rare negative inclusion (annotation 935)}{7}{paragraph.6.0.0.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0d}4. Rare exclusion failure (annotation 41)}{7}{paragraph.6.0.0.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0e}5. Rare exclusion failure (annotation 263)}{7}{paragraph.6.0.0.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0f}6. Missing information mapped to a decision (annotation 8)}{7}{paragraph.6.0.0.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0g}7. Missing information mapped to a decision (annotation 15)}{7}{paragraph.6.0.0.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0h}8. Evidence localization failure (annotation 0)}{7}{paragraph.6.0.0.8}\protected@file@percent }
+\bibcite{trialgpt}{1}
+\bibcite{lora}{2}
+\bibcite{qlora}{3}
+\bibcite{qwenreport}{4}
+\bibcite{qwen4}{5}
+\bibcite{qwen3candidate}{6}
+\bibcite{qwen7candidate}{7}
+\bibcite{flash}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Integrated Browser Application}{8}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Limitations and Reproducibility}{8}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{8}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: AI-Use Statement}{8}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{8}{section*.2}\protected@file@percent }
+\bibcite{specpaper}{9}
+\bibcite{dataset}{10}
+\bibcite{qwendraft}{11}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Actual browser input workspace. The screenshot illustrates the interface state, not a new clinical inference result. Desktop/mobile layout, invalid-input recovery, sample filling and navigation were checked with a real headless browser.}}{9}{figure.7}\protected@file@percent }
+\newlabel{fig:app}{{7}{9}{Actual browser input workspace. The screenshot illustrates the interface state, not a new clinical inference result. Desktop/mobile layout, invalid-input recovery, sample filling and navigation were checked with a real headless browser}{figure.7}{}}
+\gdef \@abspage@last{9}

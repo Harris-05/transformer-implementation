@@ -1,0 +1,4 @@
+-r requirements-data.txt
+transformers==5.15.1
+tokenizers==0.22.2
+huggingface-hub==1.28.0

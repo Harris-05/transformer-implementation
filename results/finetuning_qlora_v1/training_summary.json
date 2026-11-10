@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "signature": "aa069914a6fbd39b333698bc9beb31e30f3b7b0ef4219738070892a2fe33c40e",
+  "selection": "lowest_validation_completion_loss",
+  "best_checkpoint": "/content/drive/MyDrive/TrialGPT_Assignment2/qlora_v1/checkpoints/checkpoint-76",
+  "best_validation_loss": 0.10681445151567459,
+  "selected_validation": {
+    "eval_loss": 0.10681445151567459,
+    "eval_runtime": 90.6695,
+    "eval_samples_per_second": 2.272,
+    "eval_steps_per_second": 2.272,
+    "epoch": 3.0
+  },
+  "train_metrics": {
+    "train_runtime": 2707.2496,
+    "train_samples_per_second": 0.667,
+    "train_steps_per_second": 0.084,
+    "total_flos": 1.891139340340224e+16,
+    "train_loss": 0.10546081055674636,
+    "epoch": 3.0
+  },
+  "trainable_parameters": 33030144,
+  "peak_allocated_gib": 6.034361839294434,
+  "peak_reserved_gib": 9.73046875,
+  "adapter_sha256": {
+    "README.md": "678742275e6a4d4a361eb467bc11c04c21794cc63a67e7f0f78b989dfd6d6bfb",
+    "adapter_model.safetensors": "324a76415b95991e02b440de67a91af90acc2d71ff45356995fe989f568ce51e",
+    "adapter_config.json": "f925421e4495cc8f59c8268b42133728e20f9d824b839df9ac3d652b748ec31b",
+    "chat_template.jinja": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+    "tokenizer_config.json": "3d1614cb194c7710b666fb6ba7b4a8fecff340889ff8db4bf6592ca249fa299f",
+    "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506"
+  }
+}

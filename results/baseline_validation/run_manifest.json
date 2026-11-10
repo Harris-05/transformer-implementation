@@ -1,0 +1,53 @@
+{
+  "run_signature": "49aa5b59971f0802b19d6ae942f4ef32dac17b570dd5e073cd63402de11eb122",
+  "settings": {
+    "model": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "prompt_version": 1,
+      "system_prompt_sha256": "3ba5d29f630b8fec2b4de14e83632060015c82fe1633e88deadb87d4f9fb6672",
+      "max_sequence_length": 1024,
+      "max_new_tokens": 128,
+      "required_tokens_including_generation_reserve": 872,
+      "truncated_records": 0,
+      "do_sample": false,
+      "eos_token_id": 151645,
+      "pad_token_id": 151643
+    },
+    "validation_sha256": "0a6ad872b4b22bb5f69ad2f3db163dc6aff75f421cb71e199aee328ad881e2e3",
+    "source_sha256": {
+      "baseline.py": "65b95fb88c7e7e8aafa6962f384cbae1eabd559f058240977062c5b71a808bd3",
+      "prepare_model_inputs.py": "004b35f7e65d70e64a1e6b8fa75e6f00e865dee309d9b6d1be0beae59642683d",
+      "eda.py": "23806970afd89f37e2f954592ed06946c03a23e20384b801f1c4b672a17747e5"
+    },
+    "quantization": {
+      "bits": 4,
+      "type": "nf4",
+      "double_quant": true,
+      "compute_dtype": "float16"
+    },
+    "attention": "sdpa",
+    "seed": 42,
+    "batch_size": 1,
+    "adapters": null
+  },
+  "runtimes": [
+    {
+      "id": "c26f669672cb4999b9bfb58acf252333",
+      "started_utc": "2026-11-07T08:24:08.845669+00:00",
+      "python": "3.13.16",
+      "versions": {
+        "torch": "2.14.1+cu130",
+        "transformers": "5.15.1",
+        "tokenizers": "0.22.2",
+        "huggingface-hub": "1.28.0",
+        "bitsandbytes": "0.50.2",
+        "accelerate": "1.15.0",
+        "scikit-learn": "1.8.0"
+      },
+      "gpu": "Tesla T4",
+      "gpu_memory_gib": 14.56317138671875,
+      "cuda": "13.0"
+    }
+  ]
+}

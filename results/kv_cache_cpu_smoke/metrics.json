@@ -1,0 +1,2262 @@
+{
+  "complete": true,
+  "passed": true,
+  "expected_trials": 36,
+  "recorded_trials": 36,
+  "cases": [
+    {
+      "case_id": "p8-o4",
+      "input_tokens": 8,
+      "output_budget": 4,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.004684349987655878,
+          "prefill_seconds_min": 0.004011399985756725,
+          "prefill_seconds_max": 0.005357299989555031,
+          "decode_seconds_median": 0.013173799990909174,
+          "decode_seconds_min": 0.012462499988032505,
+          "decode_seconds_max": 0.013885099993785843,
+          "total_seconds_median": 0.017858149978565052,
+          "total_seconds_min": 0.01647389997378923,
+          "total_seconds_max": 0.019242399983340874,
+          "output_tokens_per_second_median": 225.34129962216718,
+          "decode_tokens_per_second_median": 228.3905538532132,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 2816,
+          "cache_tokens_max": 11
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0033924000017577782,
+          "prefill_seconds_min": 0.002739400020800531,
+          "prefill_seconds_max": 0.0040453999827150255,
+          "decode_seconds_median": 0.009940499992808327,
+          "decode_seconds_min": 0.006946399982552975,
+          "decode_seconds_max": 0.012934600003063679,
+          "total_seconds_median": 0.013332899994566105,
+          "total_seconds_min": 0.009685800003353506,
+          "total_seconds_max": 0.016979999985778704,
+          "output_tokens_per_second_median": 324.2734783704125,
+          "decode_tokens_per_second_median": 331.90721578881687,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 0.7466002923354012
+    },
+    {
+      "case_id": "p8-o8",
+      "input_tokens": 8,
+      "output_budget": 8,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.002992300011101179,
+          "prefill_seconds_min": 0.0029109000170137733,
+          "prefill_seconds_max": 0.0030737000051885843,
+          "decode_seconds_median": 0.018105949988239445,
+          "decode_seconds_min": 0.017828999989433214,
+          "decode_seconds_max": 0.018382899987045676,
+          "total_seconds_median": 0.021098249999340624,
+          "total_seconds_min": 0.020739900006446987,
+          "total_seconds_max": 0.02145659999223426,
+          "output_tokens_per_second_median": 379.287786394376,
+          "decode_tokens_per_second_median": 386.703717703677,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 3840,
+          "cache_tokens_max": 15
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.002937400000519119,
+          "prefill_seconds_min": 0.002912399999331683,
+          "prefill_seconds_max": 0.0029624000017065555,
+          "decode_seconds_median": 0.024030250002397224,
+          "decode_seconds_min": 0.01943549999850802,
+          "decode_seconds_max": 0.028625000006286427,
+          "total_seconds_median": 0.026967650002916344,
+          "total_seconds_min": 0.022347899997839704,
+          "total_seconds_max": 0.03158740000799298,
+          "output_tokens_per_second_median": 305.6205061456103,
+          "decode_tokens_per_second_median": 302.35358045057905,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 1.2781936892282135
+    },
+    {
+      "case_id": "p8-o12",
+      "input_tokens": 8,
+      "output_budget": 12,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0031425500055775046,
+          "prefill_seconds_min": 0.002060600003460422,
+          "prefill_seconds_max": 0.004224500007694587,
+          "decode_seconds_median": 0.039029899999150075,
+          "decode_seconds_min": 0.029786900006001815,
+          "decode_seconds_max": 0.048272899992298335,
+          "total_seconds_median": 0.04217245000472758,
+          "total_seconds_min": 0.0340114000136964,
+          "total_seconds_max": 0.05033349999575876,
+          "output_tokens_per_second_median": 295.6163417516993,
+          "decode_tokens_per_second_median": 298.5804899739437,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 4864,
+          "cache_tokens_max": 19
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.002303399989614263,
+          "prefill_seconds_min": 0.002092599985189736,
+          "prefill_seconds_max": 0.0025141999940387905,
+          "decode_seconds_median": 0.02588830000604503,
+          "decode_seconds_min": 0.021232600003713742,
+          "decode_seconds_max": 0.030544000008376315,
+          "total_seconds_median": 0.028191699995659292,
+          "total_seconds_min": 0.023746799997752532,
+          "total_seconds_max": 0.03263659999356605,
+          "output_tokens_per_second_median": 436.50830206648254,
+          "decode_tokens_per_second_median": 439.10373226993613,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 0.6684861797808515
+    },
+    {
+      "case_id": "p16-o4",
+      "input_tokens": 16,
+      "output_budget": 4,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.002508950012270361,
+          "prefill_seconds_min": 0.002259900007629767,
+          "prefill_seconds_max": 0.0027580000169109553,
+          "decode_seconds_median": 0.008318599982885644,
+          "decode_seconds_min": 0.005203999986406416,
+          "decode_seconds_max": 0.011433199979364872,
+          "total_seconds_median": 0.010827549995156005,
+          "total_seconds_min": 0.007463899994036183,
+          "total_seconds_max": 0.014191199996275827,
+          "output_tokens_per_second_median": 408.8888393522549,
+          "decode_tokens_per_second_median": 419.4366817857968,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 4864,
+          "cache_tokens_max": 19
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.003057750000152737,
+          "prefill_seconds_min": 0.002147299994248897,
+          "prefill_seconds_max": 0.003968200006056577,
+          "decode_seconds_median": 0.008166700004949234,
+          "decode_seconds_min": 0.0055887000053189695,
+          "decode_seconds_max": 0.0107447000045795,
+          "total_seconds_median": 0.011224450005101971,
+          "total_seconds_min": 0.007735999999567866,
+          "total_seconds_max": 0.014712900010636076,
+          "output_tokens_per_second_median": 394.4666725192829,
+          "decode_tokens_per_second_median": 408.0024444403798,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 1.036656492939172
+    },
+    {
+      "case_id": "p16-o8",
+      "input_tokens": 16,
+      "output_budget": 8,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.002427150000585243,
+          "prefill_seconds_min": 0.0021293000027071685,
+          "prefill_seconds_max": 0.0027249999984633178,
+          "decode_seconds_median": 0.014791899986448698,
+          "decode_seconds_min": 0.013273399992613122,
+          "decode_seconds_max": 0.016310399980284274,
+          "total_seconds_median": 0.01721904998703394,
+          "total_seconds_min": 0.01540269999532029,
+          "total_seconds_max": 0.01903539997874759,
+          "output_tokens_per_second_median": 469.82953063489776,
+          "decode_tokens_per_second_median": 478.27227764133556,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 5888,
+          "cache_tokens_max": 23
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0027750000008381903,
+          "prefill_seconds_min": 0.0026639999996405095,
+          "prefill_seconds_max": 0.002886000002035871,
+          "decode_seconds_median": 0.016875550005352125,
+          "decode_seconds_min": 0.015781499998411164,
+          "decode_seconds_max": 0.017969600012293085,
+          "total_seconds_median": 0.019650550006190315,
+          "total_seconds_min": 0.018445499998051673,
+          "total_seconds_max": 0.020855600014328957,
+          "output_tokens_per_second_median": 408.65006888459163,
+          "decode_tokens_per_second_median": 416.55205984874465,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 1.1412098821356178
+    },
+    {
+      "case_id": "p16-o12",
+      "input_tokens": 16,
+      "output_budget": 12,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.003259999997681007,
+          "prefill_seconds_min": 0.0026408999983686954,
+          "prefill_seconds_max": 0.003879099996993318,
+          "decode_seconds_median": 0.020716950006317347,
+          "decode_seconds_min": 0.01998680000542663,
+          "decode_seconds_max": 0.021447100007208064,
+          "total_seconds_median": 0.023976950003998354,
+          "total_seconds_min": 0.022627700003795326,
+          "total_seconds_max": 0.025326200004201382,
+          "output_tokens_per_second_median": 502.0705402701818,
+          "decode_tokens_per_second_median": 531.6265469944178,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 6912,
+          "cache_tokens_max": 27
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0028050499968230724,
+          "prefill_seconds_min": 0.002537099993787706,
+          "prefill_seconds_max": 0.003072999999858439,
+          "decode_seconds_median": 0.022916950008948334,
+          "decode_seconds_min": 0.022371500002918765,
+          "decode_seconds_max": 0.023462400014977902,
+          "total_seconds_median": 0.025722000005771406,
+          "total_seconds_min": 0.025444500002777204,
+          "total_seconds_max": 0.025999500008765608,
+          "output_tokens_per_second_median": 466.5810140196657,
+          "decode_tokens_per_second_median": 480.26613382048254,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 1.0727803161570613
+    },
+    {
+      "case_id": "p32-o4",
+      "input_tokens": 32,
+      "output_budget": 4,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.006209750004927628,
+          "prefill_seconds_min": 0.004610000003594905,
+          "prefill_seconds_max": 0.00780950000626035,
+          "decode_seconds_median": 0.016699700005119666,
+          "decode_seconds_min": 0.010823999997228384,
+          "decode_seconds_max": 0.02257540001301095,
+          "total_seconds_median": 0.022909450010047294,
+          "total_seconds_min": 0.01543400000082329,
+          "total_seconds_max": 0.0303849000192713,
+          "output_tokens_per_second_median": 195.4062034462425,
+          "decode_tokens_per_second_median": 205.02493668288037,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 8960,
+          "cache_tokens_max": 35
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0073848500032909214,
+          "prefill_seconds_min": 0.002825300005497411,
+          "prefill_seconds_max": 0.011944400001084432,
+          "decode_seconds_median": 0.015387749997898936,
+          "decode_seconds_min": 0.0073379999957978725,
+          "decode_seconds_max": 0.0234375,
+          "total_seconds_median": 0.022772600001189858,
+          "total_seconds_min": 0.010163300001295283,
+          "total_seconds_max": 0.03538190000108443,
+          "output_tokens_per_second_median": 253.31255369892204,
+          "decode_tokens_per_second_median": 268.4153721530362,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 0.9940264821373966
+    },
+    {
+      "case_id": "p32-o8",
+      "input_tokens": 32,
+      "output_budget": 8,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0038947499851929024,
+          "prefill_seconds_min": 0.0033543999888934195,
+          "prefill_seconds_max": 0.004435099981492385,
+          "decode_seconds_median": 0.019046900008106604,
+          "decode_seconds_min": 0.014582100004190579,
+          "decode_seconds_max": 0.02351170001202263,
+          "total_seconds_median": 0.022941649993299507,
+          "total_seconds_min": 0.017936499993084,
+          "total_seconds_max": 0.027946799993515015,
+          "output_tokens_per_second_median": 366.13803647782856,
+          "decode_tokens_per_second_median": 388.8823546270521,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 9984,
+          "cache_tokens_max": 39
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0032856500038178638,
+          "prefill_seconds_min": 0.0024150000244844705,
+          "prefill_seconds_max": 0.004156299983151257,
+          "decode_seconds_median": 0.021165450001717545,
+          "decode_seconds_min": 0.016500999976415187,
+          "decode_seconds_max": 0.025829900027019903,
+          "total_seconds_median": 0.02445110000553541,
+          "total_seconds_min": 0.018916000000899658,
+          "total_seconds_max": 0.02998620001017116,
+          "output_tokens_per_second_median": 344.8558917080544,
+          "decode_tokens_per_second_median": 347.6102368353338,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 1.0657951809340986
+    },
+    {
+      "case_id": "p32-o12",
+      "input_tokens": 32,
+      "output_budget": 12,
+      "complete": true,
+      "tokens_equal": true,
+      "fixed_length_satisfied": true,
+      "modes": {
+        "cached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.0028948500112164766,
+          "prefill_seconds_min": 0.002879400009987876,
+          "prefill_seconds_max": 0.0029103000124450773,
+          "decode_seconds_median": 0.034746549994451925,
+          "decode_seconds_min": 0.034099999989848584,
+          "decode_seconds_max": 0.035393099999055266,
+          "total_seconds_median": 0.0376414000056684,
+          "total_seconds_min": 0.03697939999983646,
+          "total_seconds_max": 0.038303400011500344,
+          "output_tokens_per_second_median": 318.89655499771186,
+          "decode_tokens_per_second_median": 316.6878436185374,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 11008,
+          "cache_tokens_max": 43
+        },
+        "uncached": {
+          "repetitions": 2,
+          "prefill_seconds_median": 0.003920800008927472,
+          "prefill_seconds_min": 0.0028953000146429986,
+          "prefill_seconds_max": 0.004946300003211945,
+          "decode_seconds_median": 0.05753859998367261,
+          "decode_seconds_min": 0.03260419997968711,
+          "decode_seconds_max": 0.08247299998765811,
+          "total_seconds_median": 0.06145939999260008,
+          "total_seconds_min": 0.03549949999433011,
+          "total_seconds_max": 0.08741929999087006,
+          "output_tokens_per_second_median": 237.65119445665687,
+          "decode_tokens_per_second_median": 235.3784154904983,
+          "initial_allocated_gib_max": null,
+          "peak_allocated_gib_max": null,
+          "peak_reserved_gib_max": null,
+          "cache_bytes_max": 0,
+          "cache_tokens_max": 0
+        }
+      },
+      "matches_reference": true,
+      "total_speedup_uncached_over_cached": 1.632760736405791
+    }
+  ],
+  "timing_complete": true,
+  "correctness": [
+    {
+      "case_id": "p8-o4",
+      "kind": "fixed_token_stress",
+      "input_tokens": 8,
+      "output_budget": 4,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 3,
+        "cache_tokens": 11,
+        "cache_bytes": 2816,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 8,
+            "mask_tokens": 8,
+            "position_start": 0,
+            "position_end": 7,
+            "cache_tokens": 8
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 9,
+            "position_start": 8,
+            "position_end": 8,
+            "cache_tokens": 9
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 10,
+            "position_start": 9,
+            "position_end": 9,
+            "cache_tokens": 10
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 11,
+            "position_start": 10,
+            "position_end": 10,
+            "cache_tokens": 11
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 3,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 8,
+            "mask_tokens": 8,
+            "position_start": 0,
+            "position_end": 7,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 9,
+            "mask_tokens": 9,
+            "position_start": 0,
+            "position_end": 8,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 10,
+            "mask_tokens": 10,
+            "position_start": 0,
+            "position_end": 9,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 11,
+            "mask_tokens": 11,
+            "position_start": 0,
+            "position_end": 10,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p8-o8",
+      "kind": "fixed_token_stress",
+      "input_tokens": 8,
+      "output_budget": 8,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 7,
+        "cache_tokens": 15,
+        "cache_bytes": 3840,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 8,
+            "mask_tokens": 8,
+            "position_start": 0,
+            "position_end": 7,
+            "cache_tokens": 8
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 9,
+            "position_start": 8,
+            "position_end": 8,
+            "cache_tokens": 9
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 10,
+            "position_start": 9,
+            "position_end": 9,
+            "cache_tokens": 10
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 11,
+            "position_start": 10,
+            "position_end": 10,
+            "cache_tokens": 11
+          },
+          {
+            "step": 4,
+            "input_tokens": 1,
+            "mask_tokens": 12,
+            "position_start": 11,
+            "position_end": 11,
+            "cache_tokens": 12
+          },
+          {
+            "step": 5,
+            "input_tokens": 1,
+            "mask_tokens": 13,
+            "position_start": 12,
+            "position_end": 12,
+            "cache_tokens": 13
+          },
+          {
+            "step": 6,
+            "input_tokens": 1,
+            "mask_tokens": 14,
+            "position_start": 13,
+            "position_end": 13,
+            "cache_tokens": 14
+          },
+          {
+            "step": 7,
+            "input_tokens": 1,
+            "mask_tokens": 15,
+            "position_start": 14,
+            "position_end": 14,
+            "cache_tokens": 15
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 7,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 8,
+            "mask_tokens": 8,
+            "position_start": 0,
+            "position_end": 7,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 9,
+            "mask_tokens": 9,
+            "position_start": 0,
+            "position_end": 8,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 10,
+            "mask_tokens": 10,
+            "position_start": 0,
+            "position_end": 9,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 11,
+            "mask_tokens": 11,
+            "position_start": 0,
+            "position_end": 10,
+            "cache_tokens": 0
+          },
+          {
+            "step": 4,
+            "input_tokens": 12,
+            "mask_tokens": 12,
+            "position_start": 0,
+            "position_end": 11,
+            "cache_tokens": 0
+          },
+          {
+            "step": 5,
+            "input_tokens": 13,
+            "mask_tokens": 13,
+            "position_start": 0,
+            "position_end": 12,
+            "cache_tokens": 0
+          },
+          {
+            "step": 6,
+            "input_tokens": 14,
+            "mask_tokens": 14,
+            "position_start": 0,
+            "position_end": 13,
+            "cache_tokens": 0
+          },
+          {
+            "step": 7,
+            "input_tokens": 15,
+            "mask_tokens": 15,
+            "position_start": 0,
+            "position_end": 14,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p8-o12",
+      "kind": "fixed_token_stress",
+      "input_tokens": 8,
+      "output_budget": 12,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 11,
+        "cache_tokens": 19,
+        "cache_bytes": 4864,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 8,
+            "mask_tokens": 8,
+            "position_start": 0,
+            "position_end": 7,
+            "cache_tokens": 8
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 9,
+            "position_start": 8,
+            "position_end": 8,
+            "cache_tokens": 9
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 10,
+            "position_start": 9,
+            "position_end": 9,
+            "cache_tokens": 10
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 11,
+            "position_start": 10,
+            "position_end": 10,
+            "cache_tokens": 11
+          },
+          {
+            "step": 4,
+            "input_tokens": 1,
+            "mask_tokens": 12,
+            "position_start": 11,
+            "position_end": 11,
+            "cache_tokens": 12
+          },
+          {
+            "step": 5,
+            "input_tokens": 1,
+            "mask_tokens": 13,
+            "position_start": 12,
+            "position_end": 12,
+            "cache_tokens": 13
+          },
+          {
+            "step": 6,
+            "input_tokens": 1,
+            "mask_tokens": 14,
+            "position_start": 13,
+            "position_end": 13,
+            "cache_tokens": 14
+          },
+          {
+            "step": 7,
+            "input_tokens": 1,
+            "mask_tokens": 15,
+            "position_start": 14,
+            "position_end": 14,
+            "cache_tokens": 15
+          },
+          {
+            "step": 8,
+            "input_tokens": 1,
+            "mask_tokens": 16,
+            "position_start": 15,
+            "position_end": 15,
+            "cache_tokens": 16
+          },
+          {
+            "step": 9,
+            "input_tokens": 1,
+            "mask_tokens": 17,
+            "position_start": 16,
+            "position_end": 16,
+            "cache_tokens": 17
+          },
+          {
+            "step": 10,
+            "input_tokens": 1,
+            "mask_tokens": 18,
+            "position_start": 17,
+            "position_end": 17,
+            "cache_tokens": 18
+          },
+          {
+            "step": 11,
+            "input_tokens": 1,
+            "mask_tokens": 19,
+            "position_start": 18,
+            "position_end": 18,
+            "cache_tokens": 19
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 11,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 8,
+            "mask_tokens": 8,
+            "position_start": 0,
+            "position_end": 7,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 9,
+            "mask_tokens": 9,
+            "position_start": 0,
+            "position_end": 8,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 10,
+            "mask_tokens": 10,
+            "position_start": 0,
+            "position_end": 9,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 11,
+            "mask_tokens": 11,
+            "position_start": 0,
+            "position_end": 10,
+            "cache_tokens": 0
+          },
+          {
+            "step": 4,
+            "input_tokens": 12,
+            "mask_tokens": 12,
+            "position_start": 0,
+            "position_end": 11,
+            "cache_tokens": 0
+          },
+          {
+            "step": 5,
+            "input_tokens": 13,
+            "mask_tokens": 13,
+            "position_start": 0,
+            "position_end": 12,
+            "cache_tokens": 0
+          },
+          {
+            "step": 6,
+            "input_tokens": 14,
+            "mask_tokens": 14,
+            "position_start": 0,
+            "position_end": 13,
+            "cache_tokens": 0
+          },
+          {
+            "step": 7,
+            "input_tokens": 15,
+            "mask_tokens": 15,
+            "position_start": 0,
+            "position_end": 14,
+            "cache_tokens": 0
+          },
+          {
+            "step": 8,
+            "input_tokens": 16,
+            "mask_tokens": 16,
+            "position_start": 0,
+            "position_end": 15,
+            "cache_tokens": 0
+          },
+          {
+            "step": 9,
+            "input_tokens": 17,
+            "mask_tokens": 17,
+            "position_start": 0,
+            "position_end": 16,
+            "cache_tokens": 0
+          },
+          {
+            "step": 10,
+            "input_tokens": 18,
+            "mask_tokens": 18,
+            "position_start": 0,
+            "position_end": 17,
+            "cache_tokens": 0
+          },
+          {
+            "step": 11,
+            "input_tokens": 19,
+            "mask_tokens": 19,
+            "position_start": 0,
+            "position_end": 18,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p16-o4",
+      "kind": "fixed_token_stress",
+      "input_tokens": 16,
+      "output_budget": 4,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          13,
+          43,
+          18,
+          19
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 3,
+        "cache_tokens": 19,
+        "cache_bytes": 4864,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 16,
+            "mask_tokens": 16,
+            "position_start": 0,
+            "position_end": 15,
+            "cache_tokens": 16
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 17,
+            "position_start": 16,
+            "position_end": 16,
+            "cache_tokens": 17
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 18,
+            "position_start": 17,
+            "position_end": 17,
+            "cache_tokens": 18
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 19,
+            "position_start": 18,
+            "position_end": 18,
+            "cache_tokens": 19
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          13,
+          43,
+          18,
+          19
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 3,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 16,
+            "mask_tokens": 16,
+            "position_start": 0,
+            "position_end": 15,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 17,
+            "mask_tokens": 17,
+            "position_start": 0,
+            "position_end": 16,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 18,
+            "mask_tokens": 18,
+            "position_start": 0,
+            "position_end": 17,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 19,
+            "mask_tokens": 19,
+            "position_start": 0,
+            "position_end": 18,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        13,
+        43,
+        18,
+        19
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p16-o8",
+      "kind": "fixed_token_stress",
+      "input_tokens": 16,
+      "output_budget": 8,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          13,
+          43,
+          18,
+          19,
+          26,
+          39,
+          35,
+          40
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 7,
+        "cache_tokens": 23,
+        "cache_bytes": 5888,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 16,
+            "mask_tokens": 16,
+            "position_start": 0,
+            "position_end": 15,
+            "cache_tokens": 16
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 17,
+            "position_start": 16,
+            "position_end": 16,
+            "cache_tokens": 17
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 18,
+            "position_start": 17,
+            "position_end": 17,
+            "cache_tokens": 18
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 19,
+            "position_start": 18,
+            "position_end": 18,
+            "cache_tokens": 19
+          },
+          {
+            "step": 4,
+            "input_tokens": 1,
+            "mask_tokens": 20,
+            "position_start": 19,
+            "position_end": 19,
+            "cache_tokens": 20
+          },
+          {
+            "step": 5,
+            "input_tokens": 1,
+            "mask_tokens": 21,
+            "position_start": 20,
+            "position_end": 20,
+            "cache_tokens": 21
+          },
+          {
+            "step": 6,
+            "input_tokens": 1,
+            "mask_tokens": 22,
+            "position_start": 21,
+            "position_end": 21,
+            "cache_tokens": 22
+          },
+          {
+            "step": 7,
+            "input_tokens": 1,
+            "mask_tokens": 23,
+            "position_start": 22,
+            "position_end": 22,
+            "cache_tokens": 23
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          13,
+          43,
+          18,
+          19,
+          26,
+          39,
+          35,
+          40
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 7,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 16,
+            "mask_tokens": 16,
+            "position_start": 0,
+            "position_end": 15,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 17,
+            "mask_tokens": 17,
+            "position_start": 0,
+            "position_end": 16,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 18,
+            "mask_tokens": 18,
+            "position_start": 0,
+            "position_end": 17,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 19,
+            "mask_tokens": 19,
+            "position_start": 0,
+            "position_end": 18,
+            "cache_tokens": 0
+          },
+          {
+            "step": 4,
+            "input_tokens": 20,
+            "mask_tokens": 20,
+            "position_start": 0,
+            "position_end": 19,
+            "cache_tokens": 0
+          },
+          {
+            "step": 5,
+            "input_tokens": 21,
+            "mask_tokens": 21,
+            "position_start": 0,
+            "position_end": 20,
+            "cache_tokens": 0
+          },
+          {
+            "step": 6,
+            "input_tokens": 22,
+            "mask_tokens": 22,
+            "position_start": 0,
+            "position_end": 21,
+            "cache_tokens": 0
+          },
+          {
+            "step": 7,
+            "input_tokens": 23,
+            "mask_tokens": 23,
+            "position_start": 0,
+            "position_end": 22,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        13,
+        43,
+        18,
+        19,
+        26,
+        39,
+        35,
+        40
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p16-o12",
+      "kind": "fixed_token_stress",
+      "input_tokens": 16,
+      "output_budget": 12,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          13,
+          43,
+          18,
+          19,
+          26,
+          39,
+          35,
+          40,
+          30,
+          17,
+          20,
+          34
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 11,
+        "cache_tokens": 27,
+        "cache_bytes": 6912,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 16,
+            "mask_tokens": 16,
+            "position_start": 0,
+            "position_end": 15,
+            "cache_tokens": 16
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 17,
+            "position_start": 16,
+            "position_end": 16,
+            "cache_tokens": 17
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 18,
+            "position_start": 17,
+            "position_end": 17,
+            "cache_tokens": 18
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 19,
+            "position_start": 18,
+            "position_end": 18,
+            "cache_tokens": 19
+          },
+          {
+            "step": 4,
+            "input_tokens": 1,
+            "mask_tokens": 20,
+            "position_start": 19,
+            "position_end": 19,
+            "cache_tokens": 20
+          },
+          {
+            "step": 5,
+            "input_tokens": 1,
+            "mask_tokens": 21,
+            "position_start": 20,
+            "position_end": 20,
+            "cache_tokens": 21
+          },
+          {
+            "step": 6,
+            "input_tokens": 1,
+            "mask_tokens": 22,
+            "position_start": 21,
+            "position_end": 21,
+            "cache_tokens": 22
+          },
+          {
+            "step": 7,
+            "input_tokens": 1,
+            "mask_tokens": 23,
+            "position_start": 22,
+            "position_end": 22,
+            "cache_tokens": 23
+          },
+          {
+            "step": 8,
+            "input_tokens": 1,
+            "mask_tokens": 24,
+            "position_start": 23,
+            "position_end": 23,
+            "cache_tokens": 24
+          },
+          {
+            "step": 9,
+            "input_tokens": 1,
+            "mask_tokens": 25,
+            "position_start": 24,
+            "position_end": 24,
+            "cache_tokens": 25
+          },
+          {
+            "step": 10,
+            "input_tokens": 1,
+            "mask_tokens": 26,
+            "position_start": 25,
+            "position_end": 25,
+            "cache_tokens": 26
+          },
+          {
+            "step": 11,
+            "input_tokens": 1,
+            "mask_tokens": 27,
+            "position_start": 26,
+            "position_end": 26,
+            "cache_tokens": 27
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          13,
+          43,
+          18,
+          19,
+          26,
+          39,
+          35,
+          40,
+          30,
+          17,
+          20,
+          34
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 11,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 16,
+            "mask_tokens": 16,
+            "position_start": 0,
+            "position_end": 15,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 17,
+            "mask_tokens": 17,
+            "position_start": 0,
+            "position_end": 16,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 18,
+            "mask_tokens": 18,
+            "position_start": 0,
+            "position_end": 17,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 19,
+            "mask_tokens": 19,
+            "position_start": 0,
+            "position_end": 18,
+            "cache_tokens": 0
+          },
+          {
+            "step": 4,
+            "input_tokens": 20,
+            "mask_tokens": 20,
+            "position_start": 0,
+            "position_end": 19,
+            "cache_tokens": 0
+          },
+          {
+            "step": 5,
+            "input_tokens": 21,
+            "mask_tokens": 21,
+            "position_start": 0,
+            "position_end": 20,
+            "cache_tokens": 0
+          },
+          {
+            "step": 6,
+            "input_tokens": 22,
+            "mask_tokens": 22,
+            "position_start": 0,
+            "position_end": 21,
+            "cache_tokens": 0
+          },
+          {
+            "step": 7,
+            "input_tokens": 23,
+            "mask_tokens": 23,
+            "position_start": 0,
+            "position_end": 22,
+            "cache_tokens": 0
+          },
+          {
+            "step": 8,
+            "input_tokens": 24,
+            "mask_tokens": 24,
+            "position_start": 0,
+            "position_end": 23,
+            "cache_tokens": 0
+          },
+          {
+            "step": 9,
+            "input_tokens": 25,
+            "mask_tokens": 25,
+            "position_start": 0,
+            "position_end": 24,
+            "cache_tokens": 0
+          },
+          {
+            "step": 10,
+            "input_tokens": 26,
+            "mask_tokens": 26,
+            "position_start": 0,
+            "position_end": 25,
+            "cache_tokens": 0
+          },
+          {
+            "step": 11,
+            "input_tokens": 27,
+            "mask_tokens": 27,
+            "position_start": 0,
+            "position_end": 26,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        13,
+        43,
+        18,
+        19,
+        26,
+        39,
+        35,
+        40,
+        30,
+        17,
+        20,
+        34
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p32-o4",
+      "kind": "fixed_token_stress",
+      "input_tokens": 32,
+      "output_budget": 4,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          2,
+          7,
+          30,
+          17
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 3,
+        "cache_tokens": 35,
+        "cache_bytes": 8960,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 32,
+            "mask_tokens": 32,
+            "position_start": 0,
+            "position_end": 31,
+            "cache_tokens": 32
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 33,
+            "position_start": 32,
+            "position_end": 32,
+            "cache_tokens": 33
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 34,
+            "position_start": 33,
+            "position_end": 33,
+            "cache_tokens": 34
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 35,
+            "position_start": 34,
+            "position_end": 34,
+            "cache_tokens": 35
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          2,
+          7,
+          30,
+          17
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 3,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 32,
+            "mask_tokens": 32,
+            "position_start": 0,
+            "position_end": 31,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 33,
+            "mask_tokens": 33,
+            "position_start": 0,
+            "position_end": 32,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 34,
+            "mask_tokens": 34,
+            "position_start": 0,
+            "position_end": 33,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 35,
+            "mask_tokens": 35,
+            "position_start": 0,
+            "position_end": 34,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        2,
+        7,
+        30,
+        17
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p32-o8",
+      "kind": "fixed_token_stress",
+      "input_tokens": 32,
+      "output_budget": 8,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          2,
+          7,
+          30,
+          17,
+          20,
+          34,
+          59,
+          55
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 7,
+        "cache_tokens": 39,
+        "cache_bytes": 9984,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 32,
+            "mask_tokens": 32,
+            "position_start": 0,
+            "position_end": 31,
+            "cache_tokens": 32
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 33,
+            "position_start": 32,
+            "position_end": 32,
+            "cache_tokens": 33
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 34,
+            "position_start": 33,
+            "position_end": 33,
+            "cache_tokens": 34
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 35,
+            "position_start": 34,
+            "position_end": 34,
+            "cache_tokens": 35
+          },
+          {
+            "step": 4,
+            "input_tokens": 1,
+            "mask_tokens": 36,
+            "position_start": 35,
+            "position_end": 35,
+            "cache_tokens": 36
+          },
+          {
+            "step": 5,
+            "input_tokens": 1,
+            "mask_tokens": 37,
+            "position_start": 36,
+            "position_end": 36,
+            "cache_tokens": 37
+          },
+          {
+            "step": 6,
+            "input_tokens": 1,
+            "mask_tokens": 38,
+            "position_start": 37,
+            "position_end": 37,
+            "cache_tokens": 38
+          },
+          {
+            "step": 7,
+            "input_tokens": 1,
+            "mask_tokens": 39,
+            "position_start": 38,
+            "position_end": 38,
+            "cache_tokens": 39
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          2,
+          7,
+          30,
+          17,
+          20,
+          34,
+          59,
+          55
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 7,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 32,
+            "mask_tokens": 32,
+            "position_start": 0,
+            "position_end": 31,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 33,
+            "mask_tokens": 33,
+            "position_start": 0,
+            "position_end": 32,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 34,
+            "mask_tokens": 34,
+            "position_start": 0,
+            "position_end": 33,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 35,
+            "mask_tokens": 35,
+            "position_start": 0,
+            "position_end": 34,
+            "cache_tokens": 0
+          },
+          {
+            "step": 4,
+            "input_tokens": 36,
+            "mask_tokens": 36,
+            "position_start": 0,
+            "position_end": 35,
+            "cache_tokens": 0
+          },
+          {
+            "step": 5,
+            "input_tokens": 37,
+            "mask_tokens": 37,
+            "position_start": 0,
+            "position_end": 36,
+            "cache_tokens": 0
+          },
+          {
+            "step": 6,
+            "input_tokens": 38,
+            "mask_tokens": 38,
+            "position_start": 0,
+            "position_end": 37,
+            "cache_tokens": 0
+          },
+          {
+            "step": 7,
+            "input_tokens": 39,
+            "mask_tokens": 39,
+            "position_start": 0,
+            "position_end": 38,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        2,
+        7,
+        30,
+        17,
+        20,
+        34,
+        59,
+        55
+      ],
+      "logit_diagnostic": null
+    },
+    {
+      "case_id": "p32-o12",
+      "kind": "fixed_token_stress",
+      "input_tokens": 32,
+      "output_budget": 12,
+      "eos_token_id": null,
+      "passed": true,
+      "first_divergence": {
+        "cached_vs_uncached": null,
+        "cached_vs_hf": null,
+        "uncached_vs_hf": null
+      },
+      "cached": {
+        "token_ids": [
+          2,
+          7,
+          30,
+          17,
+          20,
+          34,
+          59,
+          55,
+          14,
+          2,
+          7,
+          30
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 11,
+        "cache_tokens": 43,
+        "cache_bytes": 11008,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 32,
+            "mask_tokens": 32,
+            "position_start": 0,
+            "position_end": 31,
+            "cache_tokens": 32
+          },
+          {
+            "step": 1,
+            "input_tokens": 1,
+            "mask_tokens": 33,
+            "position_start": 32,
+            "position_end": 32,
+            "cache_tokens": 33
+          },
+          {
+            "step": 2,
+            "input_tokens": 1,
+            "mask_tokens": 34,
+            "position_start": 33,
+            "position_end": 33,
+            "cache_tokens": 34
+          },
+          {
+            "step": 3,
+            "input_tokens": 1,
+            "mask_tokens": 35,
+            "position_start": 34,
+            "position_end": 34,
+            "cache_tokens": 35
+          },
+          {
+            "step": 4,
+            "input_tokens": 1,
+            "mask_tokens": 36,
+            "position_start": 35,
+            "position_end": 35,
+            "cache_tokens": 36
+          },
+          {
+            "step": 5,
+            "input_tokens": 1,
+            "mask_tokens": 37,
+            "position_start": 36,
+            "position_end": 36,
+            "cache_tokens": 37
+          },
+          {
+            "step": 6,
+            "input_tokens": 1,
+            "mask_tokens": 38,
+            "position_start": 37,
+            "position_end": 37,
+            "cache_tokens": 38
+          },
+          {
+            "step": 7,
+            "input_tokens": 1,
+            "mask_tokens": 39,
+            "position_start": 38,
+            "position_end": 38,
+            "cache_tokens": 39
+          },
+          {
+            "step": 8,
+            "input_tokens": 1,
+            "mask_tokens": 40,
+            "position_start": 39,
+            "position_end": 39,
+            "cache_tokens": 40
+          },
+          {
+            "step": 9,
+            "input_tokens": 1,
+            "mask_tokens": 41,
+            "position_start": 40,
+            "position_end": 40,
+            "cache_tokens": 41
+          },
+          {
+            "step": 10,
+            "input_tokens": 1,
+            "mask_tokens": 42,
+            "position_start": 41,
+            "position_end": 41,
+            "cache_tokens": 42
+          },
+          {
+            "step": 11,
+            "input_tokens": 1,
+            "mask_tokens": 43,
+            "position_start": 42,
+            "position_end": 42,
+            "cache_tokens": 43
+          }
+        ]
+      },
+      "uncached": {
+        "token_ids": [
+          2,
+          7,
+          30,
+          17,
+          20,
+          34,
+          59,
+          55,
+          14,
+          2,
+          7,
+          30
+        ],
+        "stopped_on_eos": false,
+        "decode_steps": 11,
+        "cache_tokens": 0,
+        "cache_bytes": 0,
+        "prefill_seconds": null,
+        "decode_seconds": null,
+        "total_seconds": null,
+        "initial_allocated_gib": null,
+        "peak_allocated_gib": null,
+        "peak_reserved_gib": null,
+        "trace": [
+          {
+            "step": 0,
+            "input_tokens": 32,
+            "mask_tokens": 32,
+            "position_start": 0,
+            "position_end": 31,
+            "cache_tokens": 0
+          },
+          {
+            "step": 1,
+            "input_tokens": 33,
+            "mask_tokens": 33,
+            "position_start": 0,
+            "position_end": 32,
+            "cache_tokens": 0
+          },
+          {
+            "step": 2,
+            "input_tokens": 34,
+            "mask_tokens": 34,
+            "position_start": 0,
+            "position_end": 33,
+            "cache_tokens": 0
+          },
+          {
+            "step": 3,
+            "input_tokens": 35,
+            "mask_tokens": 35,
+            "position_start": 0,
+            "position_end": 34,
+            "cache_tokens": 0
+          },
+          {
+            "step": 4,
+            "input_tokens": 36,
+            "mask_tokens": 36,
+            "position_start": 0,
+            "position_end": 35,
+            "cache_tokens": 0
+          },
+          {
+            "step": 5,
+            "input_tokens": 37,
+            "mask_tokens": 37,
+            "position_start": 0,
+            "position_end": 36,
+            "cache_tokens": 0
+          },
+          {
+            "step": 6,
+            "input_tokens": 38,
+            "mask_tokens": 38,
+            "position_start": 0,
+            "position_end": 37,
+            "cache_tokens": 0
+          },
+          {
+            "step": 7,
+            "input_tokens": 39,
+            "mask_tokens": 39,
+            "position_start": 0,
+            "position_end": 38,
+            "cache_tokens": 0
+          },
+          {
+            "step": 8,
+            "input_tokens": 40,
+            "mask_tokens": 40,
+            "position_start": 0,
+            "position_end": 39,
+            "cache_tokens": 0
+          },
+          {
+            "step": 9,
+            "input_tokens": 41,
+            "mask_tokens": 41,
+            "position_start": 0,
+            "position_end": 40,
+            "cache_tokens": 0
+          },
+          {
+            "step": 10,
+            "input_tokens": 42,
+            "mask_tokens": 42,
+            "position_start": 0,
+            "position_end": 41,
+            "cache_tokens": 0
+          },
+          {
+            "step": 11,
+            "input_tokens": 43,
+            "mask_tokens": 43,
+            "position_start": 0,
+            "position_end": 42,
+            "cache_tokens": 0
+          }
+        ]
+      },
+      "hf_token_ids": [
+        2,
+        7,
+        30,
+        17,
+        20,
+        34,
+        59,
+        55,
+        14,
+        2,
+        7,
+        30
+      ],
+      "logit_diagnostic": null
+    }
+  ],
+  "experiment": "miniature_cpu_smoke"
+}

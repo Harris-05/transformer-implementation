@@ -1,0 +1,79 @@
+{
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "prompt_version": 1,
+  "system_prompt_sha256": "3ba5d29f630b8fec2b4de14e83632060015c82fe1633e88deadb87d4f9fb6672",
+  "prepared_source_sha256": {
+    "train": "d322d8f209dac24571f6e262faf8efa33d667a9cc0b7679225cea57fa83a6256",
+    "validation": "cef706491a060b2d60558d88d80647fceabc3628ea96233edc9f1bdd5ca5b79d"
+  },
+  "versions": {
+    "transformers": "5.15.1",
+    "tokenizers": "0.22.2",
+    "huggingface-hub": "1.28.0"
+  },
+  "special_tokens": {
+    "eos_token": "<|im_end|>",
+    "eos_token_id": 151645,
+    "pad_token": "<|endoftext|>",
+    "pad_token_id": 151643
+  },
+  "limits": {
+    "max_sequence_length": 1024,
+    "max_new_tokens": 128,
+    "required_tokens_including_generation_reserve": 872,
+    "truncated_records": 0
+  },
+  "test_content_inspected": false,
+  "model_weights_loaded": false,
+  "development": {
+    "train": {
+      "records": 602,
+      "evidence_preserved_records": 602,
+      "lengths": {
+        "prompt_tokens": {
+          "min": 369.0,
+          "median": 436.0,
+          "p95": 634.0,
+          "max": 744.0
+        },
+        "completion_tokens": {
+          "min": 14.0,
+          "median": 15.0,
+          "p95": 22.0,
+          "max": 39.0
+        },
+        "total_tokens": {
+          "min": 385.0,
+          "median": 452.0,
+          "p95": 649.9499999999999,
+          "max": 771.0
+        }
+      }
+    },
+    "validation": {
+      "records": 206,
+      "evidence_preserved_records": 206,
+      "lengths": {
+        "prompt_tokens": {
+          "min": 412.0,
+          "median": 478.0,
+          "p95": 526.75,
+          "max": 582.0
+        },
+        "completion_tokens": {
+          "min": 14.0,
+          "median": 15.0,
+          "p95": 19.0,
+          "max": 26.0
+        },
+        "total_tokens": {
+          "min": 427.0,
+          "median": 493.5,
+          "p95": 542.0,
+          "max": 605.0
+        }
+      }
+    }
+  }
+}

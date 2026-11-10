@@ -1,0 +1,227 @@
+{
+  "source_file": "train-00000-of-00001.parquet",
+  "source_sha256": "14c547184fac9b013cd17441fd028845b40150c76b022e58334f5494077e5234",
+  "seed": 42,
+  "algorithm": "Sort unique patient IDs, shuffle with NumPy default_rng(42), slice 37/8/8.",
+  "numpy_version": "2.3.5",
+  "splits": {
+    "train": [
+      {
+        "patient_id": "sigir-20148",
+        "annotation_count": 12
+      },
+      {
+        "patient_id": "sigir-201416",
+        "annotation_count": 30
+      },
+      {
+        "patient_id": "sigir-201517",
+        "annotation_count": 15
+      },
+      {
+        "patient_id": "sigir-201519",
+        "annotation_count": 7
+      },
+      {
+        "patient_id": "sigir-20159",
+        "annotation_count": 6
+      },
+      {
+        "patient_id": "sigir-201425",
+        "annotation_count": 21
+      },
+      {
+        "patient_id": "sigir-201414",
+        "annotation_count": 14
+      },
+      {
+        "patient_id": "sigir-20157",
+        "annotation_count": 18
+      },
+      {
+        "patient_id": "sigir-201514",
+        "annotation_count": 15
+      },
+      {
+        "patient_id": "sigir-20144",
+        "annotation_count": 43
+      },
+      {
+        "patient_id": "sigir-20152",
+        "annotation_count": 20
+      },
+      {
+        "patient_id": "sigir-20151",
+        "annotation_count": 29
+      },
+      {
+        "patient_id": "sigir-201429",
+        "annotation_count": 22
+      },
+      {
+        "patient_id": "sigir-201426",
+        "annotation_count": 18
+      },
+      {
+        "patient_id": "sigir-20145",
+        "annotation_count": 11
+      },
+      {
+        "patient_id": "sigir-201518",
+        "annotation_count": 10
+      },
+      {
+        "patient_id": "sigir-20154",
+        "annotation_count": 11
+      },
+      {
+        "patient_id": "sigir-201521",
+        "annotation_count": 21
+      },
+      {
+        "patient_id": "sigir-201413",
+        "annotation_count": 12
+      },
+      {
+        "patient_id": "sigir-20146",
+        "annotation_count": 22
+      },
+      {
+        "patient_id": "sigir-201511",
+        "annotation_count": 11
+      },
+      {
+        "patient_id": "sigir-20147",
+        "annotation_count": 17
+      },
+      {
+        "patient_id": "sigir-20155",
+        "annotation_count": 5
+      },
+      {
+        "patient_id": "sigir-201418",
+        "annotation_count": 12
+      },
+      {
+        "patient_id": "sigir-20156",
+        "annotation_count": 9
+      },
+      {
+        "patient_id": "sigir-20143",
+        "annotation_count": 6
+      },
+      {
+        "patient_id": "sigir-20149",
+        "annotation_count": 5
+      },
+      {
+        "patient_id": "sigir-201523",
+        "annotation_count": 25
+      },
+      {
+        "patient_id": "sigir-201424",
+        "annotation_count": 6
+      },
+      {
+        "patient_id": "sigir-201524",
+        "annotation_count": 32
+      },
+      {
+        "patient_id": "sigir-201512",
+        "annotation_count": 9
+      },
+      {
+        "patient_id": "sigir-201423",
+        "annotation_count": 23
+      },
+      {
+        "patient_id": "sigir-201412",
+        "annotation_count": 9
+      },
+      {
+        "patient_id": "sigir-201510",
+        "annotation_count": 15
+      },
+      {
+        "patient_id": "sigir-201419",
+        "annotation_count": 25
+      },
+      {
+        "patient_id": "sigir-201520",
+        "annotation_count": 21
+      },
+      {
+        "patient_id": "sigir-20153",
+        "annotation_count": 16
+      }
+    ],
+    "validation": [
+      {
+        "patient_id": "sigir-201415",
+        "annotation_count": 39
+      },
+      {
+        "patient_id": "sigir-20142",
+        "annotation_count": 12
+      },
+      {
+        "patient_id": "sigir-201430",
+        "annotation_count": 29
+      },
+      {
+        "patient_id": "sigir-201427",
+        "annotation_count": 20
+      },
+      {
+        "patient_id": "sigir-201515",
+        "annotation_count": 29
+      },
+      {
+        "patient_id": "sigir-20141",
+        "annotation_count": 31
+      },
+      {
+        "patient_id": "sigir-201420",
+        "annotation_count": 17
+      },
+      {
+        "patient_id": "sigir-201522",
+        "annotation_count": 29
+      }
+    ],
+    "test": [
+      {
+        "patient_id": "sigir-201422",
+        "annotation_count": 16
+      },
+      {
+        "patient_id": "sigir-20158",
+        "annotation_count": 22
+      },
+      {
+        "patient_id": "sigir-201411",
+        "annotation_count": 15
+      },
+      {
+        "patient_id": "sigir-201516",
+        "annotation_count": 28
+      },
+      {
+        "patient_id": "sigir-201513",
+        "annotation_count": 42
+      },
+      {
+        "patient_id": "sigir-201410",
+        "annotation_count": 26
+      },
+      {
+        "patient_id": "sigir-201421",
+        "annotation_count": 34
+      },
+      {
+        "patient_id": "sigir-201417",
+        "annotation_count": 23
+      }
+    ]
+  }
+}

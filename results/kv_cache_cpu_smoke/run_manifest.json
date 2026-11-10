@@ -1,0 +1,84 @@
+{
+  "run_signature": "c3be34b5ccfc3fa56718a0f0936b5ba9ff2925164a220b7aef5c2365e53529af",
+  "identity": {
+    "model": {
+      "transformers_version": "5.15.1",
+      "architectures": null,
+      "output_hidden_states": false,
+      "return_dict": true,
+      "dtype": null,
+      "chunk_size_feed_forward": 0,
+      "is_encoder_decoder": false,
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "label2id": {
+        "LABEL_0": 0,
+        "LABEL_1": 1
+      },
+      "problem_type": null,
+      "vocab_size": 64,
+      "hidden_size": 32,
+      "intermediate_size": 64,
+      "num_hidden_layers": 2,
+      "num_attention_heads": 4,
+      "num_key_value_heads": 2,
+      "head_dim": 8,
+      "hidden_act": "silu",
+      "max_position_embeddings": 128,
+      "initializer_range": 0.02,
+      "rms_norm_eps": 1e-06,
+      "use_cache": true,
+      "tie_word_embeddings": false,
+      "rope_parameters": {
+        "rope_theta": 10000.0,
+        "rope_type": "default"
+      },
+      "attention_bias": false,
+      "use_sliding_window": false,
+      "sliding_window": null,
+      "max_window_layers": 28,
+      "layer_types": [
+        "full_attention",
+        "full_attention"
+      ],
+      "attention_dropout": 0.0,
+      "pad_token_id": 0,
+      "bos_token_id": 1,
+      "eos_token_id": 63,
+      "_name_or_path": "",
+      "model_type": "qwen3",
+      "output_attentions": false
+    },
+    "settings": {
+      "input_lengths": [
+        8,
+        16,
+        32
+      ],
+      "output_lengths": [
+        4,
+        8,
+        12
+      ],
+      "repetitions": 2,
+      "warmups_per_case_and_mode": 1,
+      "clinical_cases": 3,
+      "attention_implementation": "sdpa",
+      "seed": 42
+    },
+    "experiment": "miniature_cpu_smoke",
+    "versions": {
+      "torch": "2.13.0",
+      "transformers": "5.15.1"
+    },
+    "source_sha256": {
+      "decoding.py": "e7217f1c3e93e4229f3b8e38b7da5aad706a6ff42f20f9eaaaa44afbce28378c",
+      "benchmark_kv_cache.py": "e2b57916296f546ab8c07caa24c4dfa447371371ec0b2adc4dac45afabac774b",
+      "kv_benchmark_report.py": "1818764d7b1943252d43eaf754b6deb53e5370a49dae12d6cba6a9fc33deae26",
+      "prepare_model_inputs.py": "004b35f7e65d70e64a1e6b8fa75e6f00e865dee309d9b6d1be0beae59642683d",
+      "baseline.py": "65b95fb88c7e7e8aafa6962f384cbae1eabd559f058240977062c5b71a808bd3"
+    }
+  }
+}

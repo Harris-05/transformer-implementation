@@ -1,0 +1,38 @@
+[
+  {
+    "width": 1440,
+    "error": "Enter a patient record before running.",
+    "overflow": false,
+    "fonts": [
+      true,
+      true
+    ],
+    "exampleCriteria": "3 criteria entered",
+    "lab": true,
+    "consoleErrors": []
+  },
+  {
+    "width": 768,
+    "error": "Enter a patient record before running.",
+    "overflow": false,
+    "fonts": [
+      true,
+      true
+    ],
+    "exampleCriteria": "3 criteria entered",
+    "lab": true,
+    "consoleErrors": []
+  },
+  {
+    "width": 390,
+    "error": "Enter a patient record before running.",
+    "overflow": false,
+    "fonts": [
+      true,
+      true
+    ],
+    "exampleCriteria": "3 criteria entered",
+    "lab": true,
+    "consoleErrors": []
+  }
+]

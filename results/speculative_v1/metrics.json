@@ -1,0 +1,3756 @@
+{
+  "complete": true,
+  "passed": true,
+  "expected_trials": 54,
+  "recorded_trials": 54,
+  "cases": [
+    {
+      "case_id": "p128-o16",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 2.8709805240000605,
+          "min_seconds": 2.4429591150001215,
+          "max_seconds": 3.0193418280000515,
+          "tokens_per_second_median": 5.573008895827558,
+          "target_forward_calls_median": 16,
+          "draft_forward_calls_median": 0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": 4.457668304443359,
+          "peak_allocated_gib_max": 4.603546619415283,
+          "peak_reserved_gib_max": 4.947265625,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 2.181172457999992,
+          "min_seconds": 2.17182360400011,
+          "max_seconds": 2.1855987769999956,
+          "tokens_per_second_median": 7.335504325353103,
+          "target_forward_calls_median": 6,
+          "draft_forward_calls_median": 17,
+          "draft_acceptance_rate": 0.8333333333333334,
+          "initial_allocated_gib_max": 4.457668304443359,
+          "peak_allocated_gib_max": 4.617618560791016,
+          "peak_reserved_gib_max": 4.982421875,
+          "speedup_over_greedy": 1.3162556282379352
+        },
+        "speculative_4": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 2.1093693239999993,
+          "min_seconds": 2.103115189000164,
+          "max_seconds": 2.1685416429997986,
+          "tokens_per_second_median": 7.585205595793525,
+          "target_forward_calls_median": 4,
+          "draft_forward_calls_median": 18,
+          "draft_acceptance_rate": 0.8125,
+          "initial_allocated_gib_max": 4.457668304443359,
+          "peak_allocated_gib_max": 4.619558334350586,
+          "peak_reserved_gib_max": 4.982421875,
+          "speedup_over_greedy": 1.361061096003718
+        }
+      }
+    },
+    {
+      "case_id": "p256-o32",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 4.813962493999952,
+          "min_seconds": 4.744997660000081,
+          "max_seconds": 5.2984505179999815,
+          "tokens_per_second_median": 6.64733055977987,
+          "target_forward_calls_median": 32,
+          "draft_forward_calls_median": 0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": 4.457669258117676,
+          "peak_allocated_gib_max": 4.652225971221924,
+          "peak_reserved_gib_max": 4.97265625,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 5.535925496000118,
+          "min_seconds": 5.477637091000133,
+          "max_seconds": 5.853517159000148,
+          "tokens_per_second_median": 5.78042461429819,
+          "target_forward_calls_median": 19,
+          "draft_forward_calls_median": 43,
+          "draft_acceptance_rate": 0.34210526315789475,
+          "initial_allocated_gib_max": 4.457669258117676,
+          "peak_allocated_gib_max": 4.697612762451172,
+          "peak_reserved_gib_max": 4.939453125,
+          "speedup_over_greedy": 0.8695858528945508
+        },
+        "speculative_4": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 7.382559067999864,
+          "min_seconds": 7.337515863999897,
+          "max_seconds": 7.480405856000061,
+          "tokens_per_second_median": 4.334540327446329,
+          "target_forward_calls_median": 16,
+          "draft_forward_calls_median": 64,
+          "draft_acceptance_rate": 0.2698412698412698,
+          "initial_allocated_gib_max": 4.457669258117676,
+          "peak_allocated_gib_max": 4.699373245239258,
+          "peak_reserved_gib_max": 4.939453125,
+          "speedup_over_greedy": 0.6520723301580281
+        }
+      }
+    },
+    {
+      "case_id": "p512-o64",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 9.674608285999966,
+          "min_seconds": 9.518077261000144,
+          "max_seconds": 10.435687610999821,
+          "tokens_per_second_median": 6.6152549134845895,
+          "target_forward_calls_median": 64,
+          "draft_forward_calls_median": 0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": 4.457671165466309,
+          "peak_allocated_gib_max": 4.78324556350708,
+          "peak_reserved_gib_max": 4.900390625,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 9.002045316000022,
+          "min_seconds": 8.446773557999904,
+          "max_seconds": 9.019636648999949,
+          "tokens_per_second_median": 7.109495426139204,
+          "target_forward_calls_median": 26,
+          "draft_forward_calls_median": 67,
+          "draft_acceptance_rate": 0.7647058823529411,
+          "initial_allocated_gib_max": 4.457671165466309,
+          "peak_allocated_gib_max": 4.810413360595703,
+          "peak_reserved_gib_max": 4.9609375,
+          "speedup_over_greedy": 1.0747122399844564
+        },
+        "speculative_4": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 10.18622956299987,
+          "min_seconds": 9.998911993000092,
+          "max_seconds": 10.218461309999839,
+          "tokens_per_second_median": 6.282992112456559,
+          "target_forward_calls_median": 20,
+          "draft_forward_calls_median": 88,
+          "draft_acceptance_rate": 0.5625,
+          "initial_allocated_gib_max": 4.457671165466309,
+          "peak_allocated_gib_max": 4.8443450927734375,
+          "peak_reserved_gib_max": 4.9609375,
+          "speedup_over_greedy": 0.9497732430006977
+        }
+      }
+    },
+    {
+      "case_id": "clinical-938",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 3.4959495660000357,
+          "min_seconds": 3.4773411369999394,
+          "max_seconds": 3.853459262999877,
+          "tokens_per_second_median": 4.5767250636589525,
+          "target_forward_calls_median": 16,
+          "draft_forward_calls_median": 0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": 4.45767068862915,
+          "peak_allocated_gib_max": 4.736778736114502,
+          "peak_reserved_gib_max": 4.900390625,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 4.060273470999846,
+          "min_seconds": 3.827047307999919,
+          "max_seconds": 4.418236622999984,
+          "tokens_per_second_median": 3.940621269547144,
+          "target_forward_calls_median": 10,
+          "draft_forward_calls_median": 22,
+          "draft_acceptance_rate": 0.3684210526315789,
+          "initial_allocated_gib_max": 4.45767068862915,
+          "peak_allocated_gib_max": 4.7792277336120605,
+          "peak_reserved_gib_max": 4.978515625,
+          "speedup_over_greedy": 0.8610133260652404
+        },
+        "speculative_4": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 4.43110572899991,
+          "min_seconds": 4.274897624999994,
+          "max_seconds": 4.4768836949999695,
+          "tokens_per_second_median": 3.6108368832831172,
+          "target_forward_calls_median": 8,
+          "draft_forward_calls_median": 30,
+          "draft_acceptance_rate": 0.3103448275862069,
+          "initial_allocated_gib_max": 4.45767068862915,
+          "peak_allocated_gib_max": 4.78082799911499,
+          "peak_reserved_gib_max": 4.98046875,
+          "speedup_over_greedy": 0.7889564771881584
+        }
+      }
+    },
+    {
+      "case_id": "clinical-6",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 3.360558175000051,
+          "min_seconds": 3.11417751099998,
+          "max_seconds": 3.691527124000004,
+          "tokens_per_second_median": 4.165974600335489,
+          "target_forward_calls_median": 14,
+          "draft_forward_calls_median": 0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": 4.457671165466309,
+          "peak_allocated_gib_max": 4.7657856941223145,
+          "peak_reserved_gib_max": 4.900390625,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 3.07465610700001,
+          "min_seconds": 3.0469199629999366,
+          "max_seconds": 3.304747430999896,
+          "tokens_per_second_median": 4.553354753439408,
+          "target_forward_calls_median": 7,
+          "draft_forward_calls_median": 16,
+          "draft_acceptance_rate": 0.6153846153846154,
+          "initial_allocated_gib_max": 4.457671165466309,
+          "peak_allocated_gib_max": 4.820563793182373,
+          "peak_reserved_gib_max": 4.9609375,
+          "speedup_over_greedy": 1.092986681453296
+        },
+        "speculative_4": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 3.4763604259999283,
+          "min_seconds": 3.4668508669999483,
+          "max_seconds": 3.853365450999945,
+          "tokens_per_second_median": 4.027200371771891,
+          "target_forward_calls_median": 6,
+          "draft_forward_calls_median": 23,
+          "draft_acceptance_rate": 0.42857142857142855,
+          "initial_allocated_gib_max": 4.457671165466309,
+          "peak_allocated_gib_max": 4.817357540130615,
+          "peak_reserved_gib_max": 4.9609375,
+          "speedup_over_greedy": 0.9666886522658051
+        }
+      }
+    },
+    {
+      "case_id": "clinical-243",
+      "complete": true,
+      "passed": true,
+      "modes": {
+        "greedy": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 3.8976233579996915,
+          "min_seconds": 3.871164900999929,
+          "max_seconds": 4.33094618899986,
+          "tokens_per_second_median": 4.105065710662047,
+          "target_forward_calls_median": 16,
+          "draft_forward_calls_median": 0,
+          "draft_acceptance_rate": null,
+          "initial_allocated_gib_max": 4.457672119140625,
+          "peak_allocated_gib_max": 4.780369281768799,
+          "peak_reserved_gib_max": 4.900390625,
+          "speedup_over_greedy": null
+        },
+        "speculative_2": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 4.2994869030001155,
+          "min_seconds": 4.27695980600015,
+          "max_seconds": 4.800495911000326,
+          "tokens_per_second_median": 3.7213742851118927,
+          "target_forward_calls_median": 10,
+          "draft_forward_calls_median": 22,
+          "draft_acceptance_rate": 0.3684210526315789,
+          "initial_allocated_gib_max": 4.457672119140625,
+          "peak_allocated_gib_max": 4.843392848968506,
+          "peak_reserved_gib_max": 4.90234375,
+          "speedup_over_greedy": 0.9065322085944698
+        },
+        "speculative_4": {
+          "repetitions": 3,
+          "tokens_equal": true,
+          "fixed_budget_satisfied": true,
+          "median_seconds": 4.771589579999954,
+          "min_seconds": 4.750542092999922,
+          "max_seconds": 5.142932670999926,
+          "tokens_per_second_median": 3.353180262414806,
+          "target_forward_calls_median": 8,
+          "draft_forward_calls_median": 30,
+          "draft_acceptance_rate": 0.3103448275862069,
+          "initial_allocated_gib_max": 4.457672119140625,
+          "peak_allocated_gib_max": 4.844933986663818,
+          "peak_reserved_gib_max": 4.90234375,
+          "speedup_over_greedy": 0.8168396071482177
+        }
+      }
+    }
+  ],
+  "preflight": [
+    {
+      "case_id": "p128-o16",
+      "greedy_token_ids": [
+        1558,
+        537,
+        3796,
+        624,
+        12,
+        537,
+        3322,
+        1995,
+        25,
+        279,
+        3255,
+        4157,
+        5695,
+        3425,
+        279,
+        41208
+      ],
+      "hf_token_ids": [
+        1558,
+        537,
+        3796,
+        624,
+        12,
+        537,
+        3322,
+        1995,
+        25,
+        279,
+        3255,
+        4157,
+        5695,
+        3425,
+        279,
+        41208
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              1558,
+              537,
+              3796,
+              624,
+              12,
+              537,
+              3322,
+              1995,
+              25,
+              279,
+              3255,
+              4157,
+              5695,
+              3425,
+              279,
+              41208
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 12,
+            "accepted_tokens": 10,
+            "bonus_tokens": 5,
+            "rejection_rounds": 1,
+            "target_forward_calls": 6,
+            "draft_forward_calls": 17,
+            "target_cache_tokens": 143,
+            "draft_cache_tokens": 143,
+            "target_cache_bytes": 42172416,
+            "draft_cache_bytes": 16400384,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 128,
+                "committed_tokens": 131,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1558,
+                  537,
+                  3796
+                ],
+                "rejected": false,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 130,
+                "draft_cache_after_proposal": 129,
+                "target_cache_after": 130,
+                "draft_cache_after": 130
+              },
+              {
+                "prefix_tokens": 131,
+                "committed_tokens": 134,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  624,
+                  12,
+                  537
+                ],
+                "rejected": false,
+                "target_cache_before": 130,
+                "draft_cache_before": 130,
+                "target_cache_after_verification": 133,
+                "draft_cache_after_proposal": 132,
+                "target_cache_after": 133,
+                "draft_cache_after": 133
+              },
+              {
+                "prefix_tokens": 134,
+                "committed_tokens": 135,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 133,
+                "draft_cache_before": 133,
+                "target_cache_after_verification": 136,
+                "draft_cache_after_proposal": 135,
+                "target_cache_after": 134,
+                "draft_cache_after": 134
+              },
+              {
+                "prefix_tokens": 135,
+                "committed_tokens": 138,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1995,
+                  25,
+                  279
+                ],
+                "rejected": false,
+                "target_cache_before": 134,
+                "draft_cache_before": 134,
+                "target_cache_after_verification": 137,
+                "draft_cache_after_proposal": 136,
+                "target_cache_after": 137,
+                "draft_cache_after": 137
+              },
+              {
+                "prefix_tokens": 138,
+                "committed_tokens": 141,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  3255,
+                  4157,
+                  5695
+                ],
+                "rejected": false,
+                "target_cache_before": 137,
+                "draft_cache_before": 137,
+                "target_cache_after_verification": 140,
+                "draft_cache_after_proposal": 139,
+                "target_cache_after": 140,
+                "draft_cache_after": 140
+              },
+              {
+                "prefix_tokens": 141,
+                "committed_tokens": 144,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  3425,
+                  279,
+                  41208
+                ],
+                "rejected": false,
+                "target_cache_before": 140,
+                "draft_cache_before": 140,
+                "target_cache_after_verification": 143,
+                "draft_cache_after_proposal": 142,
+                "target_cache_after": 143,
+                "draft_cache_after": 143
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              1558,
+              537,
+              3796,
+              624,
+              12,
+              537,
+              3322,
+              1995,
+              25,
+              279,
+              3255,
+              4157,
+              5695,
+              3425,
+              279,
+              41208
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 16,
+            "accepted_tokens": 13,
+            "bonus_tokens": 2,
+            "rejection_rounds": 1,
+            "target_forward_calls": 4,
+            "draft_forward_calls": 18,
+            "target_cache_tokens": 143,
+            "draft_cache_tokens": 143,
+            "target_cache_bytes": 42172416,
+            "draft_cache_bytes": 16400384,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 128,
+                "committed_tokens": 133,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  1558,
+                  537,
+                  3796,
+                  624,
+                  12
+                ],
+                "rejected": false,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 132,
+                "draft_cache_after_proposal": 131,
+                "target_cache_after": 132,
+                "draft_cache_after": 132
+              },
+              {
+                "prefix_tokens": 133,
+                "committed_tokens": 135,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  537,
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 132,
+                "draft_cache_before": 132,
+                "target_cache_after_verification": 137,
+                "draft_cache_after_proposal": 136,
+                "target_cache_after": 134,
+                "draft_cache_after": 134
+              },
+              {
+                "prefix_tokens": 135,
+                "committed_tokens": 140,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  1995,
+                  25,
+                  279,
+                  3255,
+                  4157
+                ],
+                "rejected": false,
+                "target_cache_before": 134,
+                "draft_cache_before": 134,
+                "target_cache_after_verification": 139,
+                "draft_cache_after_proposal": 138,
+                "target_cache_after": 139,
+                "draft_cache_after": 139
+              },
+              {
+                "prefix_tokens": 140,
+                "committed_tokens": 144,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  5695,
+                  3425,
+                  279,
+                  41208
+                ],
+                "rejected": false,
+                "target_cache_before": 139,
+                "draft_cache_before": 139,
+                "target_cache_after_verification": 144,
+                "draft_cache_after_proposal": 143,
+                "target_cache_after": 143,
+                "draft_cache_after": 143
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "p256-o32",
+      "greedy_token_ids": [
+        5107,
+        1467,
+        13,
+        1416,
+        279,
+        8720,
+        3255,
+        1558,
+        537,
+        6644,
+        264,
+        11652,
+        11,
+        990,
+        3056,
+        382,
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        3322,
+        1995,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        508,
+        16,
+        11,
+        220
+      ],
+      "hf_token_ids": [
+        5107,
+        1467,
+        13,
+        1416,
+        279,
+        8720,
+        3255,
+        1558,
+        537,
+        6644,
+        264,
+        11652,
+        11,
+        990,
+        3056,
+        382,
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        3322,
+        1995,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        508,
+        16,
+        11,
+        220
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              5107,
+              1467,
+              13,
+              1416,
+              279,
+              8720,
+              3255,
+              1558,
+              537,
+              6644,
+              264,
+              11652,
+              11,
+              990,
+              3056,
+              382,
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              3322,
+              1995,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              508,
+              16,
+              11,
+              220
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 38,
+            "accepted_tokens": 13,
+            "bonus_tokens": 5,
+            "rejection_rounds": 14,
+            "target_forward_calls": 19,
+            "draft_forward_calls": 43,
+            "target_cache_tokens": 287,
+            "draft_cache_tokens": 287,
+            "target_cache_bytes": 84639744,
+            "draft_cache_bytes": 32915456,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 256,
+                "committed_tokens": 257,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  5107
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 258,
+                "draft_cache_after_proposal": 257,
+                "target_cache_after": 256,
+                "draft_cache_after": 256
+              },
+              {
+                "prefix_tokens": 257,
+                "committed_tokens": 259,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  1467,
+                  13
+                ],
+                "rejected": true,
+                "target_cache_before": 256,
+                "draft_cache_before": 256,
+                "target_cache_after_verification": 259,
+                "draft_cache_after_proposal": 258,
+                "target_cache_after": 258,
+                "draft_cache_after": 258
+              },
+              {
+                "prefix_tokens": 259,
+                "committed_tokens": 260,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  1416
+                ],
+                "rejected": true,
+                "target_cache_before": 258,
+                "draft_cache_before": 258,
+                "target_cache_after_verification": 261,
+                "draft_cache_after_proposal": 260,
+                "target_cache_after": 259,
+                "draft_cache_after": 259
+              },
+              {
+                "prefix_tokens": 260,
+                "committed_tokens": 261,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  279
+                ],
+                "rejected": true,
+                "target_cache_before": 259,
+                "draft_cache_before": 259,
+                "target_cache_after_verification": 262,
+                "draft_cache_after_proposal": 261,
+                "target_cache_after": 260,
+                "draft_cache_after": 260
+              },
+              {
+                "prefix_tokens": 261,
+                "committed_tokens": 262,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  8720
+                ],
+                "rejected": true,
+                "target_cache_before": 260,
+                "draft_cache_before": 260,
+                "target_cache_after_verification": 263,
+                "draft_cache_after_proposal": 262,
+                "target_cache_after": 261,
+                "draft_cache_after": 261
+              },
+              {
+                "prefix_tokens": 262,
+                "committed_tokens": 265,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  3255,
+                  1558,
+                  537
+                ],
+                "rejected": false,
+                "target_cache_before": 261,
+                "draft_cache_before": 261,
+                "target_cache_after_verification": 264,
+                "draft_cache_after_proposal": 263,
+                "target_cache_after": 264,
+                "draft_cache_after": 264
+              },
+              {
+                "prefix_tokens": 265,
+                "committed_tokens": 266,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  6644
+                ],
+                "rejected": true,
+                "target_cache_before": 264,
+                "draft_cache_before": 264,
+                "target_cache_after_verification": 267,
+                "draft_cache_after_proposal": 266,
+                "target_cache_after": 265,
+                "draft_cache_after": 265
+              },
+              {
+                "prefix_tokens": 266,
+                "committed_tokens": 267,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  264
+                ],
+                "rejected": true,
+                "target_cache_before": 265,
+                "draft_cache_before": 265,
+                "target_cache_after_verification": 268,
+                "draft_cache_after_proposal": 267,
+                "target_cache_after": 266,
+                "draft_cache_after": 266
+              },
+              {
+                "prefix_tokens": 267,
+                "committed_tokens": 269,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  11652,
+                  11
+                ],
+                "rejected": true,
+                "target_cache_before": 266,
+                "draft_cache_before": 266,
+                "target_cache_after_verification": 269,
+                "draft_cache_after_proposal": 268,
+                "target_cache_after": 268,
+                "draft_cache_after": 268
+              },
+              {
+                "prefix_tokens": 269,
+                "committed_tokens": 271,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  990,
+                  3056
+                ],
+                "rejected": true,
+                "target_cache_before": 268,
+                "draft_cache_before": 268,
+                "target_cache_after_verification": 271,
+                "draft_cache_after_proposal": 270,
+                "target_cache_after": 270,
+                "draft_cache_after": 270
+              },
+              {
+                "prefix_tokens": 271,
+                "committed_tokens": 272,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  382
+                ],
+                "rejected": true,
+                "target_cache_before": 270,
+                "draft_cache_before": 270,
+                "target_cache_after_verification": 273,
+                "draft_cache_after_proposal": 272,
+                "target_cache_after": 271,
+                "draft_cache_after": 271
+              },
+              {
+                "prefix_tokens": 272,
+                "committed_tokens": 273,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 271,
+                "draft_cache_before": 271,
+                "target_cache_after_verification": 274,
+                "draft_cache_after_proposal": 273,
+                "target_cache_after": 272,
+                "draft_cache_after": 272
+              },
+              {
+                "prefix_tokens": 273,
+                "committed_tokens": 276,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1502,
+                  788,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 272,
+                "draft_cache_before": 272,
+                "target_cache_after_verification": 275,
+                "draft_cache_after_proposal": 274,
+                "target_cache_after": 275,
+                "draft_cache_after": 275
+              },
+              {
+                "prefix_tokens": 276,
+                "committed_tokens": 277,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  1921
+                ],
+                "rejected": true,
+                "target_cache_before": 275,
+                "draft_cache_before": 275,
+                "target_cache_after_verification": 278,
+                "draft_cache_after_proposal": 277,
+                "target_cache_after": 276,
+                "draft_cache_after": 276
+              },
+              {
+                "prefix_tokens": 277,
+                "committed_tokens": 278,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 276,
+                "draft_cache_before": 276,
+                "target_cache_after_verification": 279,
+                "draft_cache_after_proposal": 278,
+                "target_cache_after": 277,
+                "draft_cache_after": 277
+              },
+              {
+                "prefix_tokens": 278,
+                "committed_tokens": 281,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1995,
+                  497,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 277,
+                "draft_cache_before": 277,
+                "target_cache_after_verification": 280,
+                "draft_cache_after_proposal": 279,
+                "target_cache_after": 280,
+                "draft_cache_after": 280
+              },
+              {
+                "prefix_tokens": 281,
+                "committed_tokens": 284,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  51889,
+                  8077,
+                  788
+                ],
+                "rejected": false,
+                "target_cache_before": 280,
+                "draft_cache_before": 280,
+                "target_cache_after_verification": 283,
+                "draft_cache_after_proposal": 282,
+                "target_cache_after": 283,
+                "draft_cache_after": 283
+              },
+              {
+                "prefix_tokens": 284,
+                "committed_tokens": 285,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  508
+                ],
+                "rejected": true,
+                "target_cache_before": 283,
+                "draft_cache_before": 283,
+                "target_cache_after_verification": 286,
+                "draft_cache_after_proposal": 285,
+                "target_cache_after": 284,
+                "draft_cache_after": 284
+              },
+              {
+                "prefix_tokens": 285,
+                "committed_tokens": 288,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  16,
+                  11,
+                  220
+                ],
+                "rejected": false,
+                "target_cache_before": 284,
+                "draft_cache_before": 284,
+                "target_cache_after_verification": 287,
+                "draft_cache_after_proposal": 286,
+                "target_cache_after": 287,
+                "draft_cache_after": 287
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              5107,
+              1467,
+              13,
+              1416,
+              279,
+              8720,
+              3255,
+              1558,
+              537,
+              6644,
+              264,
+              11652,
+              11,
+              990,
+              3056,
+              382,
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              3322,
+              1995,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              508,
+              16,
+              11,
+              220
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 63,
+            "accepted_tokens": 17,
+            "bonus_tokens": 1,
+            "rejection_rounds": 14,
+            "target_forward_calls": 16,
+            "draft_forward_calls": 64,
+            "target_cache_tokens": 287,
+            "draft_cache_tokens": 287,
+            "target_cache_bytes": 84639744,
+            "draft_cache_bytes": 32915456,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 256,
+                "committed_tokens": 257,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  5107
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 260,
+                "draft_cache_after_proposal": 259,
+                "target_cache_after": 256,
+                "draft_cache_after": 256
+              },
+              {
+                "prefix_tokens": 257,
+                "committed_tokens": 259,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  1467,
+                  13
+                ],
+                "rejected": true,
+                "target_cache_before": 256,
+                "draft_cache_before": 256,
+                "target_cache_after_verification": 261,
+                "draft_cache_after_proposal": 260,
+                "target_cache_after": 258,
+                "draft_cache_after": 258
+              },
+              {
+                "prefix_tokens": 259,
+                "committed_tokens": 260,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  1416
+                ],
+                "rejected": true,
+                "target_cache_before": 258,
+                "draft_cache_before": 258,
+                "target_cache_after_verification": 263,
+                "draft_cache_after_proposal": 262,
+                "target_cache_after": 259,
+                "draft_cache_after": 259
+              },
+              {
+                "prefix_tokens": 260,
+                "committed_tokens": 261,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  279
+                ],
+                "rejected": true,
+                "target_cache_before": 259,
+                "draft_cache_before": 259,
+                "target_cache_after_verification": 264,
+                "draft_cache_after_proposal": 263,
+                "target_cache_after": 260,
+                "draft_cache_after": 260
+              },
+              {
+                "prefix_tokens": 261,
+                "committed_tokens": 262,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  8720
+                ],
+                "rejected": true,
+                "target_cache_before": 260,
+                "draft_cache_before": 260,
+                "target_cache_after_verification": 265,
+                "draft_cache_after_proposal": 264,
+                "target_cache_after": 261,
+                "draft_cache_after": 261
+              },
+              {
+                "prefix_tokens": 262,
+                "committed_tokens": 266,
+                "proposed": 4,
+                "accepted": 3,
+                "emitted": [
+                  3255,
+                  1558,
+                  537,
+                  6644
+                ],
+                "rejected": true,
+                "target_cache_before": 261,
+                "draft_cache_before": 261,
+                "target_cache_after_verification": 266,
+                "draft_cache_after_proposal": 265,
+                "target_cache_after": 265,
+                "draft_cache_after": 265
+              },
+              {
+                "prefix_tokens": 266,
+                "committed_tokens": 267,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  264
+                ],
+                "rejected": true,
+                "target_cache_before": 265,
+                "draft_cache_before": 265,
+                "target_cache_after_verification": 270,
+                "draft_cache_after_proposal": 269,
+                "target_cache_after": 266,
+                "draft_cache_after": 266
+              },
+              {
+                "prefix_tokens": 267,
+                "committed_tokens": 269,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  11652,
+                  11
+                ],
+                "rejected": true,
+                "target_cache_before": 266,
+                "draft_cache_before": 266,
+                "target_cache_after_verification": 271,
+                "draft_cache_after_proposal": 270,
+                "target_cache_after": 268,
+                "draft_cache_after": 268
+              },
+              {
+                "prefix_tokens": 269,
+                "committed_tokens": 271,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  990,
+                  3056
+                ],
+                "rejected": true,
+                "target_cache_before": 268,
+                "draft_cache_before": 268,
+                "target_cache_after_verification": 273,
+                "draft_cache_after_proposal": 272,
+                "target_cache_after": 270,
+                "draft_cache_after": 270
+              },
+              {
+                "prefix_tokens": 271,
+                "committed_tokens": 272,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  382
+                ],
+                "rejected": true,
+                "target_cache_before": 270,
+                "draft_cache_before": 270,
+                "target_cache_after_verification": 275,
+                "draft_cache_after_proposal": 274,
+                "target_cache_after": 271,
+                "draft_cache_after": 271
+              },
+              {
+                "prefix_tokens": 272,
+                "committed_tokens": 273,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 271,
+                "draft_cache_before": 271,
+                "target_cache_after_verification": 276,
+                "draft_cache_after_proposal": 275,
+                "target_cache_after": 272,
+                "draft_cache_after": 272
+              },
+              {
+                "prefix_tokens": 273,
+                "committed_tokens": 277,
+                "proposed": 4,
+                "accepted": 3,
+                "emitted": [
+                  1502,
+                  788,
+                  330,
+                  1921
+                ],
+                "rejected": true,
+                "target_cache_before": 272,
+                "draft_cache_before": 272,
+                "target_cache_after_verification": 277,
+                "draft_cache_after_proposal": 276,
+                "target_cache_after": 276,
+                "draft_cache_after": 276
+              },
+              {
+                "prefix_tokens": 277,
+                "committed_tokens": 278,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 276,
+                "draft_cache_before": 276,
+                "target_cache_after_verification": 281,
+                "draft_cache_after_proposal": 280,
+                "target_cache_after": 277,
+                "draft_cache_after": 277
+              },
+              {
+                "prefix_tokens": 278,
+                "committed_tokens": 283,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  1995,
+                  497,
+                  330,
+                  51889,
+                  8077
+                ],
+                "rejected": false,
+                "target_cache_before": 277,
+                "draft_cache_before": 277,
+                "target_cache_after_verification": 282,
+                "draft_cache_after_proposal": 281,
+                "target_cache_after": 282,
+                "draft_cache_after": 282
+              },
+              {
+                "prefix_tokens": 283,
+                "committed_tokens": 285,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  788,
+                  508
+                ],
+                "rejected": true,
+                "target_cache_before": 282,
+                "draft_cache_before": 282,
+                "target_cache_after_verification": 287,
+                "draft_cache_after_proposal": 286,
+                "target_cache_after": 284,
+                "draft_cache_after": 284
+              },
+              {
+                "prefix_tokens": 285,
+                "committed_tokens": 288,
+                "proposed": 3,
+                "accepted": 3,
+                "emitted": [
+                  16,
+                  11,
+                  220
+                ],
+                "rejected": false,
+                "target_cache_before": 284,
+                "draft_cache_before": 284,
+                "target_cache_after_verification": 288,
+                "draft_cache_after_proposal": 287,
+                "target_cache_after": 287,
+                "draft_cache_after": 287
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "p512-o64",
+      "greedy_token_ids": [
+        1635,
+        315,
+        4231,
+        879,
+        3119,
+        311,
+        614,
+        16824,
+        37,
+        10465,
+        330,
+        66,
+        12334,
+        1819,
+        788,
+        330,
+        327,
+        8957,
+        497,
+        330,
+        66,
+        12334,
+        4326,
+        788,
+        330,
+        16,
+        13,
+        64718,
+        448,
+        264,
+        3840,
+        315,
+        4867,
+        53457,
+        20107,
+        476,
+        264,
+        3840,
+        315,
+        4867,
+        76494,
+        24810,
+        19636,
+        10465,
+        330,
+        66,
+        12334,
+        1819,
+        788,
+        330,
+        327,
+        8957,
+        497,
+        330,
+        66,
+        12334,
+        4326,
+        788,
+        330,
+        17,
+        13,
+        64718,
+        448,
+        264
+      ],
+      "hf_token_ids": [
+        1635,
+        315,
+        4231,
+        879,
+        3119,
+        311,
+        614,
+        16824,
+        37,
+        10465,
+        330,
+        66,
+        12334,
+        1819,
+        788,
+        330,
+        327,
+        8957,
+        497,
+        330,
+        66,
+        12334,
+        4326,
+        788,
+        330,
+        16,
+        13,
+        64718,
+        448,
+        264,
+        3840,
+        315,
+        4867,
+        53457,
+        20107,
+        476,
+        264,
+        3840,
+        315,
+        4867,
+        76494,
+        24810,
+        19636,
+        10465,
+        330,
+        66,
+        12334,
+        1819,
+        788,
+        330,
+        327,
+        8957,
+        497,
+        330,
+        66,
+        12334,
+        4326,
+        788,
+        330,
+        17,
+        13,
+        64718,
+        448,
+        264
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              1635,
+              315,
+              4231,
+              879,
+              3119,
+              311,
+              614,
+              16824,
+              37,
+              10465,
+              330,
+              66,
+              12334,
+              1819,
+              788,
+              330,
+              327,
+              8957,
+              497,
+              330,
+              66,
+              12334,
+              4326,
+              788,
+              330,
+              16,
+              13,
+              64718,
+              448,
+              264,
+              3840,
+              315,
+              4867,
+              53457,
+              20107,
+              476,
+              264,
+              3840,
+              315,
+              4867,
+              76494,
+              24810,
+              19636,
+              10465,
+              330,
+              66,
+              12334,
+              1819,
+              788,
+              330,
+              327,
+              8957,
+              497,
+              330,
+              66,
+              12334,
+              4326,
+              788,
+              330,
+              17,
+              13,
+              64718,
+              448,
+              264
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 51,
+            "accepted_tokens": 39,
+            "bonus_tokens": 16,
+            "rejection_rounds": 9,
+            "target_forward_calls": 26,
+            "draft_forward_calls": 67,
+            "target_cache_tokens": 575,
+            "draft_cache_tokens": 575,
+            "target_cache_bytes": 169574400,
+            "draft_cache_bytes": 65945600,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 512,
+                "committed_tokens": 514,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  1635,
+                  315
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 514,
+                "draft_cache_after_proposal": 513,
+                "target_cache_after": 513,
+                "draft_cache_after": 513
+              },
+              {
+                "prefix_tokens": 514,
+                "committed_tokens": 517,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  4231,
+                  879,
+                  3119
+                ],
+                "rejected": false,
+                "target_cache_before": 513,
+                "draft_cache_before": 513,
+                "target_cache_after_verification": 516,
+                "draft_cache_after_proposal": 515,
+                "target_cache_after": 516,
+                "draft_cache_after": 516
+              },
+              {
+                "prefix_tokens": 517,
+                "committed_tokens": 520,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  311,
+                  614,
+                  16824
+                ],
+                "rejected": false,
+                "target_cache_before": 516,
+                "draft_cache_before": 516,
+                "target_cache_after_verification": 519,
+                "draft_cache_after_proposal": 518,
+                "target_cache_after": 519,
+                "draft_cache_after": 519
+              },
+              {
+                "prefix_tokens": 520,
+                "committed_tokens": 522,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  37,
+                  10465
+                ],
+                "rejected": true,
+                "target_cache_before": 519,
+                "draft_cache_before": 519,
+                "target_cache_after_verification": 522,
+                "draft_cache_after_proposal": 521,
+                "target_cache_after": 521,
+                "draft_cache_after": 521
+              },
+              {
+                "prefix_tokens": 522,
+                "committed_tokens": 524,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  330,
+                  66
+                ],
+                "rejected": true,
+                "target_cache_before": 521,
+                "draft_cache_before": 521,
+                "target_cache_after_verification": 524,
+                "draft_cache_after_proposal": 523,
+                "target_cache_after": 523,
+                "draft_cache_after": 523
+              },
+              {
+                "prefix_tokens": 524,
+                "committed_tokens": 527,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  12334,
+                  1819,
+                  788
+                ],
+                "rejected": false,
+                "target_cache_before": 523,
+                "draft_cache_before": 523,
+                "target_cache_after_verification": 526,
+                "draft_cache_after_proposal": 525,
+                "target_cache_after": 526,
+                "draft_cache_after": 526
+              },
+              {
+                "prefix_tokens": 527,
+                "committed_tokens": 530,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  330,
+                  327,
+                  8957
+                ],
+                "rejected": false,
+                "target_cache_before": 526,
+                "draft_cache_before": 526,
+                "target_cache_after_verification": 529,
+                "draft_cache_after_proposal": 528,
+                "target_cache_after": 529,
+                "draft_cache_after": 529
+              },
+              {
+                "prefix_tokens": 530,
+                "committed_tokens": 533,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  497,
+                  330,
+                  66
+                ],
+                "rejected": false,
+                "target_cache_before": 529,
+                "draft_cache_before": 529,
+                "target_cache_after_verification": 532,
+                "draft_cache_after_proposal": 531,
+                "target_cache_after": 532,
+                "draft_cache_after": 532
+              },
+              {
+                "prefix_tokens": 533,
+                "committed_tokens": 536,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  12334,
+                  4326,
+                  788
+                ],
+                "rejected": false,
+                "target_cache_before": 532,
+                "draft_cache_before": 532,
+                "target_cache_after_verification": 535,
+                "draft_cache_after_proposal": 534,
+                "target_cache_after": 535,
+                "draft_cache_after": 535
+              },
+              {
+                "prefix_tokens": 536,
+                "committed_tokens": 538,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  330,
+                  16
+                ],
+                "rejected": true,
+                "target_cache_before": 535,
+                "draft_cache_before": 535,
+                "target_cache_after_verification": 538,
+                "draft_cache_after_proposal": 537,
+                "target_cache_after": 537,
+                "draft_cache_after": 537
+              },
+              {
+                "prefix_tokens": 538,
+                "committed_tokens": 540,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  13,
+                  64718
+                ],
+                "rejected": true,
+                "target_cache_before": 537,
+                "draft_cache_before": 537,
+                "target_cache_after_verification": 540,
+                "draft_cache_after_proposal": 539,
+                "target_cache_after": 539,
+                "draft_cache_after": 539
+              },
+              {
+                "prefix_tokens": 540,
+                "committed_tokens": 543,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  448,
+                  264,
+                  3840
+                ],
+                "rejected": false,
+                "target_cache_before": 539,
+                "draft_cache_before": 539,
+                "target_cache_after_verification": 542,
+                "draft_cache_after_proposal": 541,
+                "target_cache_after": 542,
+                "draft_cache_after": 542
+              },
+              {
+                "prefix_tokens": 543,
+                "committed_tokens": 545,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  315,
+                  4867
+                ],
+                "rejected": true,
+                "target_cache_before": 542,
+                "draft_cache_before": 542,
+                "target_cache_after_verification": 545,
+                "draft_cache_after_proposal": 544,
+                "target_cache_after": 544,
+                "draft_cache_after": 544
+              },
+              {
+                "prefix_tokens": 545,
+                "committed_tokens": 546,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  53457
+                ],
+                "rejected": true,
+                "target_cache_before": 544,
+                "draft_cache_before": 544,
+                "target_cache_after_verification": 547,
+                "draft_cache_after_proposal": 546,
+                "target_cache_after": 545,
+                "draft_cache_after": 545
+              },
+              {
+                "prefix_tokens": 546,
+                "committed_tokens": 549,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  20107,
+                  476,
+                  264
+                ],
+                "rejected": false,
+                "target_cache_before": 545,
+                "draft_cache_before": 545,
+                "target_cache_after_verification": 548,
+                "draft_cache_after_proposal": 547,
+                "target_cache_after": 548,
+                "draft_cache_after": 548
+              },
+              {
+                "prefix_tokens": 549,
+                "committed_tokens": 552,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  3840,
+                  315,
+                  4867
+                ],
+                "rejected": false,
+                "target_cache_before": 548,
+                "draft_cache_before": 548,
+                "target_cache_after_verification": 551,
+                "draft_cache_after_proposal": 550,
+                "target_cache_after": 551,
+                "draft_cache_after": 551
+              },
+              {
+                "prefix_tokens": 552,
+                "committed_tokens": 553,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  76494
+                ],
+                "rejected": true,
+                "target_cache_before": 551,
+                "draft_cache_before": 551,
+                "target_cache_after_verification": 554,
+                "draft_cache_after_proposal": 553,
+                "target_cache_after": 552,
+                "draft_cache_after": 552
+              },
+              {
+                "prefix_tokens": 553,
+                "committed_tokens": 556,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  24810,
+                  19636,
+                  10465
+                ],
+                "rejected": false,
+                "target_cache_before": 552,
+                "draft_cache_before": 552,
+                "target_cache_after_verification": 555,
+                "draft_cache_after_proposal": 554,
+                "target_cache_after": 555,
+                "draft_cache_after": 555
+              },
+              {
+                "prefix_tokens": 556,
+                "committed_tokens": 559,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  330,
+                  66,
+                  12334
+                ],
+                "rejected": false,
+                "target_cache_before": 555,
+                "draft_cache_before": 555,
+                "target_cache_after_verification": 558,
+                "draft_cache_after_proposal": 557,
+                "target_cache_after": 558,
+                "draft_cache_after": 558
+              },
+              {
+                "prefix_tokens": 559,
+                "committed_tokens": 562,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1819,
+                  788,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 558,
+                "draft_cache_before": 558,
+                "target_cache_after_verification": 561,
+                "draft_cache_after_proposal": 560,
+                "target_cache_after": 561,
+                "draft_cache_after": 561
+              },
+              {
+                "prefix_tokens": 562,
+                "committed_tokens": 565,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  327,
+                  8957,
+                  497
+                ],
+                "rejected": false,
+                "target_cache_before": 561,
+                "draft_cache_before": 561,
+                "target_cache_after_verification": 564,
+                "draft_cache_after_proposal": 563,
+                "target_cache_after": 564,
+                "draft_cache_after": 564
+              },
+              {
+                "prefix_tokens": 565,
+                "committed_tokens": 568,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  330,
+                  66,
+                  12334
+                ],
+                "rejected": false,
+                "target_cache_before": 564,
+                "draft_cache_before": 564,
+                "target_cache_after_verification": 567,
+                "draft_cache_after_proposal": 566,
+                "target_cache_after": 567,
+                "draft_cache_after": 567
+              },
+              {
+                "prefix_tokens": 568,
+                "committed_tokens": 571,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  4326,
+                  788,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 567,
+                "draft_cache_before": 567,
+                "target_cache_after_verification": 570,
+                "draft_cache_after_proposal": 569,
+                "target_cache_after": 570,
+                "draft_cache_after": 570
+              },
+              {
+                "prefix_tokens": 571,
+                "committed_tokens": 572,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  17
+                ],
+                "rejected": true,
+                "target_cache_before": 570,
+                "draft_cache_before": 570,
+                "target_cache_after_verification": 573,
+                "draft_cache_after_proposal": 572,
+                "target_cache_after": 571,
+                "draft_cache_after": 571
+              },
+              {
+                "prefix_tokens": 572,
+                "committed_tokens": 575,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  13,
+                  64718,
+                  448
+                ],
+                "rejected": false,
+                "target_cache_before": 571,
+                "draft_cache_before": 571,
+                "target_cache_after_verification": 574,
+                "draft_cache_after_proposal": 573,
+                "target_cache_after": 574,
+                "draft_cache_after": 574
+              },
+              {
+                "prefix_tokens": 575,
+                "committed_tokens": 576,
+                "proposed": 1,
+                "accepted": 1,
+                "emitted": [
+                  264
+                ],
+                "rejected": false,
+                "target_cache_before": 574,
+                "draft_cache_before": 574,
+                "target_cache_after_verification": 576,
+                "draft_cache_after_proposal": 575,
+                "target_cache_after": 575,
+                "draft_cache_after": 575
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              1635,
+              315,
+              4231,
+              879,
+              3119,
+              311,
+              614,
+              16824,
+              37,
+              10465,
+              330,
+              66,
+              12334,
+              1819,
+              788,
+              330,
+              327,
+              8957,
+              497,
+              330,
+              66,
+              12334,
+              4326,
+              788,
+              330,
+              16,
+              13,
+              64718,
+              448,
+              264,
+              3840,
+              315,
+              4867,
+              53457,
+              20107,
+              476,
+              264,
+              3840,
+              315,
+              4867,
+              76494,
+              24810,
+              19636,
+              10465,
+              330,
+              66,
+              12334,
+              1819,
+              788,
+              330,
+              327,
+              8957,
+              497,
+              330,
+              66,
+              12334,
+              4326,
+              788,
+              330,
+              17,
+              13,
+              64718,
+              448,
+              264
+            ],
+            "stopped_on_eos": false,
+            "proposed_tokens": 80,
+            "accepted_tokens": 45,
+            "bonus_tokens": 8,
+            "rejection_rounds": 11,
+            "target_forward_calls": 20,
+            "draft_forward_calls": 88,
+            "target_cache_tokens": 575,
+            "draft_cache_tokens": 575,
+            "target_cache_bytes": 169574400,
+            "draft_cache_bytes": 65945600,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 512,
+                "committed_tokens": 514,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  1635,
+                  315
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 516,
+                "draft_cache_after_proposal": 515,
+                "target_cache_after": 513,
+                "draft_cache_after": 513
+              },
+              {
+                "prefix_tokens": 514,
+                "committed_tokens": 519,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  4231,
+                  879,
+                  3119,
+                  311,
+                  614
+                ],
+                "rejected": false,
+                "target_cache_before": 513,
+                "draft_cache_before": 513,
+                "target_cache_after_verification": 518,
+                "draft_cache_after_proposal": 517,
+                "target_cache_after": 518,
+                "draft_cache_after": 518
+              },
+              {
+                "prefix_tokens": 519,
+                "committed_tokens": 520,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  16824
+                ],
+                "rejected": true,
+                "target_cache_before": 518,
+                "draft_cache_before": 518,
+                "target_cache_after_verification": 523,
+                "draft_cache_after_proposal": 522,
+                "target_cache_after": 519,
+                "draft_cache_after": 519
+              },
+              {
+                "prefix_tokens": 520,
+                "committed_tokens": 522,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  37,
+                  10465
+                ],
+                "rejected": true,
+                "target_cache_before": 519,
+                "draft_cache_before": 519,
+                "target_cache_after_verification": 524,
+                "draft_cache_after_proposal": 523,
+                "target_cache_after": 521,
+                "draft_cache_after": 521
+              },
+              {
+                "prefix_tokens": 522,
+                "committed_tokens": 524,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  330,
+                  66
+                ],
+                "rejected": true,
+                "target_cache_before": 521,
+                "draft_cache_before": 521,
+                "target_cache_after_verification": 526,
+                "draft_cache_after_proposal": 525,
+                "target_cache_after": 523,
+                "draft_cache_after": 523
+              },
+              {
+                "prefix_tokens": 524,
+                "committed_tokens": 529,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  12334,
+                  1819,
+                  788,
+                  330,
+                  327
+                ],
+                "rejected": false,
+                "target_cache_before": 523,
+                "draft_cache_before": 523,
+                "target_cache_after_verification": 528,
+                "draft_cache_after_proposal": 527,
+                "target_cache_after": 528,
+                "draft_cache_after": 528
+              },
+              {
+                "prefix_tokens": 529,
+                "committed_tokens": 534,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  8957,
+                  497,
+                  330,
+                  66,
+                  12334
+                ],
+                "rejected": false,
+                "target_cache_before": 528,
+                "draft_cache_before": 528,
+                "target_cache_after_verification": 533,
+                "draft_cache_after_proposal": 532,
+                "target_cache_after": 533,
+                "draft_cache_after": 533
+              },
+              {
+                "prefix_tokens": 534,
+                "committed_tokens": 538,
+                "proposed": 4,
+                "accepted": 3,
+                "emitted": [
+                  4326,
+                  788,
+                  330,
+                  16
+                ],
+                "rejected": true,
+                "target_cache_before": 533,
+                "draft_cache_before": 533,
+                "target_cache_after_verification": 538,
+                "draft_cache_after_proposal": 537,
+                "target_cache_after": 537,
+                "draft_cache_after": 537
+              },
+              {
+                "prefix_tokens": 538,
+                "committed_tokens": 540,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  13,
+                  64718
+                ],
+                "rejected": true,
+                "target_cache_before": 537,
+                "draft_cache_before": 537,
+                "target_cache_after_verification": 542,
+                "draft_cache_after_proposal": 541,
+                "target_cache_after": 539,
+                "draft_cache_after": 539
+              },
+              {
+                "prefix_tokens": 540,
+                "committed_tokens": 545,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  448,
+                  264,
+                  3840,
+                  315,
+                  4867
+                ],
+                "rejected": false,
+                "target_cache_before": 539,
+                "draft_cache_before": 539,
+                "target_cache_after_verification": 544,
+                "draft_cache_after_proposal": 543,
+                "target_cache_after": 544,
+                "draft_cache_after": 544
+              },
+              {
+                "prefix_tokens": 545,
+                "committed_tokens": 546,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  53457
+                ],
+                "rejected": true,
+                "target_cache_before": 544,
+                "draft_cache_before": 544,
+                "target_cache_after_verification": 549,
+                "draft_cache_after_proposal": 548,
+                "target_cache_after": 545,
+                "draft_cache_after": 545
+              },
+              {
+                "prefix_tokens": 546,
+                "committed_tokens": 551,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  20107,
+                  476,
+                  264,
+                  3840,
+                  315
+                ],
+                "rejected": false,
+                "target_cache_before": 545,
+                "draft_cache_before": 545,
+                "target_cache_after_verification": 550,
+                "draft_cache_after_proposal": 549,
+                "target_cache_after": 550,
+                "draft_cache_after": 550
+              },
+              {
+                "prefix_tokens": 551,
+                "committed_tokens": 552,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  4867
+                ],
+                "rejected": true,
+                "target_cache_before": 550,
+                "draft_cache_before": 550,
+                "target_cache_after_verification": 555,
+                "draft_cache_after_proposal": 554,
+                "target_cache_after": 551,
+                "draft_cache_after": 551
+              },
+              {
+                "prefix_tokens": 552,
+                "committed_tokens": 553,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  76494
+                ],
+                "rejected": true,
+                "target_cache_before": 551,
+                "draft_cache_before": 551,
+                "target_cache_after_verification": 556,
+                "draft_cache_after_proposal": 555,
+                "target_cache_after": 552,
+                "draft_cache_after": 552
+              },
+              {
+                "prefix_tokens": 553,
+                "committed_tokens": 556,
+                "proposed": 4,
+                "accepted": 2,
+                "emitted": [
+                  24810,
+                  19636,
+                  10465
+                ],
+                "rejected": true,
+                "target_cache_before": 552,
+                "draft_cache_before": 552,
+                "target_cache_after_verification": 557,
+                "draft_cache_after_proposal": 556,
+                "target_cache_after": 555,
+                "draft_cache_after": 555
+              },
+              {
+                "prefix_tokens": 556,
+                "committed_tokens": 561,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  330,
+                  66,
+                  12334,
+                  1819,
+                  788
+                ],
+                "rejected": false,
+                "target_cache_before": 555,
+                "draft_cache_before": 555,
+                "target_cache_after_verification": 560,
+                "draft_cache_after_proposal": 559,
+                "target_cache_after": 560,
+                "draft_cache_after": 560
+              },
+              {
+                "prefix_tokens": 561,
+                "committed_tokens": 566,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  330,
+                  327,
+                  8957,
+                  497,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 560,
+                "draft_cache_before": 560,
+                "target_cache_after_verification": 565,
+                "draft_cache_after_proposal": 564,
+                "target_cache_after": 565,
+                "draft_cache_after": 565
+              },
+              {
+                "prefix_tokens": 566,
+                "committed_tokens": 571,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  66,
+                  12334,
+                  4326,
+                  788,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 565,
+                "draft_cache_before": 565,
+                "target_cache_after_verification": 570,
+                "draft_cache_after_proposal": 569,
+                "target_cache_after": 570,
+                "draft_cache_after": 570
+              },
+              {
+                "prefix_tokens": 571,
+                "committed_tokens": 572,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  17
+                ],
+                "rejected": true,
+                "target_cache_before": 570,
+                "draft_cache_before": 570,
+                "target_cache_after_verification": 575,
+                "draft_cache_after_proposal": 574,
+                "target_cache_after": 571,
+                "draft_cache_after": 571
+              },
+              {
+                "prefix_tokens": 572,
+                "committed_tokens": 576,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  13,
+                  64718,
+                  448,
+                  264
+                ],
+                "rejected": false,
+                "target_cache_before": 571,
+                "draft_cache_before": 571,
+                "target_cache_after_verification": 576,
+                "draft_cache_after_proposal": 575,
+                "target_cache_after": 575,
+                "draft_cache_after": 575
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "clinical-938",
+      "greedy_token_ids": [
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        3322,
+        1995,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        508,
+        19,
+        13989,
+        151645
+      ],
+      "hf_token_ids": [
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        3322,
+        1995,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        508,
+        19,
+        13989,
+        151645
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              3322,
+              1995,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              508,
+              19,
+              13989,
+              151645
+            ],
+            "stopped_on_eos": true,
+            "proposed_tokens": 19,
+            "accepted_tokens": 7,
+            "bonus_tokens": 3,
+            "rejection_rounds": 6,
+            "target_forward_calls": 10,
+            "draft_forward_calls": 22,
+            "target_cache_tokens": 427,
+            "draft_cache_tokens": 427,
+            "target_cache_bytes": 125927424,
+            "draft_cache_bytes": 48971776,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 412,
+                "committed_tokens": 413,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 414,
+                "draft_cache_after_proposal": 413,
+                "target_cache_after": 412,
+                "draft_cache_after": 412
+              },
+              {
+                "prefix_tokens": 413,
+                "committed_tokens": 416,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1502,
+                  788,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 412,
+                "draft_cache_before": 412,
+                "target_cache_after_verification": 415,
+                "draft_cache_after_proposal": 414,
+                "target_cache_after": 415,
+                "draft_cache_after": 415
+              },
+              {
+                "prefix_tokens": 416,
+                "committed_tokens": 417,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  1921
+                ],
+                "rejected": true,
+                "target_cache_before": 415,
+                "draft_cache_before": 415,
+                "target_cache_after_verification": 418,
+                "draft_cache_after_proposal": 417,
+                "target_cache_after": 416,
+                "draft_cache_after": 416
+              },
+              {
+                "prefix_tokens": 417,
+                "committed_tokens": 418,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 416,
+                "draft_cache_before": 416,
+                "target_cache_after_verification": 419,
+                "draft_cache_after_proposal": 418,
+                "target_cache_after": 417,
+                "draft_cache_after": 417
+              },
+              {
+                "prefix_tokens": 418,
+                "committed_tokens": 421,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1995,
+                  497,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 417,
+                "draft_cache_before": 417,
+                "target_cache_after_verification": 420,
+                "draft_cache_after_proposal": 419,
+                "target_cache_after": 420,
+                "draft_cache_after": 420
+              },
+              {
+                "prefix_tokens": 421,
+                "committed_tokens": 424,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  51889,
+                  8077,
+                  788
+                ],
+                "rejected": false,
+                "target_cache_before": 420,
+                "draft_cache_before": 420,
+                "target_cache_after_verification": 423,
+                "draft_cache_after_proposal": 422,
+                "target_cache_after": 423,
+                "draft_cache_after": 423
+              },
+              {
+                "prefix_tokens": 424,
+                "committed_tokens": 425,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  508
+                ],
+                "rejected": true,
+                "target_cache_before": 423,
+                "draft_cache_before": 423,
+                "target_cache_after_verification": 426,
+                "draft_cache_after_proposal": 425,
+                "target_cache_after": 424,
+                "draft_cache_after": 424
+              },
+              {
+                "prefix_tokens": 425,
+                "committed_tokens": 426,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  19
+                ],
+                "rejected": true,
+                "target_cache_before": 424,
+                "draft_cache_before": 424,
+                "target_cache_after_verification": 427,
+                "draft_cache_after_proposal": 426,
+                "target_cache_after": 425,
+                "draft_cache_after": 425
+              },
+              {
+                "prefix_tokens": 426,
+                "committed_tokens": 427,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  13989
+                ],
+                "rejected": true,
+                "target_cache_before": 425,
+                "draft_cache_before": 425,
+                "target_cache_after_verification": 428,
+                "draft_cache_after_proposal": 427,
+                "target_cache_after": 426,
+                "draft_cache_after": 426
+              },
+              {
+                "prefix_tokens": 427,
+                "committed_tokens": 428,
+                "proposed": 1,
+                "accepted": 1,
+                "emitted": [
+                  151645
+                ],
+                "rejected": false,
+                "target_cache_before": 426,
+                "draft_cache_before": 426,
+                "target_cache_after_verification": 428,
+                "draft_cache_after_proposal": 427,
+                "target_cache_after": 427,
+                "draft_cache_after": 427
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              3322,
+              1995,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              508,
+              19,
+              13989,
+              151645
+            ],
+            "stopped_on_eos": true,
+            "proposed_tokens": 29,
+            "accepted_tokens": 9,
+            "bonus_tokens": 1,
+            "rejection_rounds": 6,
+            "target_forward_calls": 8,
+            "draft_forward_calls": 30,
+            "target_cache_tokens": 427,
+            "draft_cache_tokens": 427,
+            "target_cache_bytes": 125927424,
+            "draft_cache_bytes": 48971776,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 412,
+                "committed_tokens": 413,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 416,
+                "draft_cache_after_proposal": 415,
+                "target_cache_after": 412,
+                "draft_cache_after": 412
+              },
+              {
+                "prefix_tokens": 413,
+                "committed_tokens": 417,
+                "proposed": 4,
+                "accepted": 3,
+                "emitted": [
+                  1502,
+                  788,
+                  330,
+                  1921
+                ],
+                "rejected": true,
+                "target_cache_before": 412,
+                "draft_cache_before": 412,
+                "target_cache_after_verification": 417,
+                "draft_cache_after_proposal": 416,
+                "target_cache_after": 416,
+                "draft_cache_after": 416
+              },
+              {
+                "prefix_tokens": 417,
+                "committed_tokens": 418,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 416,
+                "draft_cache_before": 416,
+                "target_cache_after_verification": 421,
+                "draft_cache_after_proposal": 420,
+                "target_cache_after": 417,
+                "draft_cache_after": 417
+              },
+              {
+                "prefix_tokens": 418,
+                "committed_tokens": 423,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  1995,
+                  497,
+                  330,
+                  51889,
+                  8077
+                ],
+                "rejected": false,
+                "target_cache_before": 417,
+                "draft_cache_before": 417,
+                "target_cache_after_verification": 422,
+                "draft_cache_after_proposal": 421,
+                "target_cache_after": 422,
+                "draft_cache_after": 422
+              },
+              {
+                "prefix_tokens": 423,
+                "committed_tokens": 425,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  788,
+                  508
+                ],
+                "rejected": true,
+                "target_cache_before": 422,
+                "draft_cache_before": 422,
+                "target_cache_after_verification": 427,
+                "draft_cache_after_proposal": 426,
+                "target_cache_after": 424,
+                "draft_cache_after": 424
+              },
+              {
+                "prefix_tokens": 425,
+                "committed_tokens": 426,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  19
+                ],
+                "rejected": true,
+                "target_cache_before": 424,
+                "draft_cache_before": 424,
+                "target_cache_after_verification": 429,
+                "draft_cache_after_proposal": 428,
+                "target_cache_after": 425,
+                "draft_cache_after": 425
+              },
+              {
+                "prefix_tokens": 426,
+                "committed_tokens": 427,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  13989
+                ],
+                "rejected": true,
+                "target_cache_before": 425,
+                "draft_cache_before": 425,
+                "target_cache_after_verification": 430,
+                "draft_cache_after_proposal": 429,
+                "target_cache_after": 426,
+                "draft_cache_after": 426
+              },
+              {
+                "prefix_tokens": 427,
+                "committed_tokens": 428,
+                "proposed": 1,
+                "accepted": 1,
+                "emitted": [
+                  151645
+                ],
+                "rejected": false,
+                "target_cache_before": 426,
+                "draft_cache_before": 426,
+                "target_cache_after_verification": 428,
+                "draft_cache_after_proposal": 427,
+                "target_cache_after": 427,
+                "draft_cache_after": 427
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "clinical-6",
+      "greedy_token_ids": [
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        27444,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        3056,
+        92,
+        151645
+      ],
+      "hf_token_ids": [
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        27444,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        3056,
+        92,
+        151645
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              27444,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              3056,
+              92,
+              151645
+            ],
+            "stopped_on_eos": true,
+            "proposed_tokens": 13,
+            "accepted_tokens": 8,
+            "bonus_tokens": 3,
+            "rejection_rounds": 3,
+            "target_forward_calls": 7,
+            "draft_forward_calls": 16,
+            "target_cache_tokens": 491,
+            "draft_cache_tokens": 491,
+            "target_cache_bytes": 144801792,
+            "draft_cache_bytes": 56311808,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 478,
+                "committed_tokens": 479,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 480,
+                "draft_cache_after_proposal": 479,
+                "target_cache_after": 478,
+                "draft_cache_after": 478
+              },
+              {
+                "prefix_tokens": 479,
+                "committed_tokens": 482,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1502,
+                  788,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 478,
+                "draft_cache_before": 478,
+                "target_cache_after_verification": 481,
+                "draft_cache_after_proposal": 480,
+                "target_cache_after": 481,
+                "draft_cache_after": 481
+              },
+              {
+                "prefix_tokens": 482,
+                "committed_tokens": 484,
+                "proposed": 2,
+                "accepted": 1,
+                "emitted": [
+                  1921,
+                  27444
+                ],
+                "rejected": true,
+                "target_cache_before": 481,
+                "draft_cache_before": 481,
+                "target_cache_after_verification": 484,
+                "draft_cache_after_proposal": 483,
+                "target_cache_after": 483,
+                "draft_cache_after": 483
+              },
+              {
+                "prefix_tokens": 484,
+                "committed_tokens": 487,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  497,
+                  330,
+                  51889
+                ],
+                "rejected": false,
+                "target_cache_before": 483,
+                "draft_cache_before": 483,
+                "target_cache_after_verification": 486,
+                "draft_cache_after_proposal": 485,
+                "target_cache_after": 486,
+                "draft_cache_after": 486
+              },
+              {
+                "prefix_tokens": 487,
+                "committed_tokens": 490,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  8077,
+                  788,
+                  3056
+                ],
+                "rejected": false,
+                "target_cache_before": 486,
+                "draft_cache_before": 486,
+                "target_cache_after_verification": 489,
+                "draft_cache_after_proposal": 488,
+                "target_cache_after": 489,
+                "draft_cache_after": 489
+              },
+              {
+                "prefix_tokens": 490,
+                "committed_tokens": 491,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  92
+                ],
+                "rejected": true,
+                "target_cache_before": 489,
+                "draft_cache_before": 489,
+                "target_cache_after_verification": 492,
+                "draft_cache_after_proposal": 491,
+                "target_cache_after": 490,
+                "draft_cache_after": 490
+              },
+              {
+                "prefix_tokens": 491,
+                "committed_tokens": 492,
+                "proposed": 1,
+                "accepted": 1,
+                "emitted": [
+                  151645
+                ],
+                "rejected": false,
+                "target_cache_before": 490,
+                "draft_cache_before": 490,
+                "target_cache_after_verification": 492,
+                "draft_cache_after_proposal": 491,
+                "target_cache_after": 491,
+                "draft_cache_after": 491
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              27444,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              3056,
+              92,
+              151645
+            ],
+            "stopped_on_eos": true,
+            "proposed_tokens": 21,
+            "accepted_tokens": 9,
+            "bonus_tokens": 2,
+            "rejection_rounds": 3,
+            "target_forward_calls": 6,
+            "draft_forward_calls": 23,
+            "target_cache_tokens": 491,
+            "draft_cache_tokens": 491,
+            "target_cache_bytes": 144801792,
+            "draft_cache_bytes": 56311808,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 478,
+                "committed_tokens": 479,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 482,
+                "draft_cache_after_proposal": 481,
+                "target_cache_after": 478,
+                "draft_cache_after": 478
+              },
+              {
+                "prefix_tokens": 479,
+                "committed_tokens": 484,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  1502,
+                  788,
+                  330,
+                  1921,
+                  27444
+                ],
+                "rejected": false,
+                "target_cache_before": 478,
+                "draft_cache_before": 478,
+                "target_cache_after_verification": 483,
+                "draft_cache_after_proposal": 482,
+                "target_cache_after": 483,
+                "draft_cache_after": 483
+              },
+              {
+                "prefix_tokens": 484,
+                "committed_tokens": 489,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  497,
+                  330,
+                  51889,
+                  8077,
+                  788
+                ],
+                "rejected": false,
+                "target_cache_before": 483,
+                "draft_cache_before": 483,
+                "target_cache_after_verification": 488,
+                "draft_cache_after_proposal": 487,
+                "target_cache_after": 488,
+                "draft_cache_after": 488
+              },
+              {
+                "prefix_tokens": 489,
+                "committed_tokens": 490,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  3056
+                ],
+                "rejected": true,
+                "target_cache_before": 488,
+                "draft_cache_before": 488,
+                "target_cache_after_verification": 493,
+                "draft_cache_after_proposal": 492,
+                "target_cache_after": 489,
+                "draft_cache_after": 489
+              },
+              {
+                "prefix_tokens": 490,
+                "committed_tokens": 491,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  92
+                ],
+                "rejected": true,
+                "target_cache_before": 489,
+                "draft_cache_before": 489,
+                "target_cache_after_verification": 494,
+                "draft_cache_after_proposal": 493,
+                "target_cache_after": 490,
+                "draft_cache_after": 490
+              },
+              {
+                "prefix_tokens": 491,
+                "committed_tokens": 492,
+                "proposed": 1,
+                "accepted": 1,
+                "emitted": [
+                  151645
+                ],
+                "rejected": false,
+                "target_cache_before": 490,
+                "draft_cache_before": 490,
+                "target_cache_after_verification": 492,
+                "draft_cache_after_proposal": 491,
+                "target_cache_after": 491,
+                "draft_cache_after": 491
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "clinical-243",
+      "greedy_token_ids": [
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        3322,
+        1995,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        508,
+        15,
+        13989,
+        151645
+      ],
+      "hf_token_ids": [
+        4913,
+        1502,
+        788,
+        330,
+        1921,
+        3322,
+        1995,
+        497,
+        330,
+        51889,
+        8077,
+        788,
+        508,
+        15,
+        13989,
+        151645
+      ],
+      "greedy_vs_hf_first_divergence": null,
+      "speculative": {
+        "2": {
+          "result": {
+            "token_ids": [
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              3322,
+              1995,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              508,
+              15,
+              13989,
+              151645
+            ],
+            "stopped_on_eos": true,
+            "proposed_tokens": 19,
+            "accepted_tokens": 7,
+            "bonus_tokens": 3,
+            "rejection_rounds": 6,
+            "target_forward_calls": 10,
+            "draft_forward_calls": 22,
+            "target_cache_tokens": 597,
+            "draft_cache_tokens": 597,
+            "target_cache_bytes": 176062464,
+            "draft_cache_bytes": 68468736,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 582,
+                "committed_tokens": 583,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 584,
+                "draft_cache_after_proposal": 583,
+                "target_cache_after": 582,
+                "draft_cache_after": 582
+              },
+              {
+                "prefix_tokens": 583,
+                "committed_tokens": 586,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1502,
+                  788,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 582,
+                "draft_cache_before": 582,
+                "target_cache_after_verification": 585,
+                "draft_cache_after_proposal": 584,
+                "target_cache_after": 585,
+                "draft_cache_after": 585
+              },
+              {
+                "prefix_tokens": 586,
+                "committed_tokens": 587,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  1921
+                ],
+                "rejected": true,
+                "target_cache_before": 585,
+                "draft_cache_before": 585,
+                "target_cache_after_verification": 588,
+                "draft_cache_after_proposal": 587,
+                "target_cache_after": 586,
+                "draft_cache_after": 586
+              },
+              {
+                "prefix_tokens": 587,
+                "committed_tokens": 588,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 586,
+                "draft_cache_before": 586,
+                "target_cache_after_verification": 589,
+                "draft_cache_after_proposal": 588,
+                "target_cache_after": 587,
+                "draft_cache_after": 587
+              },
+              {
+                "prefix_tokens": 588,
+                "committed_tokens": 591,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  1995,
+                  497,
+                  330
+                ],
+                "rejected": false,
+                "target_cache_before": 587,
+                "draft_cache_before": 587,
+                "target_cache_after_verification": 590,
+                "draft_cache_after_proposal": 589,
+                "target_cache_after": 590,
+                "draft_cache_after": 590
+              },
+              {
+                "prefix_tokens": 591,
+                "committed_tokens": 594,
+                "proposed": 2,
+                "accepted": 2,
+                "emitted": [
+                  51889,
+                  8077,
+                  788
+                ],
+                "rejected": false,
+                "target_cache_before": 590,
+                "draft_cache_before": 590,
+                "target_cache_after_verification": 593,
+                "draft_cache_after_proposal": 592,
+                "target_cache_after": 593,
+                "draft_cache_after": 593
+              },
+              {
+                "prefix_tokens": 594,
+                "committed_tokens": 595,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  508
+                ],
+                "rejected": true,
+                "target_cache_before": 593,
+                "draft_cache_before": 593,
+                "target_cache_after_verification": 596,
+                "draft_cache_after_proposal": 595,
+                "target_cache_after": 594,
+                "draft_cache_after": 594
+              },
+              {
+                "prefix_tokens": 595,
+                "committed_tokens": 596,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  15
+                ],
+                "rejected": true,
+                "target_cache_before": 594,
+                "draft_cache_before": 594,
+                "target_cache_after_verification": 597,
+                "draft_cache_after_proposal": 596,
+                "target_cache_after": 595,
+                "draft_cache_after": 595
+              },
+              {
+                "prefix_tokens": 596,
+                "committed_tokens": 597,
+                "proposed": 2,
+                "accepted": 0,
+                "emitted": [
+                  13989
+                ],
+                "rejected": true,
+                "target_cache_before": 595,
+                "draft_cache_before": 595,
+                "target_cache_after_verification": 598,
+                "draft_cache_after_proposal": 597,
+                "target_cache_after": 596,
+                "draft_cache_after": 596
+              },
+              {
+                "prefix_tokens": 597,
+                "committed_tokens": 598,
+                "proposed": 1,
+                "accepted": 1,
+                "emitted": [
+                  151645
+                ],
+                "rejected": false,
+                "target_cache_before": 596,
+                "draft_cache_before": 596,
+                "target_cache_after_verification": 598,
+                "draft_cache_after_proposal": 597,
+                "target_cache_after": 597,
+                "draft_cache_after": 597
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        },
+        "4": {
+          "result": {
+            "token_ids": [
+              4913,
+              1502,
+              788,
+              330,
+              1921,
+              3322,
+              1995,
+              497,
+              330,
+              51889,
+              8077,
+              788,
+              508,
+              15,
+              13989,
+              151645
+            ],
+            "stopped_on_eos": true,
+            "proposed_tokens": 29,
+            "accepted_tokens": 9,
+            "bonus_tokens": 1,
+            "rejection_rounds": 6,
+            "target_forward_calls": 8,
+            "draft_forward_calls": 30,
+            "target_cache_tokens": 597,
+            "draft_cache_tokens": 597,
+            "target_cache_bytes": 176062464,
+            "draft_cache_bytes": 68468736,
+            "total_seconds": null,
+            "initial_allocated_gib": null,
+            "peak_allocated_gib": null,
+            "peak_reserved_gib": null,
+            "trace": [
+              {
+                "prefix_tokens": 582,
+                "committed_tokens": 583,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  4913
+                ],
+                "rejected": true,
+                "target_cache_before": 0,
+                "draft_cache_before": 0,
+                "target_cache_after_verification": 586,
+                "draft_cache_after_proposal": 585,
+                "target_cache_after": 582,
+                "draft_cache_after": 582
+              },
+              {
+                "prefix_tokens": 583,
+                "committed_tokens": 587,
+                "proposed": 4,
+                "accepted": 3,
+                "emitted": [
+                  1502,
+                  788,
+                  330,
+                  1921
+                ],
+                "rejected": true,
+                "target_cache_before": 582,
+                "draft_cache_before": 582,
+                "target_cache_after_verification": 587,
+                "draft_cache_after_proposal": 586,
+                "target_cache_after": 586,
+                "draft_cache_after": 586
+              },
+              {
+                "prefix_tokens": 587,
+                "committed_tokens": 588,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  3322
+                ],
+                "rejected": true,
+                "target_cache_before": 586,
+                "draft_cache_before": 586,
+                "target_cache_after_verification": 591,
+                "draft_cache_after_proposal": 590,
+                "target_cache_after": 587,
+                "draft_cache_after": 587
+              },
+              {
+                "prefix_tokens": 588,
+                "committed_tokens": 593,
+                "proposed": 4,
+                "accepted": 4,
+                "emitted": [
+                  1995,
+                  497,
+                  330,
+                  51889,
+                  8077
+                ],
+                "rejected": false,
+                "target_cache_before": 587,
+                "draft_cache_before": 587,
+                "target_cache_after_verification": 592,
+                "draft_cache_after_proposal": 591,
+                "target_cache_after": 592,
+                "draft_cache_after": 592
+              },
+              {
+                "prefix_tokens": 593,
+                "committed_tokens": 595,
+                "proposed": 4,
+                "accepted": 1,
+                "emitted": [
+                  788,
+                  508
+                ],
+                "rejected": true,
+                "target_cache_before": 592,
+                "draft_cache_before": 592,
+                "target_cache_after_verification": 597,
+                "draft_cache_after_proposal": 596,
+                "target_cache_after": 594,
+                "draft_cache_after": 594
+              },
+              {
+                "prefix_tokens": 595,
+                "committed_tokens": 596,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  15
+                ],
+                "rejected": true,
+                "target_cache_before": 594,
+                "draft_cache_before": 594,
+                "target_cache_after_verification": 599,
+                "draft_cache_after_proposal": 598,
+                "target_cache_after": 595,
+                "draft_cache_after": 595
+              },
+              {
+                "prefix_tokens": 596,
+                "committed_tokens": 597,
+                "proposed": 4,
+                "accepted": 0,
+                "emitted": [
+                  13989
+                ],
+                "rejected": true,
+                "target_cache_before": 595,
+                "draft_cache_before": 595,
+                "target_cache_after_verification": 600,
+                "draft_cache_after_proposal": 599,
+                "target_cache_after": 596,
+                "draft_cache_after": 596
+              },
+              {
+                "prefix_tokens": 597,
+                "committed_tokens": 598,
+                "proposed": 1,
+                "accepted": 1,
+                "emitted": [
+                  151645
+                ],
+                "rejected": false,
+                "target_cache_before": 596,
+                "draft_cache_before": 596,
+                "target_cache_after_verification": 598,
+                "draft_cache_after_proposal": 597,
+                "target_cache_after": 597,
+                "draft_cache_after": 597
+              }
+            ]
+          },
+          "first_divergence": null,
+          "passed": true
+        }
+      },
+      "passed": true
+    }
+  ],
+  "experiment": "qwen3_4b_adapter_fp32_target_math_sdpa",
+  "memory_protocol": "Both models resident in every timed mode; GPU peaks include both models."
+}

@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+# Recreated from configs/tokenizer_lock.json; keep the lock in version control.
+artifacts/tokenizer/
+artifacts/training_check_deps/

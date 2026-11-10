@@ -1,0 +1,40 @@
+{
+  "signature": "fc171a3644f847c3668f63418f89002887943aa7ac5ae9bc914d85f82a09ac17",
+  "identity": {
+    "config": {
+      "seed": 42,
+      "lengths": [
+        128,
+        256,
+        512
+      ],
+      "causal_modes": [
+        false,
+        true
+      ],
+      "batch": 1,
+      "heads": 4,
+      "head_dim": 64,
+      "dtype": "float32",
+      "block_q": 64,
+      "block_k": 64,
+      "warmups": 2,
+      "repetitions": 5,
+      "cpu_threads": 2,
+      "atol": 2e-05,
+      "rtol": 0.0002
+    },
+    "device": "cpu",
+    "torch": "2.13.0+cpu",
+    "cuda": null,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "float32_matmul_precision": "highest",
+    "gpu": null,
+    "source_sha256": {
+      "attention.py": "df22dc21f739b9e601af444e0dff2b224552db35e367ce6bb4cc8d2a8c43d72a",
+      "benchmark_attention.py": "f3e4d9da892feeee4e058f653c8b9ae3e4eb64c3314613b60c5d1d61705e3b78",
+      "attention_benchmark_report.py": "ccfa3b38471e491748034d6a9dd6af81005239f6baa8ffcca8709f4c0e364db0"
+    }
+  }
+}
