@@ -1,0 +1,23 @@
+{
+  "unit_tests_passed": 88,
+  "browser_widths": [
+    1440,
+    768,
+    390
+  ],
+  "browser_console_errors": 0,
+  "held_out_test_complete": true,
+  "held_out_records_per_model": 206,
+  "held_out_accuracy_before": 0.4077669902912621,
+  "held_out_accuracy_after": 0.7427184466019418,
+  "held_out_macro_f1_after": 0.47328150158667553,
+  "held_out_evidence_micro_f1_after": 0.5714285714285714,
+  "speculative_trials": 54,
+  "speculative_passed": true,
+  "kv_overall_passed": false,
+  "kv_residual_case": "p512-o64",
+  "full_size_local_application_run": "not performed on CPU laptop",
+  "publication_and_demo": "user-provided URLs included; repository sync and actual submission remain user actions",
+  "repository_url": "https://github.com/Harris-05/transformer-implementation",
+  "demo_url": "https://youtu.be/-zL3ECuJL1A"
+}

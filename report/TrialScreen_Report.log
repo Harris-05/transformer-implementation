@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  10 NOV 2026 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  11 NOV 2026 00:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,12 +511,12 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 51
 (C:\Users\EliteSeries\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<generated/architecture.png, id=123, 722.7pt x 260.172pt>
+<generated/architecture.png, id=127, 722.7pt x 260.172pt>
 File: generated/architecture.png Graphic file (type png)
 <use generated/architecture.png>
 Package pdftex.def Info: generated/architecture.png  used on input line 58.
 (pdftex.def)             Requested size: 485.04126pt x 174.61603pt.
-<generated/training_curve.png, id=126, 520.344pt x 180.675pt>
+<generated/training_curve.png, id=130, 520.344pt x 180.675pt>
 File: generated/training_curve.png Graphic file (type png)
 <use generated/training_curve.png>
 Package pdftex.def Info: generated/training_curve.png  used on input line 73.
@@ -535,14 +535,14 @@ n
  []
 
 (generated/validation_table.tex)
-<generated/validation_comparison.png, id=160, 476.982pt x 180.675pt>
+<generated/validation_comparison.png, id=164, 476.982pt x 180.675pt>
 File: generated/validation_comparison.png Graphic file (type png)
 <use generated/validation_comparison.png>
 Package pdftex.def Info: generated/validation_comparison.png  used on input lin
 e 115.
 (pdftex.def)             Requested size: 252.0pt x 95.45679pt.
  (generated/class_table.tex)
-<../results/finetuning_qlora_v1/validation/confusion_overall.png, id=162, 722.7
+<../results/finetuning_qlora_v1/validation/confusion_overall.png, id=166, 722.7
 pt x 578.16pt>
 File: ../results/finetuning_qlora_v1/validation/confusion_overall.png Graphic f
 ile (type png)
@@ -551,55 +551,66 @@ Package pdftex.def Info: ../results/finetuning_qlora_v1/validation/confusion_ov
 erall.png  used on input line 120.
 (pdftex.def)             Requested size: 252.0pt x 201.60033pt.
 
-(generated/test_status.tex) [4 <./generated/validation_comparison.png>]
-(generated/kv_table.tex)
+(generated/test_status.tex (generated/test_table.tex) [4 <./generated/validatio
+n_comparison.png>] (generated/test_class_table.tex)
+(generated/test_evidence_table.tex)
+<../results/final_test/confusion_after_overall.png, id=181, 650.43pt x 505.89pt
+>
+File: ../results/final_test/confusion_after_overall.png Graphic file (type png)
+
+<use ../results/final_test/confusion_after_overall.png>
+Package pdftex.def Info: ../results/final_test/confusion_after_overall.png  use
+d on input line 9.
+(pdftex.def)             Requested size: 252.0pt x 195.99947pt.
+) [5 <../results/finetuning_qlora_v1/validation/confusion_overall.png> <../resu
+lts/final_test/confusion_after_overall.png>] (generated/kv_table.tex) [6]
 Underfull \hbox (badness 2050) in paragraph at lines 132--133
 \T1/ptm/m/n/10 and 2.684--2.773 GiB un-cached. These in-clude res-i-dent
  []
 
 (generated/attention_table.tex)
-<generated/attention_tradeoff.png, id=177, 520.344pt x 187.902pt>
+<generated/attention_tradeoff.png, id=201, 520.344pt x 187.902pt>
 File: generated/attention_tradeoff.png Graphic file (type png)
 <use generated/attention_tradeoff.png>
 Package pdftex.def Info: generated/attention_tradeoff.png  used on input line 1
 38.
 (pdftex.def)             Requested size: 464.39685pt x 167.70819pt.
- [5 <../results/finetuning_qlora_v1/validation/confusion_overall.png>] (generat
-ed/speculative_table.tex)
-<generated/speculative_latency.png, id=188, 520.344pt x 202.356pt>
+ (generated/speculative_table.tex)
+<generated/speculative_latency.png, id=204, 520.344pt x 202.356pt>
 File: generated/speculative_latency.png Graphic file (type png)
 <use generated/speculative_latency.png>
 Package pdftex.def Info: generated/speculative_latency.png  used on input line 
 144.
 (pdftex.def)             Requested size: 469.56189pt x 182.61583pt.
- (generated/errors.tex
-Underfull \hbox (badness 2409) in paragraph at lines 150--1
-[]\T1/ptm/m/n/10 The fol-low-ing eight dis-tinct adapted-model val-i-da-tion
+
+(generated/errors.tex
+Underfull \hbox (badness 1616) in paragraph at lines 150--1
+\T1/ptm/m/n/10 ju-di-ca-tions per-formed in this project. Full raw out-puts,
  []
 
-[6 <./generated/attention_tradeoff.png>])
+) [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./generated/speculative_latency.png>]
-<generated/application.jpg, id=210, 1445.4pt x 903.375pt>
+ [8 <./generated/attention_tradeoff.png>]
+<generated/application.jpg, id=227, 1445.4pt x 903.375pt>
 File: generated/application.jpg Graphic file (type jpg)
 <use generated/application.jpg>
 Package pdftex.def Info: generated/application.jpg  used on input line 161.
 (pdftex.def)             Requested size: 474.71906pt x 296.69489pt.
-
-Underfull \hbox (badness 2443) in paragraph at lines 184--185
+ [9 <./generated/speculative_latency.png>]
+Underfull \hbox (badness 2443) in paragraph at lines 191--192
 []\T1/ptm/m/n/8 Qwen Team, ``Qwen2.5-3B-Instruct,'' of-fi-cial model card. []$h
 ttps : / /
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 185--186
+Underfull \hbox (badness 2443) in paragraph at lines 192--193
 []\T1/ptm/m/n/8 Qwen Team, ``Qwen2.5-7B-Instruct,'' of-fi-cial model card. []$h
 ttps : / /
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 []\T1/ptm/m/n/8 Qwen Team, ``Qwen3-0.6B,'' model card, Apache-2.0.
  []
 
@@ -614,24 +625,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9
-
- <./generated/application.jpg>] (TrialScreen_Report.aux)
+[10 <./generated/application.jpg>] (TrialScreen_Report.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `TrialScreen_Report.out' has not changed.
-(rerunfilecheck)             Checksum: 0BAA0F0F59035C48EE82B45A11E0882B;5259.
+(rerunfilecheck)             Checksum: 8253EE3CCFB4063BA298012ABC9532FF;5587.
  ) 
 Here is how much of TeX's memory you used:
- 11157 strings out of 467871
- 176762 string characters out of 5415471
- 599294 words of memory out of 5000000
- 39802 multiletter control sequences out of 15000+600000
- 743322 words of font info for 161 fonts, out of 8000000 for 9000
+ 11194 strings out of 467871
+ 178122 string characters out of 5415471
+ 601842 words of memory out of 5000000
+ 39823 multiletter control sequences out of 15000+600000
+ 743293 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,1416b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,1494b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/EliteSeries/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmex10.pfb><C:/Users/EliteSeries/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EliteSeries/AppData/Local/Programs/Mi
@@ -649,9 +658,9 @@ eSeries/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Use
 rs/EliteSeries/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
 C:/Users/EliteSeries/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on TrialScreen_Report.pdf (9 pages, 529124 bytes).
+Output written on TrialScreen_Report.pdf (10 pages, 602988 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 339 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 

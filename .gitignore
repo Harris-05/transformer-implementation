@@ -1,5 +1,14 @@
+.venv/
 __pycache__/
-*.py[cod]
-# Recreated from configs/tokenizer_lock.json; keep the lock in version control.
+*.pyc
 artifacts/tokenizer/
 artifacts/training_check_deps/
+.taste-skill/
+submission/
+*.zip
+*.safetensors
+results/*/adapter/
+finetuning_results/
+report/*.aux
+report/*.log
+report/*.out

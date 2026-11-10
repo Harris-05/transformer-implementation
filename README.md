@@ -3,6 +3,9 @@
 **Muhammad Harris Azhar · i232535**  
 National University of Computer and Emerging Sciences
 
+**GitHub:** https://github.com/Harris-05/transformer-implementation  
+**Recorded demo:** https://youtu.be/-zL3ECuJL1A
+
 Criterion-level clinical trial screening with a fine-tuned
 `Qwen/Qwen3-4B-Instruct-2507`, exact patient-sentence citations, explicit cached and
 uncached generation, tiled online-softmax attention and greedy speculative
@@ -49,7 +52,8 @@ The CUDA loader uses NF4 weights with FP32 compute. See
 | Matching KV workloads | 1.42–4.17× cached speedup |
 | Tiled attention | 6/6 shapes/masks pass; peak reduction approximately 51.5% at length 512, with slower runtime |
 | Speculative decoding | 6/6 preflight cases and 54/54 timings pass exact equality; speed ratios 0.652–1.361× |
-| Final held-out test | Pending the separate final GPU evaluation; validation is never relabeled as test |
+| Final held-out accuracy | 0.4078 → 0.7427 on all 206 test records |
+| Final held-out macro-F1 / evidence micro-F1 | 0.4733 / 0.5714 after adaptation |
 
 Full-model Colab experiments are verified from their returned raw artifacts.
 The browser/API and actual miniature Qwen forward integration are verified
@@ -82,7 +86,7 @@ bitsandbytes, not TorchAO.
    prescribed eight test patients only for final inference, evaluates original
    and adapted models under the same NF4/FP16 protocol, and downloads
    `final_test_results.zip`. It does not train either model.
-9. Restore final artifacts to `results/final_test`, run `python assemble_report.py`,
+9. Returned final artifacts are verified and restored to `results/final_test`. Run `python assemble_report.py`,
    then compile the LaTeX twice from `report/`. Generation refuses incomplete
    test metrics. Keep all raw manifests/predictions and do not tune on test.
 
@@ -117,8 +121,8 @@ They do not claim to prove clinical correctness or unmeasured hardware fit.
 | Paper assembly | `assemble_report.py`, `report/`, analyses under `reports/` |
 
 See [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md) for publication links,
-demo recording and remaining verification. Do not submit claims of completion
-for pending test inference, full-size application-host verification, URLs or video.
+demo recording and remaining deployment verification. Do not submit claims of
+completion for unverified full-size application hosting, URLs or video.
 
 ## Attribution
 

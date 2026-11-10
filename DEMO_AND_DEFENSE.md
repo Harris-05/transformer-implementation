@@ -57,5 +57,5 @@ the timed walkthrough, while retaining the recorded host/resource requirements.
 14. **What must you change for an unseen case?** Nothing in the model/prompt.
     Enter it through the app, validate the context budget and inspect raw output.
 15. **What is not established?** Clinical safety, final enrollment, general
-    production speedups, full-size laptop fit, or held-out metrics before the
-    final evaluation has actually run.
+    production speedups or full-size laptop fit. Held-out metrics are now available;
+    they do not establish clinical safety or universal performance.

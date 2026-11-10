@@ -54,9 +54,13 @@ class Jobs:
             return json.loads(json.dumps(self.items[job_id], allow_nan=False))
 
 
-def create_server(port=8765, training=None, device='auto', service=None):
+def create_server(port=8765, training=None, device='auto', service=None, browser_origin=None):
     model = service or ModelService(training=training, device=device)
     jobs = Jobs()
+    proxy = urlsplit(browser_origin) if browser_origin else None
+    if proxy and (proxy.scheme not in ('http','https') or not proxy.netloc or proxy.username or proxy.password or proxy.path not in ('','/')):
+        raise ValueError('Browser origin must be one explicit HTTP(S) origin, without credentials or a path.')
+    proxy_origin = f'{proxy.scheme}://{proxy.netloc}' if proxy else None
 
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *_):
@@ -76,8 +80,12 @@ def create_server(port=8765, training=None, device='auto', service=None):
 
         def allowed(self):
             hosts = {f'127.0.0.1:{self.server.server_port}', f'localhost:{self.server.server_port}'}
+            origins = {f'http://{host}' for host in hosts}
+            if proxy:
+                hosts.add(proxy.netloc)
+                origins.add(proxy_origin)
             origin = self.headers.get('Origin')
-            return self.headers.get('Host') in hosts and (origin is None or origin in {f'http://{host}' for host in hosts})
+            return self.headers.get('Host') in hosts and (origin is None or origin in origins)
 
         def do_GET(self):
             if not self.allowed():
@@ -148,8 +156,9 @@ if __name__ == '__main__':
     parser.add_argument('--training-output', type=Path)
     parser.add_argument('--device', choices=('auto', 'cpu', 'cuda'), default='auto')
     parser.add_argument('--no-browser', action='store_true')
+    parser.add_argument('--browser-origin', help='Optional single trusted proxy origin, e.g. the Colab proxy URL.')
     args = parser.parse_args()
-    server = create_server(args.port, args.training_output, args.device)
+    server = create_server(args.port, args.training_output, args.device, browser_origin=args.browser_origin)
     print(f'TrialScreen: http://127.0.0.1:{server.server_port} (local only)', flush=True)
     if not args.no_browser:
         webbrowser.open(f'http://127.0.0.1:{server.server_port}')

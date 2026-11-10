@@ -26,10 +26,12 @@
     "baseline.py": "65b95fb88c7e7e8aafa6962f384cbae1eabd559f058240977062c5b71a808bd3",
     "decoding.py": "e7217f1c3e93e4229f3b8e38b7da5aad706a6ff42f20f9eaaaa44afbce28378c"
   },
-  "gpu_experiment": "pending_user_colab_run",
+  "gpu_experiment": "complete_uploaded_artifacts_independently_verified",
   "colab_export_fix": {
     "exact_raw_bytes_verified": true,
     "notebook_and_repair_tests_passed": 4,
     "validation_sha256": "0a6ad872b4b22bb5f69ad2f3db163dc6aff75f421cb71e199aee328ad881e2e3"
-  }
+  },
+  "gpu_trials": 54,
+  "gpu_passed": true
 }

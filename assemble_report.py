@@ -112,12 +112,53 @@ def main():
         for mode in ('before','after'):
             for name,g in metrics['groups'][mode].items():rows.append([name,mode,g['records'],f"{g['classification']['accuracy']:.4f}",f"{g['classification']['macro_f1']:.4f}",f"{g['evidence']['micro']['f1']:.4f}"])
         table(out/'test_table.tex',['Group','Model','N','Accuracy','Macro F1','Evidence F1'],rows,'llrrrr')
-        (out/'test_status.tex').write_text('The final held-out comparison is complete. Table~\\ref{tab:test} reports the untouched eight-patient test group. No subsequent tuning is performed.\\begin{table*}[t]\\centering\\caption{Final held-out test results; these are separate from development validation.}\\label{tab:test}\\input{generated/test_table.tex}\\end{table*}',encoding='utf-8')
+        class_rows=[];evidence_rows=[]
+        for group in ('overall','inclusion','exclusion'):
+            old=metrics['groups']['before'][group];new=metrics['groups']['after'][group]
+            for label,values in new['classification']['per_class'].items():
+                if label=='__invalid__':continue
+                baseline=old['classification']['per_class'][label]
+                triplet=lambda value:'/'.join(f'{value[key]:.3f}'for key in ('precision','recall','f1-score'))
+                class_rows.append([tex(group+' / '+label),int(values['support']),triplet(baseline),triplet(values)])
+            for mode,g in (('before',old),('after',new)):
+                e=g['evidence'];evidence_rows.append([group,mode,*[f'{e[kind][key]:.4f}'for kind in ('micro','macro')for key in ('precision','recall','f1')],f"{e['nonempty_gold_macro']['f1']:.4f}"])
+        table(out/'test_class_table.tex',['Group / category','N','Before P/R/F1','After P/R/F1'],class_rows,'lrrr')
+        table(out/'test_evidence_table.tex',['Group','Model','Micro P','Micro R','Micro F1','Macro P','Macro R','Macro F1','Nonempty F1'],evidence_rows,'llrrrrrrr')
+        (out/'test_status.tex').write_text(r'''The final held-out comparison is complete. Table~\ref{tab:test} reports all 206 annotations from the reserved eight patients. Original and adapted phases use the same frozen base, quantization, prompt, greedy decoding and automatic SDPA; the adapter is disabled only for the original phase. The returned predictions were independently checked against the original source inputs and expert targets, re-parsed with the frozen strict parser, and all classification/evidence metrics were recomputed. No subsequent tuning is performed.
+\begin{table*}[t]\centering\small\caption{Final held-out test results, separate from development validation.}\label{tab:test}\input{generated/test_table.tex}\end{table*}
+Accuracy improves from 0.4078 (84/206) to 0.7427 (153/206), a gain of 33.50 percentage points. Overall macro-F1 rises from 0.3492 to 0.4733. Inclusion accuracy increases from 0.7067 to 0.7600, but inclusion macro-F1 falls slightly from 0.5815 to 0.5802. Exclusion accuracy rises from 0.2366 to 0.7328 and macro-F1 from 0.1905 to 0.3508. Both phases produce valid JSON/categories/citations for every test record; validity is not the same as clinical correctness.
+
+Table~\ref{tab:testclasses} preserves every applicable category and zero-support class. The not-excluded category improves from 2/91 to 89/91 correct, explaining much of the aggregate gain. Not-included recall falls from 3/7 to 1/7, while not-applicable recall falls from 11/15 to 3/15. Included recall is unchanged at 20/27. These regressions prevent describing adaptation as uniformly better. There are no gold excluded examples in this test group, so excluded sensitivity cannot be estimated; its zero score remains in the fixed applicable macro-F1 rather than silently removing the class.
+\begin{table*}[t]\centering\footnotesize\caption{Final test category metrics overall and by criterion type. P/R/F1 denotes precision/recall/F1; zero-support classes remain.}\label{tab:testclasses}\input{generated/test_class_table.tex}\end{table*}
+Evidence micro-F1 improves from 0.4571 to 0.5714. Adapted micro precision is 0.7925 and recall 0.4468 (42 true positives, 11 false positives and 52 false negatives). Table~\ref{tab:testevidence} includes micro/macro precision, recall and F1, with nonempty-gold-only F1. Of 206 records, 145 have empty gold evidence; consequently macro-F1 of 0.8343 substantially exceeds the nonempty-only value of 0.5553. Exclusion evidence recall is only 0.1250, so improved label accuracy must not obscure weak support retrieval.
+\begin{table*}[t]\centering\scriptsize\caption{Final held-out evidence metrics with the explicit empty-set policy. Nonempty F1 is example-macro F1 restricted to nonempty gold.}\label{tab:testevidence}\input{generated/test_evidence_table.tex}\end{table*}
+\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{../results/final_test/confusion_after_overall.png}\caption{Selected model's final held-out confusion matrix. Sparse/absent categories and remaining missing-information errors constrain interpretation.}\label{fig:testconfusion}\end{figure}
+Figure~\ref{fig:testconfusion} visualizes these remaining errors. The eight examples in the later error-analysis section are drawn from these completed held-out predictions, after every model and prompt choice was fixed; they are analyzed for reporting, not fed back into training.
+''',encoding='utf-8')
+        test_rows=predictions(args.final_output/'predictions_after.jsonl')
+        test_categories=[('Negative inclusion failure',lambda r:r['gold']['label']=='not included'and r['prediction']['label']!='not included',3),
+            ('Missing information resolved without support',lambda r:r['gold']['label']=='not enough information'and r['prediction']['label']in('included','not excluded'),2),
+            ('Not-applicable criterion misinterpreted',lambda r:r['gold']['label']=='not applicable'and r['prediction']['label']!='not applicable',2),
+            ('Incomplete evidence despite matching category',lambda r:r['gold']['label']==r['prediction']['label']and set(r['gold']['sentence_ids'])!=set(r['prediction']['sentence_ids']),1)]
+        selected=[]
+        for title,predicate,limit in test_categories:
+            eligible=[r for r in test_rows if predicate(r)and r['annotation_id']not in {x[1]['annotation_id']for x in selected}]
+            selected.extend((title,row)for row in eligible[:limit])
+        assert len(selected)==8
+        paragraphs=[]
+        for index,(kind,row)in enumerate(selected,1):
+            paragraphs.append(r'\paragraph{'+f'{index}. '+tex(kind)+f' (annotation {row["annotation_id"]})'+'}\n'+
+                'Criterion ('+tex(row['criterion_type'])+'): '+tex(row['criterion_text'])+' '+
+                'Expert: '+tex(row['gold']['label'])+'; model: '+tex(row['prediction']['label'])+'. '+
+                'Gold IDs '+tex(row['gold']['sentence_ids'])+'; predicted IDs '+tex(row['prediction']['sentence_ids'])+'. '+
+                ('The category conflicts with the reference; a citation does not by itself justify the interpretation.'if row['gold']['label']!=row['prediction']['label']else'The category agrees but the source evidence set is incomplete or differs from the reference.')+'\n')
+        (out/'errors.tex').write_text('\n'.join(paragraphs),encoding='utf-8')
+        (ROOT/'reports/final_test_error_cases.json').write_text(json.dumps([{'error_group':kind,**row}for kind,row in selected],indent=2,ensure_ascii=False),encoding='utf-8')
     else:
         (out/'test_status.tex').write_text(r'\textbf{Final test evaluation is pending.} No held-out accuracy, F1 or clinical generalization result is claimed in this draft. All classification tables currently report validation. The paired final-evaluation runner and Colab cell are supplied; their returned artifacts must be incorporated before claiming completion of held-out assessment.',encoding='utf-8')
     screenshot=ROOT/'artifacts/app_browser_final/desktop-fold.jpg'
     if screenshot.exists():shutil.copyfile(screenshot,out/'application.jpg')
-    print('Generated experiment tables, four plots, eight validation error cases and explicit final-test status.')
+    print('Generated experiment tables, plots, architecture, eight development errors and (when present) eight held-out errors and final metrics.')
 
 
 if __name__=='__main__':main()

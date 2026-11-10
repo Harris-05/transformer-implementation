@@ -11,6 +11,19 @@ from app import create_server
 
 
 class AppTests(unittest.TestCase):
+    def test_explicit_browser_proxy_origin_is_supported_without_opening_other_origins(self):
+        server=create_server(port=0,browser_origin='https://demo.example')
+        thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
+        try:
+            url=f'http://127.0.0.1:{server.server_port}/api/status'
+            with urlopen(Request(url,headers={'Origin':'https://demo.example'}))as response:
+                self.assertEqual(response.status,200)
+            with self.assertRaises(HTTPError)as error:
+                urlopen(Request(url,headers={'Origin':'https://other.example'}))
+            self.assertEqual(error.exception.code,403);error.exception.close()
+        finally:
+            server.shutdown();server.server_close();server.jobs.executor.shutdown();thread.join()
+
     @classmethod
     def setUpClass(cls):
         cls.server = create_server(port=0)

@@ -2,7 +2,7 @@
 
 **Decision date:** November 4, 2026  
 **Selected target:** `Qwen/Qwen3-4B-Instruct-2507`  
-**Status:** Selected for implementation; task-specific performance and hardware feasibility remain to be measured.
+**Status:** Historical selection rationale. Training and validation/test/inference results are now measured; see `reports/finetuning_analysis.md`, `reports/final_test_analysis.md` and `reports/speculative_analysis.md`.
 
 ## The task and constraints
 
@@ -55,9 +55,9 @@ total training or inference memory requirements.
    forward-pass and cache work required by the assignment. Apache 2.0 licensing
    simplifies reproducible distribution of our implementation and adapters.
 
-The decision is to use this checkpoint as our target model. No candidate has yet
-been evaluated or fine-tuned in this project, and no accuracy, speed, or memory
-result is being claimed. More parameters alone do not guarantee better medical
+The decision was to use this checkpoint as our target model. At selection time,
+no candidate had yet been evaluated or fine-tuned, and this comparison did not
+claim accuracy, speed, or memory results. More parameters alone do not guarantee better medical
 understanding. If measured resource requirements exceed the available hardware,
 we will document and revisit the training configuration or model choice.
 

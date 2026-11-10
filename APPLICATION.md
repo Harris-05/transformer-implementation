@@ -27,6 +27,14 @@ screening starts the real load. No training occurs.
 
 ## Host resources and protocols
 
+For a recording using the already configured Colab GPU, copy
+`colab_start_application.py` into one cell in the current runtime. It restores
+the same standalone server/frontend and prints an authenticated browser proxy
+link. Open it in a new tab, load the model through the UI and record the workflow.
+The runtime must remain connected. This is a temporary recording host, not a
+permanent public deployment; the evaluator's browser workflow itself requires
+no notebook execution after the host has started.
+
 CPU mode loads unquantized FP32 base weights: approximately **16 GB for weights
 alone**, plus adapters, model-loading overhead, activations, caches and optional
 draft. A machine with 24-32 GB RAM is a more realistic starting point; memory
@@ -53,6 +61,12 @@ have not loaded the full-size target in this local server. Verify full-size mode
 loading and an unseen case on the intended demonstration host before presenting.
 The mandatory application is a local browser application; the supplied Colab
 notebooks are for experiments, not a substitute for its browser workflow.
+
+`colab_check_application.py` separately runs the actual full-size service through
+HTTP on that GPU, saves a screening report/HTML export/live cached comparison,
+and downloads `application_results.zip`. The returned file is needed before
+claiming a verified full-size application-host check. Merely generating that
+helper is not a passing full-size result.
 
 ## Behavior and recovery
 

@@ -42,28 +42,40 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Adapted-model validation confusion matrix, retaining the invalid-prediction category. Rare negative classes and confusion between missing information and not excluded remain visible.}}{5}{figure.4}\protected@file@percent }
 \newlabel{fig:confusion}{{4}{5}{Adapted-model validation confusion matrix, retaining the invalid-prediction category. Rare negative classes and confusion between missing information and not excluded remain visible}{figure.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Final Held-Out Evaluation Status}{5}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}KV Cache: Speedup and a Remaining Disagreement}{5}{subsection.5.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces KV-cache math-SDPA study. Ratios are uncached/cached median total latency; unequal output suppresses validated speedup.}}{5}{table.4}\protected@file@percent }
-\newlabel{tab:kv}{{IV}{5}{KV-cache math-SDPA study. Ratios are uncached/cached median total latency; unequal output suppresses validated speedup}{table.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Attention: Numerical Agreement and a Memory/Latency Trade-Off}{5}{subsection.5.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Standalone FP32 attention on T4. Peaks are measured allocated MiB including inputs and intermediates; SDPA auto does not identify a particular fused kernel.}}{6}{table.5}\protected@file@percent }
-\newlabel{tab:attention}{{V}{6}{Standalone FP32 attention on T4. Peaks are measured allocated MiB including inputs and intermediates; SDPA auto does not identify a particular fused kernel}{table.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Causal attention runtime and allocator peaks. Educational Python tiling saves memory at larger lengths while running slower; automatic SDPA is fastest in these measurements.}}{6}{figure.5}\protected@file@percent }
-\newlabel{fig:attention}{{5}{6}{Causal attention runtime and allocator peaks. Educational Python tiling saves memory at larger lengths while running slower; automatic SDPA is fastest in these measurements}{figure.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Speculation: Correct Outputs with Mixed Speed Outcomes}{6}{subsection.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Representative Error Analysis}{6}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0a}1. Rare negative inclusion (annotation 31)}{6}{paragraph.6.0.0.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0b}2. Rare negative inclusion (annotation 934)}{6}{paragraph.6.0.0.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Speculative GPU comparison. Speed is ordinary greedy/speculative median latency; values below one are slowdowns. Both models remain resident.}}{7}{table.6}\protected@file@percent }
-\newlabel{tab:spec}{{VI}{7}{Speculative GPU comparison. Speed is ordinary greedy/speculative median latency; values below one are slowdowns. Both models remain resident}{table.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Measured ordinary and speculative latency on identical prompts with a shared FP32 target protocol. Draft length four is slower on most cases despite fewer target forwards.}}{7}{figure.6}\protected@file@percent }
-\newlabel{fig:spec}{{6}{7}{Measured ordinary and speculative latency on identical prompts with a shared FP32 target protocol. Draft length four is slower on most cases despite fewer target forwards}{figure.6}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0c}3. Rare negative inclusion (annotation 935)}{7}{paragraph.6.0.0.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0d}4. Rare exclusion failure (annotation 41)}{7}{paragraph.6.0.0.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0e}5. Rare exclusion failure (annotation 263)}{7}{paragraph.6.0.0.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0f}6. Missing information mapped to a decision (annotation 8)}{7}{paragraph.6.0.0.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0g}7. Missing information mapped to a decision (annotation 15)}{7}{paragraph.6.0.0.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0h}8. Evidence localization failure (annotation 0)}{7}{paragraph.6.0.0.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Selected model's final held-out confusion matrix. Sparse/absent categories and remaining missing-information errors constrain interpretation.}}{5}{figure.5}\protected@file@percent }
+\newlabel{fig:testconfusion}{{5}{5}{Selected model's final held-out confusion matrix. Sparse/absent categories and remaining missing-information errors constrain interpretation}{figure.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Final held-out test results, separate from development validation.}}{6}{table.4}\protected@file@percent }
+\newlabel{tab:test}{{IV}{6}{Final held-out test results, separate from development validation}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Final test category metrics overall and by criterion type. P/R/F1 denotes precision/recall/F1; zero-support classes remain.}}{6}{table.5}\protected@file@percent }
+\newlabel{tab:testclasses}{{V}{6}{Final test category metrics overall and by criterion type. P/R/F1 denotes precision/recall/F1; zero-support classes remain}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Final held-out evidence metrics with the explicit empty-set policy. Nonempty F1 is example-macro F1 restricted to nonempty gold.}}{6}{table.6}\protected@file@percent }
+\newlabel{tab:testevidence}{{VI}{6}{Final held-out evidence metrics with the explicit empty-set policy. Nonempty F1 is example-macro F1 restricted to nonempty gold}{table.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}KV Cache: Speedup and a Remaining Disagreement}{6}{subsection.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces KV-cache math-SDPA study. Ratios are uncached/cached median total latency; unequal output suppresses validated speedup.}}{6}{table.7}\protected@file@percent }
+\newlabel{tab:kv}{{VII}{6}{KV-cache math-SDPA study. Ratios are uncached/cached median total latency; unequal output suppresses validated speedup}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Attention: Numerical Agreement and a Memory/Latency Trade-Off}{7}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Speculation: Correct Outputs with Mixed Speed Outcomes}{7}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Representative Error Analysis}{7}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0a}1. Negative inclusion failure (annotation 162)}{7}{paragraph.6.0.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0b}2. Negative inclusion failure (annotation 163)}{7}{paragraph.6.0.0.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0c}3. Negative inclusion failure (annotation 164)}{7}{paragraph.6.0.0.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0d}4. Missing information resolved without support (annotation 174)}{7}{paragraph.6.0.0.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0e}5. Missing information resolved without support (annotation 193)}{7}{paragraph.6.0.0.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0f}6. Not-applicable criterion misinterpreted (annotation 165)}{7}{paragraph.6.0.0.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0g}7. Not-applicable criterion misinterpreted (annotation 422)}{7}{paragraph.6.0.0.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {VI-}0h}8. Incomplete evidence despite matching category (annotation 179)}{7}{paragraph.6.0.0.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Standalone FP32 attention on T4. Peaks are measured allocated MiB including inputs and intermediates; SDPA auto does not identify a particular fused kernel.}}{8}{table.8}\protected@file@percent }
+\newlabel{tab:attention}{{VIII}{8}{Standalone FP32 attention on T4. Peaks are measured allocated MiB including inputs and intermediates; SDPA auto does not identify a particular fused kernel}{table.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Causal attention runtime and allocator peaks. Educational Python tiling saves memory at larger lengths while running slower; automatic SDPA is fastest in these measurements.}}{8}{figure.6}\protected@file@percent }
+\newlabel{fig:attention}{{6}{8}{Causal attention runtime and allocator peaks. Educational Python tiling saves memory at larger lengths while running slower; automatic SDPA is fastest in these measurements}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Speculative GPU comparison. Speed is ordinary greedy/speculative median latency; values below one are slowdowns. Both models remain resident.}}{8}{table.9}\protected@file@percent }
+\newlabel{tab:spec}{{IX}{8}{Speculative GPU comparison. Speed is ordinary greedy/speculative median latency; values below one are slowdowns. Both models remain resident}{table.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Integrated Browser Application}{8}{section.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Measured ordinary and speculative latency on identical prompts with a shared FP32 target protocol. Draft length four is slower on most cases despite fewer target forwards.}}{9}{figure.7}\protected@file@percent }
+\newlabel{fig:spec}{{7}{9}{Measured ordinary and speculative latency on identical prompts with a shared FP32 target protocol. Draft length four is slower on most cases despite fewer target forwards}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Limitations and Reproducibility}{9}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{9}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: AI-Use Statement}{9}{section*.1}\protected@file@percent }
 \bibcite{trialgpt}{1}
 \bibcite{lora}{2}
 \bibcite{qlora}{3}
@@ -72,14 +84,11 @@
 \bibcite{qwen3candidate}{6}
 \bibcite{qwen7candidate}{7}
 \bibcite{flash}{8}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Integrated Browser Application}{8}{section.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {VIII}Limitations and Reproducibility}{8}{section.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{8}{section.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: AI-Use Statement}{8}{section*.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{8}{section*.2}\protected@file@percent }
 \bibcite{specpaper}{9}
 \bibcite{dataset}{10}
 \bibcite{qwendraft}{11}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Actual browser input workspace. The screenshot illustrates the interface state, not a new clinical inference result. Desktop/mobile layout, invalid-input recovery, sample filling and navigation were checked with a real headless browser.}}{9}{figure.7}\protected@file@percent }
-\newlabel{fig:app}{{7}{9}{Actual browser input workspace. The screenshot illustrates the interface state, not a new clinical inference result. Desktop/mobile layout, invalid-input recovery, sample filling and navigation were checked with a real headless browser}{figure.7}{}}
-\gdef \@abspage@last{9}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Actual browser input workspace. The screenshot illustrates the interface state, not a new clinical inference result. Desktop/mobile layout, invalid-input recovery, sample filling and navigation were checked with a real headless browser.}}{10}{figure.8}\protected@file@percent }
+\newlabel{fig:app}{{8}{10}{Actual browser input workspace. The screenshot illustrates the interface state, not a new clinical inference result. Desktop/mobile layout, invalid-input recovery, sample filling and navigation were checked with a real headless browser}{figure.8}{}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  B: Source Project and Recorded Demonstration}{10}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{10}{section*.3}\protected@file@percent }
+\gdef \@abspage@last{10}

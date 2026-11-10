@@ -75,9 +75,10 @@ files or an uploaded results ZIP without an upload widget.
   patients. Frozen EDA/preparation/baseline/training/KV decoder hashes preserved.
 - Fresh final review found failed-preflight overwrite and missing-file retry
   issues. Both were reproduced with regressions, corrected and verified.
-- **Remaining:** the user runs the actual model pair on Colab and returns
-  `speculative_results.zip`. Task 5 GPU timing, acceptance and memory results are
-  pending; CPU smoke does not establish real-pair speedup or GPU fit.
+- **Completed:** returned `speculative_results.zip` independently verified and
+  preserved in `results/speculative_v1`. Six preflight cases and 54/54 timings
+  pass exact equality; measured ratios 0.652–1.361x. All aggregates/source identities
+  recomputed. See `reports/speculative_analysis.md`.
 
 ## Constraints
 

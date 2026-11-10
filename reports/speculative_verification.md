@@ -1,7 +1,8 @@
 # Speculative decoding: local verification and Colab handoff
 
-Implementation and local validation are complete. Actual paired-model GPU
-measurement remains pending in `colab_speculative.ipynb`.
+Implementation, local validation and the returned paired-model GPU experiment
+are complete. The historical local handoff checks below are retained; the final
+54/54 passing GPU results are independently verified in `speculative_analysis.md`.
 
 - The full suite passed 71 tests. Two additional notebook retry/Drive backup
   regressions passed after reproducing and fixing `TRAINING=None` recovery:
